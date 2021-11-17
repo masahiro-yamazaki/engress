@@ -1,0 +1,6 @@
+app/public/wp-content/cache/*
+app/public/wp-content/uploads/*
+app/public/wp-content/languages/*
+app/public/wp-content/plugins/*
+app/sql/local.sql
+logs/*
