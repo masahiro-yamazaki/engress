@@ -24,16 +24,17 @@
 <body>
   <!-- ヘッダー -->
   <header class='ly_header'>
-    <div class='ly_header_inner'>
+    <div class='ly_header_inner hp_col'>
       <a class='bl_headerLogo' href='#'>
-        <img src='<?php echo get_template_directory_uri() ?>/img/header-logo.png' alt='Engress' class='el_headerLogoImg'>
+        <img src='<?php echo get_template_directory_uri() ?>/img/header-logo.png' alt='Engress'>
       </a>
-      <!-- 
-      <div class='header-menu'>
-        <a href='#features'>特徴</a>
-        <a href='#price'>価格</a>
-        <a href='#contact'>お問い合わせ</a>
+      <div class='bl_headerMenu_wrapper'>
+        <a class='el_headerMenu' href=''>ホーム</a>
+        <a class='el_headerMenu' href=''>お知らせ</a>
+        <a class='el_headerMenu' href=''>ブログ</a>
+        <a class='el_headerMenu' href=''>コース・料金</a>
       </div>
+      <!-- 
       <a class='header-contact' href='#contact'>
         <span>お問い合わせ</span>
       </a>
