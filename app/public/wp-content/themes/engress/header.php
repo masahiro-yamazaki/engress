@@ -35,11 +35,11 @@
         <li class='bl_headerMenu' href=''>ブログ</a>
         <li class='bl_headerMenu' href=''>コース・料金</a>
       </ul>
-      <!-- 
-      <a class='header-contact' href='#contact'>
-        <span>お問い合わせ</span>
-      </a>
-      -->
+      <div class='bl_headerInfo'>
+        <div class='bl_businessHours'>平日08:00〜20:00</div>
+        <!-- <img src='<?php echo get_template_directory_uri() ?>/img/header-tel-icon.svg' alt='tel'> -->
+        <div class='bl_tel'>0123-456-7890</div>
+      </div>
       <a class='el_menuBtn el_menuBtn__orange'>資料請求</a>
       <a class='el_menuBtn el_menuBtn__navy'>お問い合わせ</a>
     </div><!-- /.ly_header_inner -->
