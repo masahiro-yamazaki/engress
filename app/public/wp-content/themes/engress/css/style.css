@@ -41,11 +41,33 @@ img {
 }
 
 .bl_headerMenu_wrapper {
-  padding: 17px 0;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
 }
 
-.el_headerMenu {
+.bl_headerMenu {
   font: normal normal bold 16px/29px YuGothic;
   color: #1B224C;
   margin-left: 28px;
+}
+
+.el_menuBtn {
+  width: 137px;
+  height: 50px;
+  font: normal normal bold 14px/24px YuGothic;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.el_menuBtn__orange {
+  background-color: #F5A623;
+  color: #FFFFFF;
+}
+
+.el_menuBtn__navy {
+  background-color: #1B224C;
+  color: #FFFFFF;
 }

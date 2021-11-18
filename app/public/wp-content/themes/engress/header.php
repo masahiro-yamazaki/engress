@@ -28,16 +28,19 @@
       <a class='bl_headerLogo' href='#'>
         <img src='<?php echo get_template_directory_uri() ?>/img/header-logo.png' alt='Engress'>
       </a>
-      <div class='bl_headerMenu_wrapper'>
-        <a class='el_headerMenu' href=''>ホーム</a>
-        <a class='el_headerMenu' href=''>お知らせ</a>
-        <a class='el_headerMenu' href=''>ブログ</a>
-        <a class='el_headerMenu' href=''>コース・料金</a>
-      </div>
+      <!-- TODO: nav要素を使う -->
+      <ul class='bl_headerMenu_wrapper'>
+        <li class='bl_headerMenu' href=''>ホーム</a>
+        <li class='bl_headerMenu' href=''>お知らせ</a>
+        <li class='bl_headerMenu' href=''>ブログ</a>
+        <li class='bl_headerMenu' href=''>コース・料金</a>
+      </ul>
       <!-- 
       <a class='header-contact' href='#contact'>
         <span>お問い合わせ</span>
       </a>
       -->
+      <a class='el_menuBtn el_menuBtn__orange'>資料請求</a>
+      <a class='el_menuBtn el_menuBtn__navy'>お問い合わせ</a>
     </div><!-- /.ly_header_inner -->
   </header><!-- /.ly_header -->
