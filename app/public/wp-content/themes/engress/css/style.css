@@ -27,9 +27,11 @@ img {
   height: 50px;
   margin: 0 auto;
   padding: 0 10px 0 15px;
+  display: flex;
+  justify-content: space-between;
 }
 
-.hp_col {
+.ly_header_left {
   display: flex;
 }
 
@@ -52,8 +54,26 @@ img {
   margin-left: 28px;
 }
 
+.ly_header_right {
+  display: flex;
+}
+
 .bl_headerInfo {
-  
+
+}
+
+.bl_businessHours {
+  font: normal normal 500 12px/12px YuGothic;
+  color: #1B224C;
+}
+
+.bl_tel {
+  font: normal normal bold 16px/16px YuGothic;
+  color: #1B224C;
+}
+
+.bl_menuBtn_wrapper {
+  margin-left: 10px;
 }
 
 .el_menuBtn {

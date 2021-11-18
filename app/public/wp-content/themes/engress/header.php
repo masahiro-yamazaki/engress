@@ -24,23 +24,31 @@
 <body>
   <!-- ヘッダー -->
   <header class='ly_header'>
-    <div class='ly_header_inner hp_col'>
-      <a class='bl_headerLogo' href='#'>
-        <img src='<?php echo get_template_directory_uri() ?>/img/header-logo.png' alt='Engress'>
-      </a>
-      <!-- TODO: nav要素を使う -->
-      <ul class='bl_headerMenu_wrapper'>
-        <li class='bl_headerMenu' href=''>ホーム</a>
-        <li class='bl_headerMenu' href=''>お知らせ</a>
-        <li class='bl_headerMenu' href=''>ブログ</a>
-        <li class='bl_headerMenu' href=''>コース・料金</a>
-      </ul>
-      <div class='bl_headerInfo'>
-        <div class='bl_businessHours'>平日08:00〜20:00</div>
-        <!-- <img src='<?php echo get_template_directory_uri() ?>/img/header-tel-icon.svg' alt='tel'> -->
-        <div class='bl_tel'>0123-456-7890</div>
+    <div class='ly_header_inner'>
+      <div class='ly_header_left'>
+        <a class='bl_headerLogo' href='#'>
+          <img src='<?php echo get_template_directory_uri() ?>/img/header-logo.png' alt='Engress'>
+        </a>
+        <!-- TODO: nav要素を使う -->
+        <ul class='bl_headerMenu_wrapper'>
+          <li class='bl_headerMenu' href=''>ホーム</a>
+          <li class='bl_headerMenu' href=''>お知らせ</a>
+          <li class='bl_headerMenu' href=''>ブログ</a>
+          <li class='bl_headerMenu' href=''>コース・料金</a>
+        </ul>
       </div>
-      <a class='el_menuBtn el_menuBtn__orange'>資料請求</a>
-      <a class='el_menuBtn el_menuBtn__navy'>お問い合わせ</a>
+      <div class='ly_header_right'>
+        <div class='bl_headerInfo'>
+          <div class='bl_businessHours'>平日08:00〜20:00</div>
+          <!-- <img src='<?php echo get_template_directory_uri() ?>/img/header-tel-icon.svg' alt='tel'> -->
+          <div class='bl_tel'>0123-456-7890</div>
+        </div>
+        <div class='bl_menuBtn_wrapper'>
+          <a class='el_menuBtn el_menuBtn__orange'>資料請求</a>
+        </div>
+        <div class='bl_menuBtn_wrapper'>
+          <a class='el_menuBtn el_menuBtn__navy'>お問い合わせ</a>
+        </div>
+      </div>
     </div><!-- /.ly_header_inner -->
   </header><!-- /.ly_header -->
