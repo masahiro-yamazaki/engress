@@ -60,13 +60,13 @@
         <div class='bl_menuBtn_wrapper'>
           <a class='el_menuBtn el_menuBtn__navy'>お問い合わせ</a>
         </div>
-        <button class='bl_hamburgerMenuBtn js_hamburgerMenuBtn'
+        <button class='bl_drawerMenuBtn js_drawerMenuBtn'
                 aria-controls='js_glabalMenu' aria-expanded='false' area-label='メニューを開閉する'>
-          <i class='fa fa-2x fa-bars js_hamburgerMenuIcon is_active'></i>
-          <i class='fa fa-2x fa-times js_hamburgerMenuIcon'></i>
+          <i class='fa fa-2x fa-bars js_drawerMenuIcon is_active'></i>
+          <i class='fa fa-2x fa-times js_drawerMenuIcon'></i>
         </button>
         <div class='bl_drawerBg js_drawerBg' aria-hidden='true'>
-        <div id='js_glabalMenu' class='bl_hamburgerMenu js_hamburgerMenu'  aria-hidden='true'>
+        <div id='js_glabalMenu' class='bl_drawerMenu js_drawerMenu'  aria-hidden='true'>
           hmenu
         </div>
       </div><!-- /.ly_header_right -->

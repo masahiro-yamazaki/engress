@@ -167,7 +167,7 @@ button {
   border: currentColor 1px solid;
 }
 
-.bl_hamburgerMenuBtn {
+.bl_drawerMenuBtn {
   width: 50px;
   height: 50px;
   background-color: #FFFFFF;
@@ -177,18 +177,18 @@ button {
 }
 
 @media (min-width: 1025px) {
-  .bl_hamburgerMenuBtn {
+  .bl_drawerMenuBtn {
     display: none;
   }
 }
 
-.bl_hamburgerMenuBtn > i {
+.bl_drawerMenuBtn > i {
   display: none;
   font-size: 18px;
   color: #1B224C;
 }
 
-.bl_hamburgerMenuBtn > i.is_active {
+.bl_drawerMenuBtn > i.is_active {
   display: block;
 }
 
@@ -219,7 +219,7 @@ button {
   }
 }
 
-.bl_hamburgerMenu {
+.bl_drawerMenu {
   /* display: none; */
   position: fixed;
   z-index: 4;
@@ -234,6 +234,6 @@ button {
   transition: 0.3s;
 }
 
-.bl_hamburgerMenu.is_active {
+.bl_drawerMenu.is_active {
   display: block;
 }
