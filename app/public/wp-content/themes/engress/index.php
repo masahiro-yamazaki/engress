@@ -1,4 +1,3 @@
 <?php get_header(); ?>
-  <!-- CSSが有効になっているかどうかテスト -->
-  <h1 class='test-title'>Engress</h1>
+  <div style='height: 100px; background-color: blue;'></div>
 <?php get_footer(); ?>

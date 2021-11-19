@@ -16,11 +16,6 @@ button {
   overflow: hidden;
 }
 
-.test-title {
-  font-size: 20px;
-  color: blue;
-}
-
 .ly_header {
   height: 50px;
   padding: 15px 0;
@@ -229,6 +224,7 @@ button {
   overflow: hidden;
   background-color: #FFFFFF;
   transform: translateX(280px);
+  transition: 0.3s;
 }
 
 .bl_drawerMenu.is_active {
