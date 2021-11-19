@@ -65,8 +65,12 @@ button {
 }
 
 .ly_header {
+  background-color: #FFFFFF;
+  width: 100%;
   height: 50px;
   padding: 15px 0;
+  position: fixed;
+  z-index: 100;
 }
 
 .ly_header_inner {
@@ -172,7 +176,7 @@ button {
   background-color: #FFFFFF;
   border: #1B224C 1px solid;
   border-radius: 50px;
-  z-index: 100;
+  z-index: 101;
 }
 
 .bl_drawerBtn:hover {
@@ -289,4 +293,8 @@ button {
   display: inline-block;
   width: 115px;
   height: 50px;
+}
+
+.ly-paddingTop {
+  height: 80px;
 }

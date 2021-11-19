@@ -100,3 +100,4 @@
       </div><!-- /.ly_header_right -->
     </div><!-- /.ly_header_inner -->
   </header><!-- /.ly_header -->
+  <div class='ly-paddingTop'></div><!-- /.ly-paddingTop -->
