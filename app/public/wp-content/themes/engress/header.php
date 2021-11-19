@@ -62,7 +62,7 @@
         </div>
         <button class='bl_drawerBtn js_drawerBtn'
                 aria-controls='js_glabalMenu' aria-expanded='false' area-label='メニューを開閉する'>
-          <i class='fa fa-2x fa-bars js_drawerIcon is_active'></i>
+          <i class='fa fa-2x fa-bars js_drawerIcon is_drawerActive'></i>
           <i class='fa fa-2x fa-times js_drawerIcon'></i>
         </button>
         <div class='bl_drawerBg js_drawerBg' aria-hidden='true'></div>
