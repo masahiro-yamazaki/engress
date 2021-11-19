@@ -237,3 +237,17 @@ button {
     display: none;
   }
 }
+
+.bl_drawerMenuLogo_wrapper {
+  margin-top: 46px; /* TODO: ;ワードプレスのメニューバーの設定を変更後削除 */
+  height: 80px;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+}
+
+.bl_drawerMenuLogo {
+  display: inline-block;
+  width: 136px;
+  height: 27px;
+}

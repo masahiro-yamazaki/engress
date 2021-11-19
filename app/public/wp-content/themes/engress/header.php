@@ -67,7 +67,11 @@
         </button>
         <div class='bl_drawerBg js_drawerBg' aria-hidden='true'></div>
         <div class='bl_drawerMenu js_drawerMenu' aria-hidden='true'>
-          hmenu
+          <div class='bl_drawerMenuLogo_wrapper'>
+            <a class='bl_drawerMenuLogo' href='#'>
+              <img src='<?php echo get_template_directory_uri() ?>/img/header-logo.png' alt='Engress'>
+            </a>
+          </div>
         </div>
       </div><!-- /.ly_header_right -->
     </div><!-- /.ly_header_inner -->
