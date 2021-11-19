@@ -1,7 +1,8 @@
 /* 共通化 */
 body {
   margin: 0;
-  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ", "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ",
+               "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
 }
 
 a {
@@ -280,6 +281,10 @@ button {
   font-size: 16px;
   line-height: 30px;
   color: #FFFFFF;
+}
+
+.bl_drawerNav_link:hover {
+  opacity: 0.7;
 }
 
 .bl_drawerCtaBtnGroup {
