@@ -66,7 +66,7 @@
           <i class='fa fa-2x fa-times js_drawerMenuIcon'></i>
         </button>
         <div class='bl_drawerBg js_drawerBg' aria-hidden='true'>
-        <div id='js_glabalMenu' class='bl_drawerMenu js_drawerMenu'  aria-hidden='true'>
+        <div class='bl_drawerMenu js_drawerMenu' aria-hidden='true'>
           hmenu
         </div>
       </div><!-- /.ly_header_right -->

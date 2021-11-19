@@ -1,7 +1,7 @@
 // ドロワーメニュー
 jQuery('.js_drawerMenuBtn').click(function () {
   jQuery('body').toggleClass('hp_noScroll');
-	jQuery('.js_drawerBg').toggleClass('is_active');
+  jQuery('.js_drawerBg').toggleClass('is_active');
   jQuery('.js_drawerMenu').toggleClass('is_active');
   jQuery('.js_drawerMenuIcon').toggleClass('is_active');
 
@@ -15,4 +15,13 @@ jQuery('.js_drawerMenuBtn').click(function () {
     jQuery('.js_drawerMenu').attr('aria-hidden', 'true');
     //jQuery('.hmenu-link').attr('tabindex', '-1');
   }
+});
+
+jQuery('.js_drawerBg').click(function () {
+  jQuery('.js_drawerBg').toggleClass('is_active');
+  jQuery('.js_drawerMenu').toggleClass('is_active');
+  jQuery('.js_drawerMenuIcon').toggleClass('is_active');
+
+  jQuery('.js_drawerMenuBtn').attr('aria-expanded', false);
+  jQuery('.js_drawerMenu').attr('aria-hidden', true);
 });
