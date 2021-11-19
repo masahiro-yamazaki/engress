@@ -8,6 +8,10 @@ a {
   cursor: pointer;
 }
 
+button {
+  cursor: pointer;
+}
+
 .test-title {
   font-size: 20px;
   color: blue;
@@ -157,4 +161,28 @@ a {
   background-color: #FFFFFF;
   color: #1B224C;
   border: currentColor 1px solid;
+}
+
+.bl_hamburgerMenuBtn {
+  width: 50px;
+  height: 50px;
+  background-color: #FFFFFF;
+  border: #1B224C 1px solid;
+  border-radius: 50px;
+}
+
+@media (min-width: 1025px) {
+  .el_hamburgerMenuBtn {
+    display: none;
+  }
+}
+
+.bl_hamburgerMenuBtn > i {
+  display: none;
+  font-size: 18px;
+  color: #1B224C;
+}
+
+.bl_hamburgerMenuBtn > i.is_active {
+  display: block;
 }

@@ -60,6 +60,11 @@
         <div class='bl_menuBtn_wrapper'>
           <a class='el_menuBtn el_menuBtn__navy'>お問い合わせ</a>
         </div>
+        <button id='js_hamburgerMenuBtn' class='bl_hamburgerMenuBtn'
+                aria-controls='js-glabal-menu' aria-expanded='false' area-label='メニューを開閉する'>
+          <i class='fa fa-2x fa-bars js_hamburgerMenuIcon_open is_active'></i>
+          <i class='fa fa-2x fa-times js_hamburgerMenuIcon_close'></i>
+      </button>
       </div>
     </div><!-- /.ly_header_inner -->
   </header><!-- /.ly_header -->
