@@ -7,7 +7,7 @@
   <meta name='format-detection' content='telephone=no'>
 
   <title>Engress</title>
-  <meta name='description' content=''>
+  <meta name='description' content='日本人へのTOEFL指導歴豊かな講師陣の コーチング型TOEFLスクール'>
 
   <meta property='og:title' content='Engress'>
   <meta property='og:type' content='website'>
@@ -29,13 +29,22 @@
         <a class='bl_headerLogo' href='#'>
           <img src='<?php echo get_template_directory_uri() ?>/img/header-logo.png' alt='Engress'>
         </a>
-        <!-- TODO: nav要素を使う -->
-        <ul class='bl_headerMenu_wrapper'>
-          <li class='bl_headerMenu' href=''>ホーム</a>
-          <li class='bl_headerMenu' href=''>お知らせ</a>
-          <li class='bl_headerMenu' href=''>ブログ</a>
-          <li class='bl_headerMenu' href=''>コース・料金</a>
-        </ul>
+        <nav>
+          <ul class='bl_headerNav'>
+            <li class='bl_headerNav_item'>
+              <a class='bl_headerNav_link' href=''>ホーム</a>
+            </li>
+            <li class='bl_headerNav_item'>
+              <a class='bl_headerNav_link' href=''>お知らせ</a>
+            </li>
+            <li class='bl_headerNav_item'>
+              <a class='bl_headerNav_link' href=''>ブログ</a>
+            </li>
+            <li class='bl_headerNav_item'>
+              <a class='bl_headerNav_link' href=''>コース・料金</a>
+            </li>
+          </ul>
+        </nav>
       </div>
       <div class='ly_header_right'>
         <div class='bl_headerInfo'>

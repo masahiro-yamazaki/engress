@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ", "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
 }
 
 a {
@@ -42,16 +43,31 @@ img {
   display: inline-block;
 }
 
-.bl_headerMenu_wrapper {
+.bl_headerLogo:hover {
+  opacity: 0.7;
+}
+
+.bl_headerNav {
+  height: 100%;
   list-style-type: none;
   display: flex;
   align-items: center;
+  margin: 0; /* nav要素以下のul要素に自動でmarginが指定される */
+  padding: 0; /* nav要素以下のul要素に自動でpaddingが指定される */
 }
 
-.bl_headerMenu {
-  font: normal normal bold 16px/29px YuGothic;
-  color: #1B224C;
+.bl_headerNav > * {
   margin-left: 28px;
+}
+
+.bl_headerNav_link {
+  font-weight: bold;
+  font-size: 16px;
+  color: #1B224C;
+}
+
+.bl_headerNav_link:hover {
+  opacity: 0.7;
 }
 
 .ly_header_right {
@@ -59,16 +75,26 @@ img {
 }
 
 .bl_headerInfo {
-
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: flex-end;
 }
 
 .bl_businessHours {
-  font: normal normal 500 12px/12px YuGothic;
+  height: 12px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 12px;
   color: #1B224C;
+  margin-bottom: 10px;
 }
 
 .bl_tel {
-  font: normal normal bold 16px/16px YuGothic;
+  height: 16px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 16px;
   color: #1B224C;
 }
 
@@ -79,11 +105,15 @@ img {
 .el_menuBtn {
   width: 137px;
   height: 50px;
-  font: normal normal bold 14px/24px YuGothic;
+  font-weight: bold;
+  font-size: 14px;
   border-radius: 5px;
+  border: transparent 1px solid;
+  box-sizing: border-box; /* TODO: 必要に応じて共通化 */
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 .el_menuBtn__orange {
@@ -91,7 +121,19 @@ img {
   color: #FFFFFF;
 }
 
+.el_menuBtn__orange:focus, .el_menuBtn__orange:hover {
+  background-color: #FFFFFF;
+  color: #F5A623;
+  border: currentColor 1px solid;
+}
+
 .el_menuBtn__navy {
   background-color: #1B224C;
   color: #FFFFFF;
+}
+
+.el_menuBtn__navy:focus, .el_menuBtn__navy:hover {
+  background-color: #FFFFFF;
+  color: #1B224C;
+  border: currentColor 1px solid;
 }
