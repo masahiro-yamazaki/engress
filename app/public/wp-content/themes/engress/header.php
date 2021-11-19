@@ -26,7 +26,7 @@
   <header class='ly_header'>
     <div class='ly_header_inner'>
       <div class='ly_header_left'>
-        <a class='bl_headerLogo' href='#'>
+        <a class='el_companyLogo' href='#'>
           <img src='<?php echo get_template_directory_uri() ?>/img/header-logo.png' alt='Engress'>
         </a>
         <nav class='bl_headerNav'>
@@ -68,7 +68,7 @@
         <div class='bl_drawerBg js_drawerBg' aria-hidden='true'></div>
         <div class='bl_drawerMenu js_drawerMenu' aria-hidden='true'>
           <div class='bl_drawerMenuLogo_wrapper'>
-            <a class='bl_drawerMenuLogo' href='#'>
+            <a class='el_companyLogo' href='#'>
               <img src='<?php echo get_template_directory_uri() ?>/img/header-logo.png' alt='Engress'>
             </a>
           </div>

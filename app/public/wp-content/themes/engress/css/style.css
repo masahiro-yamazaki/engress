@@ -1,3 +1,4 @@
+/* 共通化 */
 body {
   margin: 0;
   font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ", "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
@@ -12,6 +13,7 @@ button {
   cursor: pointer;
 }
 
+/* ヘッダー */
 .hp_noScroll {
   overflow: hidden;
 }
@@ -32,16 +34,16 @@ button {
 
 .ly_header_left {
   display: flex;
+  padding: 11.5px 0;
 }
 
-.bl_headerLogo {
+.el_companyLogo {
   width: 136px;
   height: 27px;
-  padding: 11.5px 0;
   display: inline-block;
 }
 
-.bl_headerLogo:hover {
+.el_companyLogo:hover {
   opacity: 0.7;
 }
 
@@ -171,6 +173,10 @@ button {
   z-index: 100;
 }
 
+.bl_drawerMenuBtn:hover {
+  box-shadow: 0 0 3px #1B224C;
+}
+
 @media (min-width: 1025px) {
   .bl_drawerMenuBtn {
     display: none;
@@ -244,10 +250,4 @@ button {
   display: flex;
   align-items: center;
   padding-left: 20px;
-}
-
-.bl_drawerMenuLogo {
-  display: inline-block;
-  width: 136px;
-  height: 27px;
 }
