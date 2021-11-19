@@ -13,6 +13,52 @@ button {
   cursor: pointer;
 }
 
+/* 共通で使う要素 */
+.el_companyLogo {
+  width: 136px;
+  height: 27px;
+  display: inline-block;
+}
+
+.el_companyLogo:hover {
+  opacity: 0.7;
+}
+
+.el_ctaBtn {
+  width: 100%;
+  height: 100%;
+  font-weight: bold;
+  font-size: 14px;
+  border-radius: 5px;
+  border: transparent 1px solid;
+  box-sizing: border-box; /* TODO: 必要に応じて共通化 */
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.el_ctaBtn__orange {
+  background-color: #F5A623;
+  color: #FFFFFF;
+}
+
+.el_ctaBtn__orange:focus, .el_ctaBtn__orange:hover {
+  background-color: #FFFFFF;
+  color: #F5A623;
+  border: currentColor 1px solid;
+}
+
+.el_ctaBtn__navy {
+  background-color: #1B224C;
+  color: #FFFFFF;
+}
+
+.el_ctaBtn__navy:focus, .el_ctaBtn__navy:hover {
+  background-color: #FFFFFF;
+  color: #1B224C;
+  border: currentColor 1px solid;
+}
+
 /* ヘッダー */
 .hp_noScroll {
   overflow: hidden;
@@ -35,16 +81,6 @@ button {
 .ly_header_left {
   display: flex;
   padding: 11.5px 0;
-}
-
-.el_companyLogo {
-  width: 136px;
-  height: 27px;
-  display: inline-block;
-}
-
-.el_companyLogo:hover {
-  opacity: 0.7;
 }
 
 .bl_headerNav {
@@ -118,50 +154,16 @@ button {
   opacity: 0.7;
 }
 
-.bl_menuBtn_wrapper {
+.bl_headerCtaBtn_wrapper {
   display: none;
-  margin-left: 10px;
+  width: 137px;
+  padding-left: 10px;
 }
 
 @media (min-width: 1025px) {
-  .bl_menuBtn_wrapper {
+  .bl_headerCtaBtn_wrapper {
     display: block;
   }
-}
-
-.el_menuBtn {
-  width: 137px;
-  height: 50px;
-  font-weight: bold;
-  font-size: 14px;
-  border-radius: 5px;
-  border: transparent 1px solid;
-  box-sizing: border-box; /* TODO: 必要に応じて共通化 */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.el_menuBtn__orange {
-  background-color: #F5A623;
-  color: #FFFFFF;
-}
-
-.el_menuBtn__orange:focus, .el_menuBtn__orange:hover {
-  background-color: #FFFFFF;
-  color: #F5A623;
-  border: currentColor 1px solid;
-}
-
-.el_menuBtn__navy {
-  background-color: #1B224C;
-  color: #FFFFFF;
-}
-
-.el_menuBtn__navy:focus, .el_menuBtn__navy:hover {
-  background-color: #FFFFFF;
-  color: #1B224C;
-  border: currentColor 1px solid;
 }
 
 .bl_drawerBtn {
@@ -275,4 +277,16 @@ button {
   font-size: 16px;
   line-height: 30px;
   color: #FFFFFF;
+}
+
+.bl_drawerCtaBtnGroup {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 20px;
+}
+
+.bl_drawerCtaBtn_wrapper {
+  display: inline-block;
+  width: 115px;
+  height: 50px;
 }
