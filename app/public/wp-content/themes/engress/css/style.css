@@ -251,7 +251,6 @@ button {
 }
 
 .bl_drawerLogo {
-  margin-top: 46px; /* TODO: ;ワードプレスのメニューバーの設定を変更後削除 */
   height: 80px;
   display: flex;
   align-items: center;
