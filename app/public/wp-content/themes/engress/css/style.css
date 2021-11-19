@@ -220,20 +220,24 @@ button {
 }
 
 .bl_drawerMenu {
-  /* display: none; */
   position: fixed;
-  z-index: 4;
+  z-index: 40;
   width: 280px;
-  height: 100px;
+  height: 100vh;
   top: 0;
   right: 0;
   overflow: hidden;
-  background-color: #000;
-  color: #fff;
+  background-color: #FFFFFF;
   transform: translateX(280px);
-  transition: 0.3s;
 }
 
 .bl_drawerMenu.is_active {
-  display: block;
+  transition: 0.3s;
+  transform: translateX(0px);
+}
+
+@media (min-width: 1025px) {
+  .bl_drawerMenu {
+    display: none;
+  }
 }

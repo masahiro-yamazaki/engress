@@ -65,7 +65,7 @@
           <i class='fa fa-2x fa-bars js_drawerMenuIcon is_active'></i>
           <i class='fa fa-2x fa-times js_drawerMenuIcon'></i>
         </button>
-        <div class='bl_drawerBg js_drawerBg' aria-hidden='true'>
+        <div class='bl_drawerBg js_drawerBg' aria-hidden='true'></div>
         <div class='bl_drawerMenu js_drawerMenu' aria-hidden='true'>
           hmenu
         </div>
