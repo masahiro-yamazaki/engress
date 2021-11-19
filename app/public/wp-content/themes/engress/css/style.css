@@ -164,7 +164,7 @@ button {
   border: currentColor 1px solid;
 }
 
-.bl_drawerMenuBtn {
+.bl_drawerBtn {
   width: 50px;
   height: 50px;
   background-color: #FFFFFF;
@@ -173,23 +173,23 @@ button {
   z-index: 100;
 }
 
-.bl_drawerMenuBtn:hover {
+.bl_drawerBtn:hover {
   box-shadow: 0 0 3px #1B224C;
 }
 
 @media (min-width: 1025px) {
-  .bl_drawerMenuBtn {
+  .bl_drawerBtn {
     display: none;
   }
 }
 
-.bl_drawerMenuBtn > i {
+.bl_drawerBtn > i {
   display: none;
   font-size: 18px;
   color: #1B224C;
 }
 
-.bl_drawerMenuBtn > i.is_active {
+.bl_drawerBtn > i.is_active {
   display: block;
 }
 
@@ -220,7 +220,7 @@ button {
   }
 }
 
-.bl_drawerMenu {
+.bl_drawer {
   position: fixed;
   z-index: 40;
   width: 280px;
@@ -233,21 +233,25 @@ button {
   transition: 0.3s;
 }
 
-.bl_drawerMenu.is_active {
+.bl_drawer.is_active {
   transition: 0.3s;
   transform: translateX(0px);
 }
 
 @media (min-width: 1025px) {
-  .bl_drawerMenu {
+  .bl_drawer {
     display: none;
   }
 }
 
-.bl_drawerMenuLogo_wrapper {
+.bl_drawerLogo {
   margin-top: 46px; /* TODO: ;ワードプレスのメニューバーの設定を変更後削除 */
   height: 80px;
   display: flex;
   align-items: center;
   padding-left: 20px;
+}
+
+.bl_drawerMenu {
+  list-style-type: none;
 }

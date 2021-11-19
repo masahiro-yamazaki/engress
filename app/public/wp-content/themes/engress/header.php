@@ -60,18 +60,34 @@
         <div class='bl_menuBtn_wrapper'>
           <a class='el_menuBtn el_menuBtn__navy'>お問い合わせ</a>
         </div>
-        <button class='bl_drawerMenuBtn js_drawerMenuBtn'
+        <button class='bl_drawerBtn js_drawerBtn'
                 aria-controls='js_glabalMenu' aria-expanded='false' area-label='メニューを開閉する'>
-          <i class='fa fa-2x fa-bars js_drawerMenuIcon is_active'></i>
-          <i class='fa fa-2x fa-times js_drawerMenuIcon'></i>
+          <i class='fa fa-2x fa-bars js_drawerIcon is_active'></i>
+          <i class='fa fa-2x fa-times js_drawerIcon'></i>
         </button>
         <div class='bl_drawerBg js_drawerBg' aria-hidden='true'></div>
-        <div class='bl_drawerMenu js_drawerMenu' aria-hidden='true'>
-          <div class='bl_drawerMenuLogo_wrapper'>
+        <div class='bl_drawer js_drawer' aria-hidden='true'>
+          <div class='bl_drawerLogo'>
             <a class='el_companyLogo' href='#'>
               <img src='<?php echo get_template_directory_uri() ?>/img/header-logo.png' alt='Engress'>
             </a>
           </div>
+          <nav>
+            <ul class='bl_drawerMenu'>
+              <li>
+                <a>ホーム</a>
+             </li>
+             <li>
+                <a>お知らせ</a>
+             </li>
+             <li>
+                <a>ブログ</a>
+             </li>
+             <li>
+                <a>コース・料金</a>
+             </li>
+            </ul>
+          </nav>
         </div>
       </div><!-- /.ly_header_right -->
     </div><!-- /.ly_header_inner -->
