@@ -12,6 +12,10 @@ button {
   cursor: pointer;
 }
 
+.hp_noScroll {
+  overflow: hidden;
+}
+
 .test-title {
   font-size: 20px;
   color: blue;
@@ -184,5 +188,13 @@ button {
 }
 
 .bl_hamburgerMenuBtn > i.is_active {
+  display: block;
+}
+
+.bl_hamburgerMenu {
+  display: none;
+}
+
+.bl_hamburgerMenu.is_active {
   display: block;
 }
