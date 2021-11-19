@@ -73,19 +73,19 @@
             </a>
           </div>
           <nav>
-            <ul class='bl_drawerMenu'>
-              <li>
-                <a>ホーム</a>
-             </li>
-             <li>
-                <a>お知らせ</a>
-             </li>
-             <li>
-                <a>ブログ</a>
-             </li>
-             <li>
-                <a>コース・料金</a>
-             </li>
+            <ul class='bl_drawerNav'>
+              <li class='bl_drawerNav_item'>
+                <a class='bl_drawerNav_link' href=''>ホーム</a>
+              </li>
+              <li class='bl_drawerNav_item'>
+                <a class='bl_drawerNav_link' href=''>お知らせ</a>
+              </li>
+              <li class='bl_drawerNav_item'>
+                <a class='bl_drawerNav_link' href=''>ブログ</a>
+              </li>
+              <li class='bl_drawerNav_item'>
+                <a class='bl_drawerNav_link' href=''>コース・料金</a>
+              </li>
             </ul>
           </nav>
         </div>
