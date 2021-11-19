@@ -20,7 +20,6 @@ a {
 
 .ly_header_inner {
   max-width: 1280px;
-  width: 90%;
   height: 50px;
   margin: 0 auto;
   padding: 0 10px 0 15px;
@@ -44,6 +43,16 @@ a {
 }
 
 .bl_headerNav {
+  display: none;
+}
+
+@media (min-width: 1025px) {
+  .bl_headerNav {
+    display: block;
+  }
+}
+
+.bl_headerNav_items {
   height: 100%;
   list-style-type: none;
   display: flex;
@@ -52,7 +61,7 @@ a {
   padding: 0; /* nav要素以下のul要素に自動でpaddingが指定される */
 }
 
-.bl_headerNav > * {
+.bl_headerNav_items > * {
   margin-left: 28px;
 }
 
@@ -71,10 +80,16 @@ a {
 }
 
 .bl_headerInfo {
-  display: flex;
-  flex-direction: column;
-  justify-content: end;
-  align-items: flex-end;
+  display: none;
+}
+
+@media (min-width: 1025px) {
+  .bl_headerInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: flex-end;
+  }
 }
 
 .bl_businessHours {
@@ -99,7 +114,14 @@ a {
 }
 
 .bl_menuBtn_wrapper {
+  display: none;
   margin-left: 10px;
+}
+
+@media (min-width: 1025px) {
+  .bl_menuBtn_wrapper {
+    display: block;
+  }
 }
 
 .el_menuBtn {

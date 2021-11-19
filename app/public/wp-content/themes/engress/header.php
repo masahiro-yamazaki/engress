@@ -29,8 +29,8 @@
         <a class='bl_headerLogo' href='#'>
           <img src='<?php echo get_template_directory_uri() ?>/img/header-logo.png' alt='Engress'>
         </a>
-        <nav>
-          <ul class='bl_headerNav'>
+        <nav class='bl_headerNav'>
+          <ul class='bl_headerNav_items'>
             <li class='bl_headerNav_item'>
               <a class='bl_headerNav_link' href=''>ホーム</a>
             </li>
