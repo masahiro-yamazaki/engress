@@ -49,8 +49,10 @@
       <div class='ly_header_right'>
         <div class='bl_headerInfo'>
           <div class='bl_businessHours'>平日08:00〜20:00</div>
-          <!-- <img src='<?php echo get_template_directory_uri() ?>/img/header-tel-icon.svg' alt='tel'> -->
-          <div class='bl_tel'>0123-456-7890</div>
+          <a class='bl_tel'>
+            <img src='<?php echo get_template_directory_uri() ?>/img/header-tel-icon.svg' alt='tel'>
+            <span>0123-456-7890</span>
+          </a>
         </div>
         <div class='bl_menuBtn_wrapper'>
           <a class='el_menuBtn el_menuBtn__orange'>資料請求</a>
