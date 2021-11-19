@@ -45,7 +45,7 @@
             </li>
           </ul>
         </nav>
-      </div>
+      </div><!-- /.ly_header_left -->
       <div class='ly_header_right'>
         <div class='bl_headerInfo'>
           <div class='bl_businessHours'>平日08:00〜20:00</div>
@@ -61,13 +61,14 @@
           <a class='el_menuBtn el_menuBtn__navy'>お問い合わせ</a>
         </div>
         <button class='bl_hamburgerMenuBtn js_hamburgerMenuBtn'
-                aria-controls='js-glabal-menu' aria-expanded='false' area-label='メニューを開閉する'>
+                aria-controls='js_glabalMenu' aria-expanded='false' area-label='メニューを開閉する'>
           <i class='fa fa-2x fa-bars js_hamburgerMenuIcon is_active'></i>
           <i class='fa fa-2x fa-times js_hamburgerMenuIcon'></i>
         </button>
-      </div>
+        <div class='bl_drawerBg js_drawerBg' aria-hidden='true'>
+        <div id='js_glabalMenu' class='bl_hamburgerMenu js_hamburgerMenu'  aria-hidden='true'>
+          hmenu
+        </div>
+      </div><!-- /.ly_header_right -->
     </div><!-- /.ly_header_inner -->
   </header><!-- /.ly_header -->
-  <div class='bl_hamburgerMenu' style='height: 30px; background-color: blue;'>
-    hmenu
-  </div>

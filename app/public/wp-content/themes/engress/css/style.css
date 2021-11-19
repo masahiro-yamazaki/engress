@@ -173,10 +173,11 @@ button {
   background-color: #FFFFFF;
   border: #1B224C 1px solid;
   border-radius: 50px;
+  z-index: 100;
 }
 
 @media (min-width: 1025px) {
-  .el_hamburgerMenuBtn {
+  .bl_hamburgerMenuBtn {
     display: none;
   }
 }
@@ -191,8 +192,46 @@ button {
   display: block;
 }
 
+.bl_drawerBg {
+  visibility: hidden;
+  position: fixed;
+  z-index: 30;
+  width: 100vw;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  height: 100vh;
+  background: #000000;
+  color: #FFFFFF;
+  opacity: 0;
+}
+
+.bl_drawerBg.is_active {
+  visibility: visible;
+  opacity: 0.8;
+  transition: 0.3s;
+}
+
+@media (min-width: 1025px) {
+  .bl_drawerBg {
+    display: none;
+  }
+}
+
 .bl_hamburgerMenu {
-  display: none;
+  /* display: none; */
+  position: fixed;
+  z-index: 4;
+  width: 280px;
+  height: 100px;
+  top: 0;
+  right: 0;
+  overflow: hidden;
+  background-color: #000;
+  color: #fff;
+  transform: translateX(280px);
+  transition: 0.3s;
 }
 
 .bl_hamburgerMenu.is_active {
