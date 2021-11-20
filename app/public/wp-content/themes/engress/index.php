@@ -8,6 +8,9 @@
         <p>日本人へのTOEFL指導歴豊かな講師陣の</p>
         <p>コーチング型TOEFLスクール</p>
       </div>
+      <div class='bl_fvCtaBtn_wrapper'>
+        <a class='el_ctaBtn el_ctaBtn__orange el_ctaBtn__rounded hp_ft16'>資料請求</a>
+      </div>
     </div><!-- /.ly_fv_inner -->
   </div><!-- /.hp_fv -->
   <div style='height: 81px; background-color: blue;'></div>

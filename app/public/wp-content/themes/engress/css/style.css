@@ -19,6 +19,10 @@ p {
 }
 
 /* 共通で使う要素 */
+.hp_ft16 {
+  font-size: 16px !important;
+}
+
 .el_companyLogo {
   width: 136px;
   height: 27px;
@@ -42,23 +46,27 @@ p {
   align-items: center;
 }
 
-.el_ctaBtn__orange {
+.el_ctaBtn.el_ctaBtn__rounded {
+  border-radius: 31px;
+}
+
+.el_ctaBtn.el_ctaBtn__orange {
   background-color: #F5A623;
   color: #FFFFFF;
 }
 
-.el_ctaBtn__orange:focus, .el_ctaBtn__orange:hover {
+.el_ctaBtn.el_ctaBtn__orange:focus, .el_ctaBtn.el_ctaBtn__orange:hover {
   background-color: #FFFFFF;
   color: #F5A623;
   border: currentColor 1px solid;
 }
 
-.el_ctaBtn__navy {
+.el_ctaBtn.el_ctaBtn__navy {
   background-color: #1B224C;
   color: #FFFFFF;
 }
 
-.el_ctaBtn__navy:focus, .el_ctaBtn__navy:hover {
+.el_ctaBtn.el_ctaBtn__navy:focus, .el_ctaBtn.el_ctaBtn__navy:hover {
   background-color: #FFFFFF;
   color: #1B224C;
   border: currentColor 1px solid;
@@ -349,4 +357,10 @@ p {
     font-size: 18px;
     line-height: 31px;
   }
+}
+
+.bl_fvCtaBtn_wrapper {
+  width: 260px;
+  height: 60px;
+  margin: 44.5px auto 0;
 }
