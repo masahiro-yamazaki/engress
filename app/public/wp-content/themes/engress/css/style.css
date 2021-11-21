@@ -104,6 +104,20 @@ p {
   opacity: 0.7;
 }
 
+.el_title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 50px;
+  color: #FFFFFF;
+}
+
+@media screen and (min-width: 1025px) {
+  .el_title {
+    display: flex;
+    justify-content: center;
+  }
+}
+
 /* ヘッダー */
 .hp_noScroll {
   overflow: hidden;
@@ -358,5 +372,19 @@ p {
 
 .bl_fvContactLink {
   margin-top: 22px;
+  text-align: center;
+}
+
+/* こんなお悩みありませんか？ */
+.hp_problem {
+  min-height: 604px;
+  background-color: #1B224C;
+}
+
+.ly_problem_inner {
+  padding: 55px 10px 10px;
+}
+
+.bl_problemTitle {
   text-align: center;
 }

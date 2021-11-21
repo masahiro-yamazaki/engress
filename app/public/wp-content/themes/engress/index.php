@@ -16,6 +16,17 @@
       </div>
     </div><!-- /.ly_fv_inner -->
   </div><!-- /.hp_fv -->
+  <!-- こんなお悩みありませんか？ -->
+  <div class='hp_problem'>
+    <div class='ly_problem_inner'>
+      <div class='bl_problemTitle'>
+        <div class='el_title'>
+          <p>TOEFL学習で</p>
+          <p>こんな悩みありませんか？</p>
+        </div>
+      </div>
+    </div><!-- /.ly_problem_inner -->
+  </div><!-- /.hp_problem -->
   <div style='height: 81px; background-color: blue;'></div>
   <div style='height: 81px; background-color: green;'></div>
   <div style='height: 500px; background-color: blue;'></div>
