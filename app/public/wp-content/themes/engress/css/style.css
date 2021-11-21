@@ -72,6 +72,18 @@ p {
   border: currentColor 1px solid;
 }
 
+.el_contactLink {
+  text-decoration: underline;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  color: #FFFFFF;
+}
+
+.el_contactLink:hover {
+  opacity: 0.7;
+}
+
 /* ヘッダー */
 .hp_noScroll {
   overflow: hidden;
@@ -363,4 +375,9 @@ p {
   width: 260px;
   height: 60px;
   margin: 44.5px auto 0;
+}
+
+.bl_fvContactLink {
+  margin-top: 22px;
+  text-align: center;
 }

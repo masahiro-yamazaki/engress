@@ -11,6 +11,9 @@
       <div class='bl_fvCtaBtn_wrapper'>
         <a class='el_ctaBtn el_ctaBtn__orange el_ctaBtn__rounded hp_ft16'>資料請求</a>
       </div>
+      <div class='bl_fvContactLink'>
+        <a href='' class='el_contactLink'>お問い合わせ</a>
+      </div>
     </div><!-- /.ly_fv_inner -->
   </div><!-- /.hp_fv -->
   <div style='height: 81px; background-color: blue;'></div>
