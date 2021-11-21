@@ -41,7 +41,7 @@
         <div class='bl_feature_inner'>
           <div class='bl_featureTitle'>
             <p>Engressは</p>
-            <p>TOEFL対策に特化したスクールです</p>
+            <p><span class='hp_underline'>TOEFL対策に特化したスクール</span>です</p>
           </div>
           <div class='bl_featureDescription'>
             <p>完全オーダーメイドで、１人１人の悩みに合わせた最適な指導で</p>
