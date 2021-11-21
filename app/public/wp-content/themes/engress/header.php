@@ -4,6 +4,9 @@
 <head>
   <meta charset='UTF-8'>
   <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <script src='https://cdn.jsdelivr.net/npm/viewport-extra@1.0.3/dist/viewport-extra.min.js'></script>
+  <script>new ViewportExtra(320)</script>
+
   <meta name='format-detection' content='telephone=no'>
 
   <title>Engress</title>

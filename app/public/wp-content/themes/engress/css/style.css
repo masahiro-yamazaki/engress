@@ -417,13 +417,14 @@ p {
   justify-content: center;
   text-align: center;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 39px;
   color: #FFFFFF;
 }
 
 @media (min-width: 1025px) {
   .bl_problemItem {
+    font-size: 18px;
     flex-direction: column;
   }
 }
