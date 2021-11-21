@@ -19,11 +19,9 @@
   <!-- こんなお悩みありませんか？ -->
   <div class='hp_problem'>
     <div class='ly_problem_inner'>
-      <div class='bl_problemTitle'>
-        <div class='el_title'>
-          <p>TOEFL学習で</p>
-          <p>こんな悩みありませんか？</p>
-        </div>
+      <div class='el_title el_title__white'>
+        <p>TOEFL学習で</p>
+        <p>こんな悩みありませんか？</p>
       </div>
       <div class='bl_problemItems'>
         <div class='bl_problemItem'>
@@ -37,6 +35,18 @@
         <div class='bl_problemItem'>
           <p>正しい勉強方法が</p>
           <p>分からない</p>
+        </div>
+      </div>
+      <div class='bl_feature'>
+        <div class='bl_feature_inner'>
+          <div class='bl_featureTitle'>
+            <p>Engressは</p>
+            <p>TOEFL対策に特化したスクールです</p>
+          </div>
+          <div class='bl_featureDescription'>
+            <p>完全オーダーメイドで、１人１人の悩みに合わせた最適な指導で</p>
+            <p>TOEFLの苦手分野を克服します。</p>
+          </div>
         </div>
       </div>
     </div><!-- /.ly_problem_inner -->
