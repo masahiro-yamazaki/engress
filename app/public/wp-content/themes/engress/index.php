@@ -51,6 +51,17 @@
       </div>
     </div><!-- /.ly_problem_inner -->
   </div><!-- /.hp_problem -->
+  <!-- こんなお悩みありませんか？ -->
+  <div class='ly_strengths'>
+    <div class='ly_strengths_inner'>
+      <div class='el_title el_title__navy'>
+        <p>TOEFL対策に特化した</p>
+        <p>Engress3つの強み</p>
+      </div>
+      <div class='bl_strengthBlock'>
+      </div>
+    </div>
+  </div>
   <div style='height: 81px; background-color: blue;'></div>
   <div style='height: 81px; background-color: green;'></div>
   <div style='height: 500px; background-color: blue;'></div>

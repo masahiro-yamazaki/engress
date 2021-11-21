@@ -483,3 +483,8 @@ p {
     margin-left: -4px;
   }
 }
+
+/* 3つの強み */
+.ly_strengths_inner {
+  padding: 52px 20px 0;
+}
