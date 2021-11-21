@@ -51,14 +51,50 @@
       </div>
     </div><!-- /.ly_problem_inner -->
   </div><!-- /.hp_problem -->
-  <!-- こんなお悩みありませんか？ -->
-  <div class='ly_strengths'>
+  <!-- Engress3つの強み -->
+  <section class='ly_strengths'>
     <div class='ly_strengths_inner'>
-      <div class='el_title el_title__navy'>
+      <h2 class='el_title el_title__navy'>
         <p>TOEFL対策に特化した</p>
         <p>Engress3つの強み</p>
+      </h2>
+      <div class='bl_media'>
+        <figure class='bl_media_imgWrapper'>
+          <img src='<?php echo get_template_directory_uri() ?>/img/feature01.png'>
+        </figure>
+        <div class='bl_media_body'>
+          <div class='bl_media_label'>特長 １</div>
+          <h3 class='bl_media_ttl'>
+            <p>TOEFLに最適化された</p>
+            <p>無駄のないカリキュラム</p>
+          </h3>
+          <p class='bl_media_txt'>TOEFLではビジネス英語には登場しない数多くの学術的内容が出題されます。そのため、ベースとなる知識も必要になります。Engressでは過去1000題を分析し、最適なカリキュラムを組んでいます。</p>
+        </div>
       </div>
-      <div class='bl_strengthBlock'>
+      <div class='bl_media bl_media__reverse'>
+        <figure class='bl_media_imgWrapper'>
+          <img src='<?php echo get_template_directory_uri() ?>/img/feature02.png'>
+        </figure>
+        <div class='bl_media_body'>
+          <div class='bl_media_label'>特長 ２</div>
+          <h3 class='bl_media_ttl'>
+            <p>日本人指導歴10年以上の</p>
+            <p>経験豊富な講師陣</p>
+          </h3>
+          <p class='bl_media_txt'>TOEFLではビジネス英語には登場しない数多くの学術的内容が出題されます。そのため、ベースとなる知識も必要になります。Engressでは過去1000題を分析し、最適なカリキュラムを組んでいます。</p>
+        </div>
+      </div>
+      <div class='bl_media'>
+        <figure class='bl_media_imgWrapper'>
+          <img src='<?php echo get_template_directory_uri() ?>/img/feature03.png'>
+        </figure>
+        <div class='bl_media_body'>
+          <div class='bl_media_label'>特長 ３</div>
+          <h3 class='bl_media_ttl'>
+            <p>平均3ヶ月でTOEFL iBT20点アップ</p>
+          </h3>
+          <p class='bl_media_txt'>TOEFLではビジネス英語には登場しない数多くの学術的内容が出題されます。そのため、ベースとなる知識も必要になります。Engressでは過去1000題を分析し、最適なカリキュラムを組んでいます。</p>
+        </div>
       </div>
     </div>
   </div>

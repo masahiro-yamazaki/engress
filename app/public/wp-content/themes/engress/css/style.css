@@ -486,5 +486,71 @@ p {
 
 /* 3つの強み */
 .ly_strengths_inner {
-  padding: 52px 20px 0;
+  max-width: 900px;
+  width: 90%;
+  margin: 0 auto;
+  padding: 52px 0 0;
+}
+
+.bl_media {
+  padding: 0 0 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px 0;
+}
+
+@media screen and (min-width: 1025px) {
+  .bl_media {
+    flex-direction: row;
+    gap: 0 50px;
+  }
+
+  .bl_media.bl_media__reverse {
+    flex-direction: row-reverse;
+  }
+}
+
+.bl_media_imgWrapper {
+  max-width: 350px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 1025px) {
+  .bl_media_imgWrapper {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .bl_media_body {
+    max-width: 700px;
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+.bl_media_label {
+  width: 90px;
+  height: 30px;
+  background-color: #F5A623;
+  color: white;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 28.5px;
+}
+
+.bl_media_ttl {
+  color: #1B224C;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 39px;
+}
+
+.bl_media_txt {
+  color: #1B224C;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 27px;
 }
