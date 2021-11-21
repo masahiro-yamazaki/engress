@@ -387,4 +387,32 @@ p {
 
 .bl_problemTitle {
   text-align: center;
+  margin-bottom: 58px;
+}
+
+.bl_problemItems {
+}
+
+@media (min-width: 1025px) {
+  .bl_problemItems {
+    display: flex;
+    justify-content: center;
+    gap: 0 30px;
+  }
+}
+
+.bl_problemItem {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 39px;
+  color: #FFFFFF;
+}
+
+@media (min-width: 1025px) {
+  .bl_problemItem {
+    flex-direction: column;
+  }
 }

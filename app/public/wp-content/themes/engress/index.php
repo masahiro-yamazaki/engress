@@ -25,6 +25,20 @@
           <p>こんな悩みありませんか？</p>
         </div>
       </div>
+      <div class='bl_problemItems'>
+        <div class='bl_problemItem'>
+          <p>勉強の習慣が</p>
+          <p>身についていない</p>
+        </div>
+        <div class='bl_problemItem'>
+          <p>勉強しているはず</p>
+          <p>なのに点数が伸びない</p>
+        </div>
+        <div class='bl_problemItem'>
+          <p>正しい勉強方法が</p>
+          <p>分からない</p>
+        </div>
+      </div>
     </div><!-- /.ly_problem_inner -->
   </div><!-- /.hp_problem -->
   <div style='height: 81px; background-color: blue;'></div>
