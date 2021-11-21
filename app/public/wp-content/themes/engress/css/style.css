@@ -166,7 +166,7 @@ p {
   padding: 0; /* nav要素以下のul要素に自動でpaddingが指定される */
 }
 
-.bl_headerNav_items > * {
+.bl_headerNav > * {
   margin-left: 28px;
 }
 
