@@ -133,16 +133,6 @@ p {
 }
 
 .bl_headerNav {
-  display: none;
-}
-
-@media (min-width: 1025px) {
-  .bl_headerNav {
-    display: block;
-  }
-}
-
-.bl_headerNav_items {
   height: 100%;
   list-style-type: none;
   display: flex;
@@ -170,16 +160,10 @@ p {
 }
 
 .bl_headerInfo {
-  display: none;
-}
-
-@media (min-width: 1025px) {
-  .bl_headerInfo {
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    align-items: flex-end;
-  }
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: flex-end;
 }
 
 .bl_businessHours {
@@ -204,15 +188,8 @@ p {
 }
 
 .bl_headerCtaBtn_wrapper {
-  display: none;
   width: 137px;
   padding-left: 10px;
-}
-
-@media (min-width: 1025px) {
-  .bl_headerCtaBtn_wrapper {
-    display: block;
-  }
 }
 
 .bl_drawerBtn {
@@ -226,12 +203,6 @@ p {
 
 .bl_drawerBtn:hover {
   box-shadow: 0 0 3px #1B224C;
-}
-
-@media (min-width: 1025px) {
-  .bl_drawerBtn {
-    display: none;
-  }
 }
 
 .bl_drawerBtn > i {
@@ -265,12 +236,6 @@ p {
   transition: 0.3s;
 }
 
-@media (min-width: 1025px) {
-  .bl_drawerBg {
-    display: none;
-  }
-}
-
 .bl_drawer {
   position: fixed;
   z-index: 40;
@@ -287,12 +252,6 @@ p {
 .bl_drawer.is_drawerActive {
   transition: 0.3s;
   transform: translateX(0px);
-}
-
-@media (min-width: 1025px) {
-  .bl_drawer {
-    display: none;
-  }
 }
 
 .bl_drawerLogo {

@@ -29,8 +29,8 @@
         <a class='el_companyLogo' href='#'>
           <img src='<?php echo get_template_directory_uri() ?>/img/header-logo.png' alt='Engress'>
         </a>
-        <nav class='bl_headerNav'>
-          <ul class='bl_headerNav_items'>
+        <nav class='lg_only'>
+          <ul class='bl_headerNav'>
             <li class='bl_headerNav_item'>
               <a class='bl_headerNav_link' href=''>ホーム</a>
             </li>
@@ -47,26 +47,26 @@
         </nav>
       </div><!-- /.ly_header_left -->
       <div class='ly_header_right'>
-        <div class='bl_headerInfo'>
+        <div class='bl_headerInfo lg_only'>
           <div class='bl_businessHours'>平日08:00〜20:00</div>
           <a class='bl_tel'>
             <img src='<?php echo get_template_directory_uri() ?>/img/header-tel-icon.svg' alt='tel'>
             <span>0123-456-7890</span>
           </a>
         </div>
-        <div class='bl_headerCtaBtn_wrapper'>
+        <div class='bl_headerCtaBtn_wrapper lg_only'>
           <a class='el_ctaBtn el_ctaBtn__orange'>資料請求</a>
         </div>
-        <div class='bl_headerCtaBtn_wrapper'>
+        <div class='bl_headerCtaBtn_wrapper lg_only'>
           <a class='el_ctaBtn el_ctaBtn__navy'>お問い合わせ</a>
         </div>
-        <button class='bl_drawerBtn js_drawerBtn'
+        <button class='bl_drawerBtn md_only js_drawerBtn'
                 aria-controls='js_glabalMenu' aria-expanded='false' area-label='メニューを開閉する'>
           <i class='fa fa-2x fa-bars js_drawerIcon is_drawerActive'></i>
           <i class='fa fa-2x fa-times js_drawerIcon'></i>
         </button>
-        <div class='bl_drawerBg js_drawerBg' aria-hidden='true'></div>
-        <div class='bl_drawer js_drawer' aria-hidden='true'>
+        <div class='bl_drawerBg md_only js_drawerBg' aria-hidden='true'></div>
+        <div class='bl_drawer md_only js_drawer' aria-hidden='true'>
           <div class='bl_drawerLogo'>
             <a class='el_companyLogo' href='#'>
               <img src='<?php echo get_template_directory_uri() ?>/img/header-logo.png' alt='Engress'>
