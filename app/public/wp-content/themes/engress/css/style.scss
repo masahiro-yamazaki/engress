@@ -21,20 +21,14 @@ p {
 /* 共通で使う要素 */
 .lg_only {
   display: none !important;
-}
-
-@media screen and (min-width: 1025px) {
-  .lg_only {
+  @media screen and (min-width: 1025px) {
     display: block !important;
   }
 }
 
 .md_only {
   display: block !important;
-}
-
-@media screen and (min-width: 1025px) {
-  .md_only {
+  @media screen and (min-width: 1025px) {
     display: none !important;
   }
 }
@@ -47,10 +41,9 @@ p {
   width: 136px;
   height: 27px;
   display: inline-block;
-}
-
-.el_companyLogo:hover {
-  opacity: 0.7;
+  &:hover {
+    opacity: 0.7;
+  }
 }
 
 .el_ctaBtn {
@@ -64,32 +57,30 @@ p {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-}
 
-.el_ctaBtn.el_ctaBtn__rounded {
-  border-radius: 31px;
-}
+  &.el_ctaBtn__rounded {
+    border-radius: 31px;
+  }
+  
+  &.el_ctaBtn__orange {
+    background-color: #F5A623;
+    color: #FFFFFF;
+    &:focus, &:hover {
+      background-color: #FFFFFF;
+      color: #F5A623;
+      border: currentColor 1px solid;
+    }
+  }
 
-.el_ctaBtn.el_ctaBtn__orange {
-  background-color: #F5A623;
-  color: #FFFFFF;
-}
-
-.el_ctaBtn.el_ctaBtn__orange:focus, .el_ctaBtn.el_ctaBtn__orange:hover {
-  background-color: #FFFFFF;
-  color: #F5A623;
-  border: currentColor 1px solid;
-}
-
-.el_ctaBtn.el_ctaBtn__navy {
-  background-color: #1B224C;
-  color: #FFFFFF;
-}
-
-.el_ctaBtn.el_ctaBtn__navy:focus, .el_ctaBtn.el_ctaBtn__navy:hover {
-  background-color: #FFFFFF;
-  color: #1B224C;
-  border: currentColor 1px solid;
+  &.el_ctaBtn__navy {
+    background-color: #1B224C;
+    color: #FFFFFF;
+    &:focus, &:hover {
+      background-color: #FFFFFF;
+      color: #1B224C;
+      border: currentColor 1px solid;
+    }
+  }
 }
 
 .el_contactLink {
@@ -98,10 +89,9 @@ p {
   font-size: 16px;
   line-height: 16px;
   color: #FFFFFF;
-}
-
-.el_contactLink:hover {
-  opacity: 0.7;
+  &:hover {
+    opacity: 0.7;
+  }
 }
 
 .el_title {
@@ -110,23 +100,20 @@ p {
   line-height: 36px;
   color: #FFFFFF;
   text-align: center;
-}
-
-@media screen and (min-width: 1025px) {
-  .el_title {
+  @media screen and (min-width: 1025px) {
     display: flex;
     justify-content: center;
     font-size: 36px;
     line-height: 50px;
   }
-}
 
-.el_title.el_title__white {
-  color: #FFFFFF;
-}
-
-.el_title.el_title__navy {
-  color: #1B224C;
+  &.el_title__white {
+    color: #FFFFFF;
+  }
+  
+  &.el_title__navy {
+    color: #1B224C;
+  }
 }
 
 .hp_underline {
@@ -168,20 +155,19 @@ p {
   align-items: center;
   margin: 0; /* nav要素以下のul要素に自動でmarginが指定される */
   padding: 0; /* nav要素以下のul要素に自動でpaddingが指定される */
-}
 
-.bl_headerNav > * {
-  margin-left: 28px;
+  > * {
+    margin-left: 28px;
+  }
 }
 
 .bl_headerNav_link {
   font-weight: bold;
   font-size: 16px;
   color: #1B224C;
-}
-
-.bl_headerNav_link:hover {
-  opacity: 0.7;
+  &:hover {
+    opacity: 0.7;
+  }
 }
 
 .ly_header_right {
@@ -210,10 +196,9 @@ p {
   font-size: 16px;
   line-height: 16px;
   color: #1B224C;
-}
-
-.bl_tel:hover {
-  opacity: 0.7;
+  &:hover {
+    opacity: 0.7;
+  }
 }
 
 .bl_headerCtaBtn_wrapper {
@@ -228,20 +213,18 @@ p {
   border: #1B224C 1px solid;
   border-radius: 50px;
   z-index: 101;
-}
+  &:hover {
+    box-shadow: 0 0 3px #1B224C;
+  }
 
-.bl_drawerBtn:hover {
-  box-shadow: 0 0 3px #1B224C;
-}
-
-.bl_drawerBtn > i {
-  display: none;
-  font-size: 18px;
-  color: #1B224C;
-}
-
-.bl_drawerBtn > i.is_drawerActive {
-  display: block;
+  > i {
+    display: none;
+    font-size: 18px;
+    color: #1B224C;
+    &.is_drawerActive {
+      display: block;
+    }
+  }
 }
 
 .bl_drawerBg {
@@ -257,12 +240,11 @@ p {
   background: #000000;
   color: #FFFFFF;
   opacity: 0;
-}
-
-.bl_drawerBg.is_drawerActive {
-  visibility: visible;
-  opacity: 0.8;
-  transition: 0.3s;
+  &.is_drawerActive {
+    visibility: visible;
+    opacity: 0.8;
+    transition: 0.3s;
+  }
 }
 
 .bl_drawer {
@@ -276,11 +258,10 @@ p {
   background-color: #FFFFFF;
   transform: translateX(280px);
   transition: 0.3s;
-}
-
-.bl_drawer.is_drawerActive {
-  transition: 0.3s;
-  transform: translateX(0px);
+  &.is_drawerActive {
+    transition: 0.3s;
+    transform: translateX(0px);
+  }
 }
 
 .bl_drawerLogo {
@@ -313,10 +294,9 @@ p {
   font-size: 16px;
   line-height: 30px;
   color: #FFFFFF;
-}
-
-.bl_drawerNav_link:hover {
-  opacity: 0.7;
+  &:hover {
+    opacity: 0.7;
+  }
 }
 
 .bl_drawerCtaBtnGroup {
@@ -356,10 +336,7 @@ p {
   text-shadow: 0px 3px 6px #00000029;
   text-align: center;
   margin-bottom: 21.5px;
-}
-
-@media (min-width: 600px) {
-  .bl_fvTitle {
+  @media (min-width: 600px) {
     font-size: 48px;
     line-height: 48px;
   }
@@ -370,10 +347,7 @@ p {
   line-height: 21px;
   color: #FFFFFF;
   text-align: center;
-}
-
-@media (min-width: 600px) {
-  .bl_fvSubTitle {
+  @media (min-width: 600px) {
     font-size: 18px;
     line-height: 31px;
   }
@@ -402,10 +376,7 @@ p {
 
 .bl_problemItems {
   margin-top:58px;
-}
-
-@media (min-width: 1025px) {
-  .bl_problemItems {
+  @media (min-width: 1025px) {
     display: flex;
     justify-content: center;
     gap: 0 30px;
@@ -442,10 +413,7 @@ p {
   color: #1B224C;
   text-align: center;
   margin-bottom: 25px;
-}
-
-@media screen and (min-width: 1025px) {
-  .bl_featureTitle {
+  @media screen and (min-width: 1025px) {
     font-size: 36px;
     line-height: 50px;
   }
@@ -457,10 +425,7 @@ p {
   color: #1B224C;
   padding: 0 20px 20px;
   text-align: center;
-}
-
-@media screen and (max-width: 1024px) {
-  .bl_featureDescription {
+  @media screen and (max-width: 1024px) {
     font-size: 14px;
     line-height: 21px;
     text-align: left;
@@ -480,32 +445,28 @@ p {
   display: flex;
   flex-direction: column;
   gap: 20px 0;
-}
-
-@media screen and (min-width: 1025px) {
-  .bl_media {
+  @media screen and (min-width: 1025px) {
     flex-direction: row;
     gap: 0 50px;
   }
-
-  .bl_media.bl_media__reverse {
-    flex-direction: row-reverse;
+  
+  &.bl_media__reverse {
+    @media screen and (min-width: 1025px) {
+      flex-direction: row-reverse;
+    }
   }
 }
 
 .bl_media_imgWrapper {
   max-width: 350px;
   margin: 0 auto;
-}
-
-@media screen and (min-width: 1025px) {
-  .bl_media_imgWrapper {
+  @media screen and (min-width: 1025px) {
     width: 40%;
   }
 }
 
-@media screen and (max-width: 1024px) {
-  .bl_media_body {
+.bl_media_body {
+  @media screen and (max-width: 1024px) {
     max-width: 700px;
     width: 90%;
     margin: 0 auto;

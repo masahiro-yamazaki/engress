@@ -558,6 +558,9 @@ p {
             flex-direction: row;
     gap: 0 50px;
   }
+}
+
+@media screen and (min-width: 1025px) {
   .bl_media.bl_media__reverse {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
