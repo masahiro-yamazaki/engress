@@ -413,20 +413,11 @@ p {
 }
 
 .bl_problemItem {
-  display: flex;
-  justify-content: center;
   text-align: center;
   font-weight: bold;
   font-size: 14px;
   line-height: 39px;
   color: #FFFFFF;
-}
-
-@media (min-width: 1025px) {
-  .bl_problemItem {
-    font-size: 18px;
-    flex-direction: column;
-  }
 }
 
 .bl_feature {
@@ -473,14 +464,6 @@ p {
     font-size: 14px;
     line-height: 21px;
     text-align: left;
-  }
-
-  .bl_featureDescription p {
-    display: inline;
-  }
-
-  .bl_featureDescription p:not(:first-child) {
-    margin-left: -4px;
   }
 }
 

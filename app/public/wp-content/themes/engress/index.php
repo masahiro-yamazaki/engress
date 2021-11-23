@@ -19,34 +19,16 @@
   <!-- こんなお悩みありませんか？ -->
   <div class='hp_problem'>
     <div class='ly_problem_inner'>
-      <div class='el_title el_title__white'>
-        <p>TOEFL学習で</p>
-        <p>こんな悩みありませんか？</p>
-      </div>
+      <h2 class='el_title el_title__white'>TOEFL学習で<br class='md_only'>こんな悩みありませんか？</h2>
       <div class='bl_problemItems'>
-        <div class='bl_problemItem'>
-          <p>勉強の習慣が</p>
-          <p>身についていない</p>
-        </div>
-        <div class='bl_problemItem'>
-          <p>勉強しているはず</p>
-          <p>なのに点数が伸びない</p>
-        </div>
-        <div class='bl_problemItem'>
-          <p>正しい勉強方法が</p>
-          <p>分からない</p>
-        </div>
+        <p class='bl_problemItem'>勉強の習慣が<br class='lg_only'>身についていない</p>
+        <p class='bl_problemItem'>勉強しているはず<br class='lg_only'>なのに点数が伸びない</p>
+        <p class='bl_problemItem'>正しい勉強方法が<br class='lg_only'>分からない</p>
       </div>
       <div class='bl_feature'>
         <div class='bl_feature_inner'>
-          <div class='bl_featureTitle'>
-            <p>Engressは</p>
-            <p><span class='hp_underline'>TOEFL対策に特化したスクール</span>です</p>
-          </div>
-          <div class='bl_featureDescription'>
-            <p>完全オーダーメイドで、１人１人の悩みに合わせた最適な指導で</p>
-            <p>TOEFLの苦手分野を克服します。</p>
-          </div>
+          <p class='bl_featureTitle'>Engressは<br><span class='hp_underline'>TOEFL対策に特化したスクール</span>です</p>
+          <p class='bl_featureDescription'>完全オーダーメイドで、１人１人の悩みに合わせた最適な指導で<br class='lg_only'>TOEFLの苦手分野を克服します。</p>
         </div>
       </div>
     </div><!-- /.ly_problem_inner -->
