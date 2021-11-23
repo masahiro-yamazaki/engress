@@ -4,55 +4,44 @@ body {
   margin: 0;
   font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ", "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
 }
-
 a {
   text-decoration: none;
   cursor: pointer;
 }
-
 button {
   cursor: pointer;
 }
-
-h1, h2, p {
+p {
   margin: 0;
 }
-
 /* 共通で使う要素 */
 .lg_only {
   display: none !important;
 }
-
 @media screen and (min-width: 1025px) {
   .lg_only {
     display: block !important;
   }
 }
-
 .md_only {
   display: block !important;
 }
-
 @media screen and (min-width: 1025px) {
   .md_only {
     display: none !important;
   }
 }
-
 .hp_ft16 {
   font-size: 16px !important;
 }
-
 .el_companyLogo {
   width: 136px;
   height: 27px;
   display: inline-block;
 }
-
 .el_companyLogo:hover {
   opacity: 0.7;
 }
-
 .el_ctaBtn {
   width: 100%;
   height: 100%;
@@ -60,46 +49,33 @@ h1, h2, p {
   font-size: 14px;
   border-radius: 5px;
   border: transparent 1px solid;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   /* TODO: 必要に応じて共通化 */
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
-
 .el_ctaBtn.el_ctaBtn__rounded {
   border-radius: 31px;
 }
-
 .el_ctaBtn.el_ctaBtn__orange {
   background-color: #F5A623;
   color: #FFFFFF;
 }
-
 .el_ctaBtn.el_ctaBtn__orange:focus, .el_ctaBtn.el_ctaBtn__orange:hover {
   background-color: #FFFFFF;
   color: #F5A623;
   border: currentColor 1px solid;
 }
-
 .el_ctaBtn.el_ctaBtn__navy {
   background-color: #1B224C;
   color: #FFFFFF;
 }
-
 .el_ctaBtn.el_ctaBtn__navy:focus, .el_ctaBtn.el_ctaBtn__navy:hover {
   background-color: #FFFFFF;
   color: #1B224C;
   border: currentColor 1px solid;
 }
-
 .el_contactLink {
   text-decoration: underline;
   font-weight: 500;
@@ -107,11 +83,9 @@ h1, h2, p {
   line-height: 16px;
   color: #FFFFFF;
 }
-
 .el_contactLink:hover {
   opacity: 0.7;
 }
-
 .el_title {
   font-weight: bold;
   font-size: 24px;
@@ -119,38 +93,27 @@ h1, h2, p {
   color: #FFFFFF;
   text-align: center;
 }
-
 @media screen and (min-width: 1025px) {
   .el_title {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
     font-size: 36px;
     line-height: 50px;
   }
 }
-
 .el_title.el_title__white {
   color: #FFFFFF;
 }
-
 .el_title.el_title__navy {
   color: #1B224C;
 }
-
 .hp_underline {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(70%, transparent), color-stop(70%, #F5A623));
   background: linear-gradient(transparent 70%, #F5A623 70%);
 }
-
 /* ヘッダー */
 .hp_noScroll {
   overflow: hidden;
 }
-
 .ly_header {
   background-color: #FFFFFF;
   /* TODO: 別クラスで指定 */
@@ -160,78 +123,48 @@ h1, h2, p {
   position: fixed;
   z-index: 100;
 }
-
 .ly_header_inner {
   max-width: 1280px;
   height: 50px;
   margin: 0 auto;
   padding: 0 10px 0 15px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
-
 .ly_header_left {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   padding: 11.5px 0;
 }
-
 .bl_headerNav {
   height: 100%;
   list-style-type: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   margin: 0;
   /* nav要素以下のul要素に自動でmarginが指定される */
   padding: 0;
   /* nav要素以下のul要素に自動でpaddingが指定される */
 }
-
 .bl_headerNav > * {
   margin-left: 28px;
 }
-
 .bl_headerNav_link {
   font-weight: bold;
   font-size: 16px;
   color: #1B224C;
 }
-
 .bl_headerNav_link:hover {
   opacity: 0.7;
 }
-
 .ly_header_right {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 .bl_headerInfo {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  flex-direction: column;
+  justify-content: end;
+  align-items: flex-end;
 }
-
 .bl_businessHours {
   height: 12px;
   font-weight: 500;
@@ -240,7 +173,6 @@ h1, h2, p {
   color: #1B224C;
   margin-bottom: 10px;
 }
-
 .bl_tel {
   height: 16px;
   font-weight: bold;
@@ -248,16 +180,13 @@ h1, h2, p {
   line-height: 16px;
   color: #1B224C;
 }
-
 .bl_tel:hover {
   opacity: 0.7;
 }
-
 .bl_headerCtaBtn_wrapper {
   width: 137px;
   padding-left: 10px;
 }
-
 .bl_drawerBtn {
   width: 50px;
   height: 50px;
@@ -266,22 +195,17 @@ h1, h2, p {
   border-radius: 50px;
   z-index: 101;
 }
-
 .bl_drawerBtn:hover {
-  -webkit-box-shadow: 0 0 3px #1B224C;
-          box-shadow: 0 0 3px #1B224C;
+  box-shadow: 0 0 3px #1B224C;
 }
-
 .bl_drawerBtn > i {
   display: none;
   font-size: 18px;
   color: #1B224C;
 }
-
 .bl_drawerBtn > i.is_drawerActive {
   display: block;
 }
-
 .bl_drawerBg {
   visibility: hidden;
   position: fixed;
@@ -296,14 +220,11 @@ h1, h2, p {
   color: #FFFFFF;
   opacity: 0;
 }
-
 .bl_drawerBg.is_drawerActive {
   visibility: visible;
   opacity: 0.8;
-  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
-
 .bl_drawer {
   position: fixed;
   z-index: 40;
@@ -313,30 +234,19 @@ h1, h2, p {
   right: 0;
   overflow: hidden;
   background-color: #FFFFFF;
-  -webkit-transform: translateX(280px);
-          transform: translateX(280px);
-  -webkit-transition: 0.3s;
+  transform: translateX(280px);
   transition: 0.3s;
 }
-
 .bl_drawer.is_drawerActive {
-  -webkit-transition: 0.3s;
   transition: 0.3s;
-  -webkit-transform: translateX(0px);
-          transform: translateX(0px);
+  transform: translateX(0px);
 }
-
 .bl_drawerLogo {
   height: 80px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   padding-left: 20px;
 }
-
 .bl_drawerNav {
   list-style-type: none;
   margin: 0;
@@ -344,22 +254,15 @@ h1, h2, p {
   padding: 0;
   /* nav要素以下のul要素に自動でpaddingが指定される */
 }
-
 .bl_drawerNav_item {
   background-color: #1B224C;
   height: 60px;
   padding-left: 20px;
   border-bottom: 1px solid #FFFFFF;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  box-sizing: border-box;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 .bl_drawerNav_link {
   display: inline-block;
   width: 100px;
@@ -368,44 +271,33 @@ h1, h2, p {
   line-height: 30px;
   color: #FFFFFF;
 }
-
 .bl_drawerNav_link:hover {
   opacity: 0.7;
 }
-
 .bl_drawerCtaBtnGroup {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   padding: 20px 20px;
 }
-
 .bl_drawerCtaBtn_wrapper {
   display: inline-block;
   width: 115px;
   height: 50px;
 }
-
 .ly_paddingTop {
   height: 80px;
 }
-
 /* ファーストビュー */
 .hp_fv {
-  background-image: url("../img/first-view.png");
+  background-image: url('../img/first-view.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 476px;
 }
-
 .ly_fv_inner {
   padding: 116px 20px 0;
 }
-
 .bl_fvTitle {
   font-weight: bold;
   font-size: 40px;
@@ -415,65 +307,51 @@ h1, h2, p {
   text-align: center;
   margin-bottom: 21.5px;
 }
-
 @media (min-width: 600px) {
   .bl_fvTitle {
     font-size: 48px;
     line-height: 48px;
   }
 }
-
 .bl_fvSubTitle {
   font-size: 12px;
   line-height: 21px;
   color: #FFFFFF;
   text-align: center;
 }
-
 @media (min-width: 600px) {
   .bl_fvSubTitle {
     font-size: 18px;
     line-height: 31px;
   }
 }
-
 .bl_fvCtaBtn_wrapper {
   width: 260px;
   height: 60px;
   margin: 44.5px auto 0;
 }
-
 .bl_fvContactLink {
   margin-top: 22px;
   text-align: center;
 }
-
 /* こんなお悩みありませんか？ */
 .hp_problem {
   min-height: 604px;
   background-color: #1B224C;
 }
-
 .ly_problem_inner {
   padding: 55px 20px 30px;
 }
-
 .bl_problemItems {
   margin-top: 58px;
 }
-
 @media (min-width: 1025px) {
   .bl_problemItems {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
     gap: 0 30px;
   }
 }
-
 .bl_problemItem {
   text-align: center;
   font-weight: bold;
@@ -481,7 +359,6 @@ h1, h2, p {
   line-height: 39px;
   color: #FFFFFF;
 }
-
 .bl_feature {
   background-color: #FFFFFF;
   max-width: 900px;
@@ -489,15 +366,12 @@ h1, h2, p {
   margin: 72.5px auto 0;
   padding: 11px 16px 12px;
 }
-
 .bl_feature_inner {
   min-height: 225px;
   border: 5px solid #1B224C;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding: 15px 0 0;
 }
-
 .bl_featureTitle {
   font-weight: bold;
   font-size: 24px;
@@ -506,14 +380,12 @@ h1, h2, p {
   text-align: center;
   margin-bottom: 25px;
 }
-
 @media screen and (min-width: 1025px) {
   .bl_featureTitle {
     font-size: 36px;
     line-height: 50px;
   }
 }
-
 .bl_featureDescription {
   font-size: 18px;
   line-height: 31px;
@@ -521,7 +393,6 @@ h1, h2, p {
   padding: 0 20px 20px;
   text-align: center;
 }
-
 @media screen and (max-width: 1024px) {
   .bl_featureDescription {
     font-size: 14px;
@@ -529,7 +400,6 @@ h1, h2, p {
     text-align: left;
   }
 }
-
 /* 3つの強み */
 .ly_strengths_inner {
   max-width: 900px;
@@ -537,49 +407,35 @@ h1, h2, p {
   margin: 0 auto;
   padding: 52px 0 0;
 }
-
+.bl_strengths_ttl {
+  padding-bottom: 59px;
+}
 .bl_media {
   padding: 0 0 60px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 20px 0;
 }
-
 @media screen and (min-width: 1025px) {
   .bl_media {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    flex-direction: row;
     gap: 0 50px;
   }
 }
-
 @media screen and (min-width: 1025px) {
   .bl_media.bl_media__reverse {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: row-reverse;
-            flex-direction: row-reverse;
+    flex-direction: row-reverse;
   }
 }
-
 .bl_media_imgWrapper {
   max-width: 350px;
   margin: 0 auto;
 }
-
 @media screen and (min-width: 1025px) {
   .bl_media_imgWrapper {
     width: 40%;
   }
 }
-
 @media screen and (max-width: 1024px) {
   .bl_media_body {
     max-width: 700px;
@@ -587,32 +443,23 @@ h1, h2, p {
     margin: 0 auto;
   }
 }
-
 .bl_media_label {
   width: 90px;
   height: 30px;
   background-color: #F5A623;
   color: white;
   font-size: 12px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 28.5px;
 }
-
 .bl_media_ttl {
   color: #1B224C;
   font-weight: bold;
   font-size: 26px;
   line-height: 39px;
 }
-
 .bl_media_txt {
   color: #1B224C;
   font-weight: 500;
