@@ -375,7 +375,7 @@ p {
 }
 
 .bl_problemItems {
-  margin-top:58px;
+  margin-top: 58px;
   @media (min-width: 1025px) {
     display: flex;
     justify-content: center;
@@ -438,6 +438,10 @@ p {
   width: 90%;
   margin: 0 auto;
   padding: 52px 0 0;
+}
+
+.bl_strengths_ttl {
+  padding-bottom: 59px;
 }
 
 .bl_media {

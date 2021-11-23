@@ -33,7 +33,9 @@
   <!-- Engress3つの強み -->
   <section class='ly_strengths'>
     <div class='ly_strengths_inner'>
-      <h2 class='el_title el_title__navy'>TOEFL対策に特化した<br class='md_only'>Engress3つの強み</h2>
+      <div class='bl_strengths_ttl'>
+        <h2 class='el_title el_title__navy'>TOEFL対策に特化した<br class='md_only'>Engress3つの強み</h2>
+      </div>
       <div class='bl_media'>
         <figure class='bl_media_imgWrapper'>
           <img src='<?php echo get_template_directory_uri() ?>/img/feature01.png'>
