@@ -67,7 +67,14 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
+  <!-- 料金プラン -->
+  <section class='ly_price'>
+    <div class='ly_price_inner'>
+      <h2 class='bl_price_ttl'>Engressの料金プランはこちら</h2>
+      <a href='' class='bl_price_btn'>料金を見てみる</a>
+    </div>
+  </section>
   <div style='height: 81px; background-color: blue;'></div>
   <div style='height: 81px; background-color: green;'></div>
   <div style='height: 500px; background-color: blue;'></div>
