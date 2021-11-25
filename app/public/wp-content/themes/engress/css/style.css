@@ -475,7 +475,7 @@ h1, h2, h3, p {
   width: 90%;
   height: 156px;
   margin: 0 auto;
-  padding: 61px 0 0;
+  padding: 61px 20px 0;
   background-image: url('../img/price.png');
   background-position: center;
   background-repeat: no-repeat;
@@ -494,11 +494,15 @@ h1, h2, h3, p {
   height: 50px;
   box-sizing: border-box;
   background: transparent;
+  color: #FFFFFF;
   border: 1px solid #FFFFFF;
   border-radius: 30px;
-  color: #FFFFFF;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
+}
+.bl_price_btn:hover {
+  color: #1B224C;
+  background: #FFFFFF;
 }
 /*# sourceMappingURL=style.css.map */
