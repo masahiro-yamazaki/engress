@@ -463,9 +463,14 @@ h1, h2, h3, p {
 
 .bl_media_imgWrapper {
   max-width: 350px;
+  width: 90%;
   margin: 0 auto;
   @media screen and (min-width: 1025px) {
     width: 40%;
+  }
+
+  img {
+    width: 100%;
   }
 }
 

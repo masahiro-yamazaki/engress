@@ -429,12 +429,16 @@ h1, h2, h3, p {
 }
 .bl_media_imgWrapper {
   max-width: 350px;
+  width: 90%;
   margin: 0 auto;
 }
 @media screen and (min-width: 1025px) {
   .bl_media_imgWrapper {
     width: 40%;
   }
+}
+.bl_media_imgWrapper img {
+  width: 100%;
 }
 @media screen and (max-width: 1024px) {
   .bl_media_body {
