@@ -75,6 +75,16 @@
       <a href='' class='bl_price_btn'>料金を見てみる</a>
     </div>
   </section>
+  <!-- 成功事例 -->
+  <section class='ly_success'>
+    <div class='ly_success_inner'>
+      <h2 class='bl_success_title'>TOEFL成功事例</h2>
+      <div class='.bl_success_examples'>
+        <div class='.bl_success_example'>
+        </div>
+      </div>
+    </div>
+  </section>
   <div style='height: 81px; background-color: blue;'></div>
   <div style='height: 81px; background-color: green;'></div>
   <div style='height: 500px; background-color: blue;'></div>

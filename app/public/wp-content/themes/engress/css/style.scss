@@ -551,3 +551,24 @@ h1, h2, h3, p {
     color: #1B224C;
   }
 }
+
+/* 成功事例 */
+.ly_success {
+  min-height: 608px;
+  padding: 58px 0 60px;
+  background: #1B224C;
+}
+
+.ly_success_inner {
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.bl_success_title {
+  color: #FFFFFF;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 36px;
+  text-align: center;
+}
