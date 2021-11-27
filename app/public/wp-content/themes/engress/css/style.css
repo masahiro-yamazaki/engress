@@ -530,10 +530,23 @@ h1, h2, h3, p {
 }
 .bl_success_examples {
   display: flex;
-  gap: 0 3.33%;
+  flex-direction: column;
+  gap: 50px 0;
+}
+@media screen and (min-width: 1025px) {
+  .bl_success_examples {
+    flex-direction: row;
+    gap: 0 3.33%;
+  }
 }
 .bl_success_example {
-  width: calc((100% - 6.66%) / 3);
+  max-width: 300px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 1025px) {
+  .bl_success_example {
+    width: calc((100% - 6.66%) / 3);
+  }
 }
 .bl_success_summary {
   margin-bottom: 3.5px;
