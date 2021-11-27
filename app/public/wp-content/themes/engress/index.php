@@ -79,8 +79,33 @@
   <section class='ly_success'>
     <div class='ly_success_inner'>
       <h2 class='bl_success_title'>TOEFL成功事例</h2>
-      <div class='.bl_success_examples'>
-        <div class='.bl_success_example'>
+      <div class='bl_success_examples'>
+        <div class='bl_success_example'>
+          <h3 class='bl_success_summary'>TOEFL iBT 100点を突破してコロンビア大学大学院に進学できました！</h3>
+          <div class='bl_success_picture'></div>
+          <div class='bl_success_profile'>
+            <div class='bl_success_status'>会社員</div>
+            <div class='bl_success_name'>T.Fujiyamaさん</div>
+          </div>
+          <div class='bl_success_result'>3ヶ月でTOEFL80→108点</div>
+        </div>
+        <div class='bl_success_example'>
+          <h3 class='bl_success_summary'>TOEFL iBT 100点を突破してコロンビア大学大学院に進学できました！</h3>
+          <div class='bl_success_picture'></div>
+          <div class='bl_success_profile'>
+            <div class='bl_success_status'>会社員</div>
+            <div class='bl_success_name'>T.Fujiyamaさん</div>
+          </div>
+          <div class='bl_success_result'>3ヶ月でTOEFL80→108点</div>
+        </div>
+        <div class='bl_success_example'>
+          <h3 class='bl_success_summary'>TOEFL iBT 100点を突破してコロンビア大学大学院に進学できました！</h3>
+          <div class='bl_success_picture'></div>
+          <div class='bl_success_profile'>
+            <div class='bl_success_status'>会社員</div>
+            <div class='bl_success_name'>T.Fujiyamaさん</div>
+          </div>
+          <div class='bl_success_result'>3ヶ月でTOEFL80→108点</div>
         </div>
       </div>
     </div>

@@ -566,9 +566,66 @@ h1, h2, h3, p {
 }
 
 .bl_success_title {
+  margin-bottom: 131.5px;
   color: #FFFFFF;
   font-weight: bold;
   font-size: 36px;
   line-height: 36px;
   text-align: center;
+}
+
+.bl_success_examples {
+  display: flex;
+  gap: 0 3.33%;
+}
+
+.bl_success_example {
+  width: calc((100% - 6.66%) / 3);
+}
+
+.bl_success_summary {
+  margin-bottom: 3.5px;
+  color: #FFFFFF;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 29px;
+}
+
+.bl_success_picture {
+  height: 171px;
+  background-color: #FFFFFF;
+}
+
+.bl_success_profile {
+  display: flex;
+  gap: 0 8px;
+  margin-top: 16px;
+}
+
+.bl_success_status {
+  width: 35%;
+  height: 32px;
+  padding: 0 4px;
+  background-color: #FFFFFF;
+  color: #1B224C;
+  font-size: 16px;
+  line-height: 32px;
+}
+
+.bl_success_name {
+  width: 65%;
+  height: 32px;
+  padding: 0 4px;
+  background-color: #FFFFFF;
+  font-size: 16px;
+  line-height: 32px;
+}
+
+.bl_success_result {
+  height: 32px;
+  margin-top: 10px;
+  padding: 0 4px;
+  background-color: #FFFFFF;
+  font-size: 16px;
+  line-height: 32px;
 }
