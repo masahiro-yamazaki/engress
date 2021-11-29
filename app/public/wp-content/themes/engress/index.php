@@ -71,6 +71,7 @@
   <!-- 料金プラン -->
   <section class='ly_price'>
     <div class='ly_price_inner'>
+      <!-- TODO: タイトルのCSSを共通化 -->
       <h2 class='bl_price_ttl'>Engressの料金プランはこちら</h2>
       <a href='' class='bl_price_btn'>料金を見てみる</a>
     </div>
@@ -107,6 +108,36 @@
             <div class='bl_success_name'>T.Fujiyamaさん</div>
           </div>
           <div class='bl_success_result'>3ヶ月でTOEFL80→108点</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ご利用の流れ -->
+  <section class='ly_flow'>
+    <div class='ly_flow_inner'>
+      <div class='bl_flow_title'>
+        <h2 class='el_title el_title__navy'>ご利用の流れ</h2>
+      </div>
+      <div class='bl_flow_parts'>
+        <div class='bl_flow_part'>
+          <div class='bl_flow_number'>01</div>
+          <div class='bl_flow_summary'><h3>お問い合わせ</h3></div>
+          <div class='bl_flow_content'>まずはフォームまたはお電話からお申し込みください。</div>
+        </div>
+        <div class='bl_flow_part'>
+          <div class='bl_flow_number'>02</div>
+          <div class='bl_flow_summary'><h3>ヒアリング</h3></div>
+          <div class='bl_flow_content'>現在の学習状況やTOEFLスコア、目標のスコアをお聞きします。</div>
+        </div>
+        <div class='bl_flow_part'>
+          <div class='bl_flow_number'>03</div>
+          <div class='bl_flow_summary'><h3>学習プランのご提供</h3></div>
+          <div class='bl_flow_content'>目標達成のために最適な学習プランをご提案致します。</div>
+        </div>
+        <div class='bl_flow_part'>
+          <div class='bl_flow_number'>04</div>
+          <div class='bl_flow_summary'><h3>ご入会</h3></div>
+          <div class='bl_flow_content'>お申込み完了後、レッスンがスタートします。</div>
         </div>
       </div>
     </div>
