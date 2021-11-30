@@ -640,6 +640,7 @@ h1, h2, h3, p {
   line-height: 32px;
 }
 
+/* ご利用の流れ */
 .ly_flow {
   padding: 50px 0 30px;
 }
@@ -723,5 +724,65 @@ h1, h2, h3, p {
   line-height: 27px;
   @media screen and (min-width: 1025px) {
     padding-left: 53.5px;
+  }
+}
+
+// 資料請求 
+.bl_document {
+  height: 186.4px;
+  padding: 70px 0 0;
+  background-image: url('../img/cta.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+.bl_document_title {
+  color: #FFFFFF;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 1em; // TODO: line-heightを共通化したい
+  @media screen and (max-width: 1024px) {
+    font-size: 24px;
+  }
+}
+
+.bl_document_ctaButton_wrapper {
+  margin: 25px 0 22px;
+}
+
+.bl_document_ctaButton {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 280px;
+  height: 50px;
+  border: transparent 1px solid;
+  border-radius: 25px;
+  box-sizing: border-box; /* TODO: 必要に応じて共通化 */
+  background-color: #F5A623;
+  color: #FFFFFF;
+  font-weight: bold;
+  font-size: 16px;
+  &:focus, &:hover {
+    border: currentColor 1px solid;
+    background-color: #FFFFFF;
+    color: #F5A623;
+  }
+}
+
+.bl_document_contactLink_wrapper {
+  
+}
+
+.bl_document_contactLink {
+  color: #FFFFFF;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  text-decoration: underline;
+  &:hover {
+    opacity: 0.7;
   }
 }
