@@ -772,4 +772,23 @@ h1, h2, h3, p {
   font-size: 16px;
   line-height: 1em;
 }
+.bl_footerMenu {
+  height: 230px;
+  background-color: #1B224C;
+}
+.ly_copyright {
+  height: 36px;
+}
+.ly_copyright_inner {
+  max-width: 930px;
+  margin: 0 auto;
+  padding: 12px 20px;
+}
+.bl_copyright_text {
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 1em;
+  color: #1B224C;
+  text-align: right;
+}
 /*# sourceMappingURL=style.css.map */
