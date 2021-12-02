@@ -773,8 +773,63 @@ h1, h2, h3, p {
   line-height: 1em;
 }
 .bl_footerMenu {
-  height: 230px;
+  min-height: 230px;
   background-color: #1B224C;
+}
+.bl_footerMenu_inner {
+  display: flex;
+  justify-content: space-between;
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 35px 20px;
+}
+.bl_footerNav_item {
+  list-style-type: none;
+}
+.bl_footerNav_link {
+  color: #FFFFFF;
+}
+.bl_footerNav_link:hover {
+  opacity: 0.7;
+}
+.bl_footerMenu_info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  color: #FFFFFF;
+}
+.bl_footerMenu_info > *:nth-child(1) {
+  margin-bottom: 40px;
+}
+.bl_footerMenu_info > *:nth-child(2) {
+  margin-bottom: 13px;
+}
+.bl_footerMenu_logo {
+  display: inline-block;
+  width: 159px;
+  height: 31px;
+  padding: 14px 19px 13px;
+  background-color: #FFFFFF;
+}
+.bl_footerMenu_logo img {
+  width: 100%;
+  height: 100%;
+}
+.bl_footer_tel {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1em;
+}
+.bl_footer_tel > *:first-child {
+  margin-right: 3px;
+}
+.bl_footer_tel:hover {
+  opacity: 0.7;
+}
+.bl_footer_time {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1em;
 }
 .ly_copyright {
   height: 36px;
