@@ -162,7 +162,5 @@
       <a href='' class='bl_document_contactLink'>お問い合わせ</a>
     </div>
   </section>
-  <div style='height: 81px; background-color: blue;'></div>
-  <div style='height: 81px; background-color: green;'></div>
 </main>
 <?php get_footer(); ?>
