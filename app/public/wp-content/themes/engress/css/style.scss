@@ -732,8 +732,14 @@ h1, h2, h3, p {
 }
 
 .ly_blog_news_container_inner {
+  display: flex;
+  justify-content: space-between;
   max-width: 900px;
   margin: 0 auto;
+}
+
+.ly_blog {
+  width: 47%;
 }
 
 // TODO: 共通化
@@ -790,6 +796,42 @@ h1, h2, h3, p {
   font-weight: 500;
   font-size: 12px;
   line-height: 20px;
+}
+
+.ly_news {
+  width: 47%;
+}
+
+.bl_news_title {
+  margin-bottom: 36px;
+  color: #1B224C;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 1em;
+}
+
+.bl_news_item {
+  display: block;
+  height: 78px;
+  &:hover {
+    opacity: .7;
+  }
+}
+
+.bl_news_item_time {
+  margin-bottom: 10.5px;
+  color: #1B224C;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1em;
+}
+
+.bl_news_item_title {
+  color: #1B224C;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 27px;
+  text-decoration: underline;
 }
 
 // 資料請求 
