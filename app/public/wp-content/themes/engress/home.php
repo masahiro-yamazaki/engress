@@ -150,8 +150,38 @@
       </div>
     </div>
   </section>
-  <div style='height: 81px; background-color: blue;'></div>
-  <div style='height: 81px; background-color: green;'></div>
+  <!-- ブログ＆お知らせ -->
+  <div class='ly_blog_news_container'>
+    <div class='ly_blog_news_container_inner'>
+      <section class='ly_blog'>
+        <h2 class='bl_blog_title'>ブログ</h2>
+        <div class='bl_blog_items'>
+          <?php if ( have_posts() ) : ?>
+            <?php while ( have_posts() ) : the_post(); ?>
+              <a class='bl_blog_item' href="<?php the_permalink(); ?>">
+                <figure>
+                  <?php
+                    if (has_post_thumbnail() ) {
+                      the_post_thumbnail('large');
+                    } else {
+                      echo '<img src="' . esc_url(get_template_directory_uri()) . '/img/noimg.png" alt="">';
+                    }
+                  ?>
+                </figure>
+                <div class='bl_blog_info'>
+                  <h3 class='bl_blog_info_title'><?php the_title(); ?></h3>
+                  <!-- TODO: 2021-12-01のように2桁になるように0埋めする -->
+                  <time class='bl_blog_info_time'><?php the_time('Y-n-j'); ?></time>
+                </div>
+              </a>
+            <?php endwhile; ?>
+          <?php endif; ?>
+        </div>
+      <section>
+      <section class='ly_news'>
+      <section>
+    </div>
+  </div>
   <!-- 資料請求 -->
   <section class='bl_document'>
     <h2 class='bl_document_title'>まずは無料で資料請求から</h2>
