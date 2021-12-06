@@ -698,6 +698,18 @@ h1, h2, h3, p {
   width: 430px;
   height: 110px;
 }
+.bl_blog_item:hover {
+  opacity: 0.7;
+}
+.bl_blog_img {
+  width: 150px;
+  height: 110px;
+  margin: 0;
+}
+.bl_blog_img img {
+  width: auto;
+  height: 100%;
+}
 .bl_blog_info {
   display: flex;
   flex-direction: column;

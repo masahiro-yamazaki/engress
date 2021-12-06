@@ -159,7 +159,7 @@
           <?php if ( have_posts() ) : ?>
             <?php while ( have_posts() ) : the_post(); ?>
               <a class='bl_blog_item' href="<?php the_permalink(); ?>">
-                <figure>
+                <figure class='bl_blog_img'>
                   <?php
                     if (has_post_thumbnail() ) {
                       the_post_thumbnail('large');
