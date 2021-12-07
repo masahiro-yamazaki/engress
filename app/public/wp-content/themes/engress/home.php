@@ -191,7 +191,7 @@
             $myposts = get_posts($args);
             foreach ($myposts as $post) : setup_postdata($post);
           ?>
-          <a class='bl_news_item' href=''>
+          <a class='bl_news_item' href="<?php the_permalink(); ?>">
             <time class='bl_news_item_time'><?php the_date('Y-m-d'); ?></time>
             <h3 class='bl_news_item_title'><?php echo wp_trim_words(get_the_title(), 30, '...'); ?></h3>
           </a>
