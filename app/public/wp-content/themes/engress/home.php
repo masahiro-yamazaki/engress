@@ -169,7 +169,9 @@
                   ?>
                 </figure>
                 <div class='bl_blog_info'>
-                  <h3 class='bl_blog_info_title'><?php the_title(); ?></h3>
+                  <?php $blog_title = get_the_title(); ?>
+                  <?php $blog_trim_title = wp_trim_words( $blog_title, 30, '...' ) ?>
+                  <h3 class='bl_blog_info_title'><?php echo $blog_trim_title; ?></h3>
                   <!-- TODO: 2021-12-01のように2桁になるように0埋めする -->
                   <time class='bl_blog_info_time'><?php the_time('Y-n-j'); ?></time>
                 </div>
