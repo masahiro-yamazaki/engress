@@ -179,37 +179,25 @@
         </div>
       </section>
       <section class='ly_news'>
-      <?php
-        global $post;
-        $args = array(
-          'posts_per_page' => 3,
-          'post_type'=> 'news'
-        );
-        $myposts = get_posts( $args );
-        foreach ( $myposts as $post ) : setup_postdata( $post ); ?>
-          <dl class='news'>
-            <dt class='news-title'><?php the_title(); ?></dt>
-            <dd class='news-date'><?php the_date('Y.m.d'); ?></dd>
-            <dd class='news-content'><?php the_content(); ?></dd>
-          </dl>
-        <?php
-          endforeach;
-          wp_reset_postdata();
-        ?>
         <h2 class='bl_news_title'>お知らせ</h2>
         <div class='bl_news_items'>
-          <a class='bl_news_item' href="">
-            <time class='bl_news_item_time'>2021-12-01</time>
-            <h3 class='bl_news_item_title'>お知らせタイトル</h3>
+          <?php
+            global $post;
+            $args = array(
+              'posts_per_page' => 3,
+              'post_type'=> 'news'
+            );
+            $myposts = get_posts($args);
+            foreach ($myposts as $post) : setup_postdata($post);
+          ?>
+          <a class='bl_news_item' href=''>
+            <time class='bl_news_item_time'><?php the_date('Y-m-d'); ?></time>
+            <h3 class='bl_news_item_title'><?php the_title(); ?></h3>
           </a>
-          <a class='bl_news_item' href="">
-            <time class='bl_news_item_time'>2021-12-01</time>
-            <h3 class='bl_news_item_title'>お知らせタイトル</h3>
-          </a>
-          <a class='bl_news_item' href="">
-            <time class='bl_news_item_time'>2021-12-01</time>
-            <h3 class='bl_news_item_title'>お知らせタイトル</h3>
-          </a>
+          <?php
+            endforeach;
+            wp_reset_postdata();
+          ?>
         </div>
       </section>
     </div>
