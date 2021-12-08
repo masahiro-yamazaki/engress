@@ -1,7 +1,12 @@
 // <CSSのリファクタポイント>
 
-// 全要素に共通するCSSを指定 (ベースグループ)
 // ブラウザ間の差分を無くすCSSを指定
+// https://github.com/necolas/normalize.css/blob/master/normalize.css
+
+// CSSのファイルを分割
+// https://webdrawer.net/css/filesplit.html
+
+// 全要素に共通するCSSを指定 (ベースグループ)
 // ファーストビューなどの背景画像がある場合ly_ではなくbl_にすべきか？
 // ファーストビューなどの背景画像はCSSファイルではなくstyleタグで指定？
 // クラス名はbl_(featureやpriceなどブロック名)_(titleやimgなどブロック内のパーツ名)という名前をつける
