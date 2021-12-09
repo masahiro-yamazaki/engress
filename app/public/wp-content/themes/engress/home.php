@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <main>
   <!-- ファーストビュー -->
-  <section class='hp_fv'>
+  <section class='ly_fv'>
     <div class='ly_fv_inner'>
       <h1 class='bl_fv_title'>TOEFL対策はEngress</h2>
       <p class='bl_fv_subTitle'>日本人へのTOEFL指導歴豊かな講師陣の<br>コーチング型TOEFLスクール</p>
@@ -14,7 +14,7 @@
     </div><!-- /.ly_fv_inner -->
   </section><!-- /.hp_fv -->
   <!-- こんなお悩みありませんか？ -->
-  <section class='hp_problem'>
+  <section class='ly_problem'>
     <div class='ly_problem_inner'>
       <h2 class='el_title el_title__white'>TOEFL学習で<br class='md_only'>こんな悩みありませんか？</h2>
       <div class='bl_problemItems'>
@@ -204,7 +204,7 @@
     </div>
   </div>
   <!-- 資料請求 -->
-  <section class='bl_document'>
+  <section class='ly_document'>
     <h2 class='bl_document_title'>まずは無料で資料請求から</h2>
     <div class='bl_document_ctaButton_wrapper'>
       <a class='bl_document_ctaButton'>資料請求</a>

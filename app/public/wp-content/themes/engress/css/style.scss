@@ -4,11 +4,10 @@
 // https://webdrawer.net/css/filesplit.html
 
 // 全要素に共通するCSSを指定 (ベースグループ)
-// ファーストビューなどの背景画像がある場合ly_ではなくbl_にすべきか？
-// ファーストビューなどの背景画像はCSSファイルではなくstyleタグで指定？
+// 背景色や背景画像は例外としてly_に追加してOK
 // クラス名はbl_(featureやpriceなどブロック名)_(titleやimgなどブロック内のパーツ名)という名前をつける
 
-// bl_要素やel_要素にレイアウトに関するスタイリングはしない (floatやwidthなど)
+// bl_要素やel_要素にレイアウトに関するスタイリングはしない (floatやwidth、marginなど)
 // line-heightなどを共通で指定したい
 // Sassのmixinを活用
 // できるだけPC表示をベースにする (SP/iPad表示をmax-widthで対応)
@@ -55,8 +54,8 @@ h1, h2, h3, p {
 
 .el_companyLogo {
   display: inline-block;
-  width: 136px;
-  height: 27px;
+  width: 136px; // TODO: 削除？
+  height: 27px; // TODO: 削除？
   &:hover {
     opacity: .7;
   }
@@ -73,7 +72,6 @@ h1, h2, h3, p {
   box-sizing: border-box; /* TODO: 必要に応じて共通化 */
   font-weight: bold;
   font-size: 14px;
-
 
   &.el_ctaBtn__rounded {
     border-radius: 31px;
@@ -104,7 +102,7 @@ h1, h2, h3, p {
   color: #FFFFFF;
   font-weight: 500;
   font-size: 16px;
-  line-height: 16px;
+  line-height: 1;
   text-decoration: underline;
   &:hover {
     opacity: .7;
@@ -148,7 +146,7 @@ h1, h2, h3, p {
   width: 100%;
   height: 50px;
   padding: 15px 0;
-  background-color: #FFFFFF; /* TODO: 別クラスで指定 */
+  background-color: #FFFFFF;
 }
 
 .ly_header_inner {
@@ -333,7 +331,7 @@ h1, h2, h3, p {
 }
 
 /* ファーストビュー */
-.hp_fv {
+.ly_fv {
   height: 476px;
   background-image: url('../img/first-view.png');
   background-position: center;
@@ -380,7 +378,7 @@ h1, h2, h3, p {
 }
 
 /* こんなお悩みありませんか？ */
-.hp_problem {
+.ly_problem {
   min-height: 604px;
   background-color: #1B224C;
 }
@@ -531,7 +529,7 @@ h1, h2, h3, p {
 .ly_price_inner {
   width: 90%;
   max-width: 906px;
-  height: 156px;
+  height: 156px; // TODO: 削除してpaddingで高さを指定
   margin: 0 auto;
   padding: 61px 20px 0;
   background-image: url('../img/price.png');
@@ -628,7 +626,7 @@ h1, h2, h3, p {
 
 .bl_success_status {
   width: 35%;
-  height: 32px;
+  height: 32px; // TODO: 削除してpaddingで高さを指定
   padding: 0 4px;
   background-color: #FFFFFF;
   color: #1B224C;
@@ -638,7 +636,7 @@ h1, h2, h3, p {
 
 .bl_success_name {
   width: 65%;
-  height: 32px;
+  height: 32px; // TODO: 削除してpaddingで高さを指定
   padding: 0 4px;
   background-color: #FFFFFF;
   font-size: 16px;
@@ -646,7 +644,7 @@ h1, h2, h3, p {
 }
 
 .bl_success_result {
-  height: 32px;
+  height: 32px; // TODO: 削除してpaddingで高さを指定
   margin-top: 10px;
   padding: 0 4px;
   background-color: #FFFFFF;
@@ -678,7 +676,7 @@ h1, h2, h3, p {
 .bl_flow_part {
   display: flex;
   width: 100%;
-  min-height: 64px;
+  min-height: 64px; // TODO: 削除してpaddingで高さを指定
   background-color: #F8F8F8;
 }
 
@@ -855,7 +853,7 @@ h1, h2, h3, p {
 }
 
 // 資料請求 
-.bl_document {
+.ly_document {
   height: 186.4px;
   padding: 70px 0 0;
   background-image: url('../img/cta.png');

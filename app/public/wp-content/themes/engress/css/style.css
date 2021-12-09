@@ -80,7 +80,7 @@ h1, h2, h3, p {
   color: #FFFFFF;
   font-weight: 500;
   font-size: 16px;
-  line-height: 16px;
+  line-height: 1;
   text-decoration: underline;
 }
 .el_contactLink:hover {
@@ -121,7 +121,6 @@ h1, h2, h3, p {
   height: 50px;
   padding: 15px 0;
   background-color: #FFFFFF;
-  /* TODO: 別クラスで指定 */
 }
 .ly_header_inner {
   display: flex;
@@ -288,7 +287,7 @@ h1, h2, h3, p {
   height: 80px;
 }
 /* ファーストビュー */
-.hp_fv {
+.ly_fv {
   height: 476px;
   background-image: url('../img/first-view.png');
   background-position: center;
@@ -331,7 +330,7 @@ h1, h2, h3, p {
   margin: 0 auto 22px;
 }
 /* こんなお悩みありませんか？ */
-.hp_problem {
+.ly_problem {
   min-height: 604px;
   background-color: #1B224C;
 }
@@ -765,7 +764,7 @@ h1, h2, h3, p {
   line-height: 27px;
   text-decoration: underline;
 }
-.bl_document {
+.ly_document {
   height: 186.4px;
   padding: 70px 0 0;
   background-image: url('../img/cta.png');
