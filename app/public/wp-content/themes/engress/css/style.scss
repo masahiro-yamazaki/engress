@@ -48,8 +48,10 @@ h1, h2, h3, p {
   }
 }
 
-.hp_ft16 {
-  font-size: 16px !important;
+.ly_inner {
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .el_companyLogo {
@@ -61,6 +63,38 @@ h1, h2, h3, p {
   }
 }
 
+.el_button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border: transparent 1px solid;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-weight: bold;
+  font-size: 14px;
+
+  &.el_button__orange {
+    background-color: #F5A623;
+    color: #FFFFFF;
+    &:focus, &:hover {
+      border: currentColor 1px solid;
+      background-color: #FFFFFF;
+      color: #F5A623;
+    }
+  }
+
+  &.el_button__navy {
+    background-color: #1B224C;
+    color: #FFFFFF;
+    &:focus, &:hover {
+      border: currentColor 1px solid;
+      background-color: #FFFFFF;
+      color: #1B224C;
+    }
+  }
+}
+
+// TODO: .el_buttonに置き換えて削除したい
 .el_ctaBtn {
   display: inline-flex;
   justify-content: center;

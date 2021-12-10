@@ -2,17 +2,17 @@
 <main>
   <!-- ファーストビュー -->
   <section class='ly_fv'>
-    <div class='ly_fv_inner'>
+    <div class='ly_fv_inner ly_inner'>
       <h1 class='bl_fv_title'>TOEFL対策はEngress</h2>
       <p class='bl_fv_subTitle'>日本人へのTOEFL指導歴豊かな講師陣の<br>コーチング型TOEFLスクール</p>
-      <div class='bl_fv_documentRequest'>
-        <a class='el_ctaBtn el_ctaBtn__orange el_ctaBtn__rounded hp_ft16'>資料請求</a>
+      <div class='bl_fv_document'>
+        <a class='el_button el_button__orange'>資料請求</a>
       </div>
       <div class='bl_fv_contact'>
         <a href='' class='el_contactLink'>お問い合わせ</a>
       </div>
-    </div><!-- /.ly_fv_inner -->
-  </section><!-- /.hp_fv -->
+    </div>
+  </section>
   <!-- こんなお悩みありませんか？ -->
   <section class='ly_problem'>
     <div class='ly_problem_inner'>

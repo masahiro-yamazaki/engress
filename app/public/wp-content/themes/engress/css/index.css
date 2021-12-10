@@ -1,46 +1,46 @@
 @charset "UTF-8";
 /* ファーストビュー */
 .ly_fv {
-  height: 476px;
+  padding: 116px 0 86px;
   background-image: url('../img/first-view.png');
   background-position: center;
   background-size: cover;
-  background-repeat: no-repeat;
   text-align: center;
-}
-.ly_fv_inner {
-  padding: 116px 20px 0;
 }
 .bl_fv_title {
   margin-bottom: 21.5px;
   color: #FFFFFF;
   font-weight: bold;
-  font-size: 40px;
+  font-size: 48px;
+  line-height: 48px;
   line-height: 1;
   text-shadow: 0px 3px 6px #00000029;
 }
-@media (min-width: 600px) {
+@media (max-width: 599px) {
   .bl_fv_title {
-    font-size: 48px;
-    line-height: 48px;
+    font-size: 40px;
   }
 }
 .bl_fv_subTitle {
   margin-bottom: 44.5px;
   color: #FFFFFF;
   font-size: 12px;
-  line-height: 21px;
+  font-size: 18px;
+  line-height: 1.7;
 }
-@media (min-width: 600px) {
+@media (max-width: 599px) {
   .bl_fv_subTitle {
-    font-size: 18px;
-    line-height: 31px;
+    font-size: 12px;
   }
 }
-.bl_fv_documentRequest {
+.bl_fv_document {
+  margin-bottom: 22px;
+}
+.bl_fv_document .el_button {
   width: 260px;
   height: 60px;
-  margin: 0 auto 22px;
+  border-radius: 31px;
+  font-size: 16px;
 }
 /* こんなお悩みありませんか？ */
 .ly_problem {

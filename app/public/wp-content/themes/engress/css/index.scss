@@ -1,27 +1,25 @@
 /* ファーストビュー */
 .ly_fv {
-  height: 476px;
   background-image: url('../img/first-view.png');
   background-position: center;
   background-size: cover;
-  background-repeat: no-repeat;
   text-align: center;
 }
 
 .ly_fv_inner {
-  padding: 116px 20px 0;
+  padding: 116px 0 86px;
 }
 
 .bl_fv_title {
   margin-bottom: 21.5px;
   color: #FFFFFF;
   font-weight: bold;
-  font-size: 40px;
+  font-size: 48px;
+  line-height: 48px;
   line-height: 1;
   text-shadow: 0px 3px 6px #00000029;
-  @media (min-width: 600px) {
-    font-size: 48px;
-    line-height: 48px;
+  @media (max-width: 599px) {
+    font-size: 40px;
   }
 }
 
@@ -29,17 +27,21 @@
   margin-bottom: 44.5px;
   color: #FFFFFF;
   font-size: 12px;
-  line-height: 21px;
-  @media (min-width: 600px) {
-    font-size: 18px;
-    line-height: 31px;
+  font-size: 18px;
+  line-height: 1.7;
+  @media (max-width: 599px) {
+    font-size: 12px;
   }
 }
 
-.bl_fv_documentRequest {
-  width: 260px;
-  height: 60px;
-  margin: 0 auto 22px;
+.bl_fv_document {
+  margin-bottom: 22px;
+  .el_button {
+    width: 260px;
+    height: 60px;
+    border-radius: 31px;
+    font-size: 16px;
+  }
 }
 
 .bl_fv_contact {
