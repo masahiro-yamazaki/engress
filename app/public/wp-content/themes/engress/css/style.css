@@ -52,7 +52,7 @@ h1, h2, h3, p {
   border-radius: 5px;
   box-sizing: border-box;
   font-weight: bold;
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 .el_button.el_button__orange {
   background-color: #F5A623;
