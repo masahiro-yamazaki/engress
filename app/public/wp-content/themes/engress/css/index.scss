@@ -133,8 +133,10 @@
   .bl_feature_media {
     display: flex;
     gap: 0 50px;
-    @media screen and (max-width: 1024px) {
-      display: block;
+    // スマホで見た時のみ画像と文章を縦に並べる (iPadの横幅が768px)
+    @media screen and (max-width: 767px) {
+      flex-direction: column;
+      gap: 20px 0;
     }
     &.bl_feature_media__reverse {
       flex-direction: row-reverse;
@@ -144,12 +146,6 @@
       flex-grow: 0;
       flex-shrink: 1;
       flex-basis: 40%;
-      // width: 90%;
-      // max-width: 350px;
-      // margin: 0 auto;
-      // @media screen and (min-width: 1025px) {
-      //   width: 40%;
-      // }
       img {
         width: 100%;
       }
@@ -160,11 +156,6 @@
       flex-grow: 1;
       flex-shrink: 1;
       flex-basis: 0%;
-      // @media screen and (max-width: 1024px) {
-      //   width: 90%;
-      //   max-width: 700px;
-      //   margin: 0 auto;
-      // }
 
       .bl_feature_media_body_label {
         display: flex;

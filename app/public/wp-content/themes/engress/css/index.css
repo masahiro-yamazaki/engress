@@ -124,9 +124,10 @@
   display: flex;
   gap: 0 50px;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 767px) {
   .bl_feature_items .bl_feature_media {
-    display: block;
+    flex-direction: column;
+    gap: 20px 0;
   }
 }
 .bl_feature_items .bl_feature_media.bl_feature_media__reverse {

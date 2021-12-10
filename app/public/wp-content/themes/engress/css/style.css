@@ -39,6 +39,11 @@ h1, h2, h3, p, figure {
   margin: 0 auto;
   padding: 0 25px;
 }
+@media screen and (max-width: 767px) {
+  .ly_inner {
+    max-width: 600px;
+  }
+}
 .el_companyLogo {
   display: inline-block;
   width: 136px;
