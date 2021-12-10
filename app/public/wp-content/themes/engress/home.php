@@ -74,10 +74,11 @@
   </section>
   <!-- 料金プラン -->
   <section class='ly_price'>
-    <div class='ly_price_inner'>
-      <!-- TODO: タイトルのCSSを共通化 -->
-      <h2 class='bl_price_ttl'>Engressの料金プランはこちら</h2>
-      <a href='' class='bl_price_btn'>料金を見てみる</a>
+    <div class='ly_inner'>
+      <h2 class='bl_price_title'>Engressの料金プランはこちら</h2>
+      <div class='bl_price_button'>
+        <a href='' class='el_button'>料金を見てみる</a>
+      </div>
     </div>
   </section>
   <!-- 成功事例 -->

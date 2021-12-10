@@ -189,44 +189,38 @@
 
 /* 料金プラン */
 .ly_price {
-  padding: 0 0 39px;
-}
-
-.ly_price_inner {
-  width: 90%;
-  max-width: 906px;
-  height: 156px; // TODO: 削除してpaddingで高さを指定
-  margin: 0 auto;
-  padding: 61px 20px 0;
   background-image: url('../img/price.png');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-}
-
-.bl_price_ttl {
-  margin-bottom: 27px;
-  font-size: 26px;
-  line-height: 26px;
-  color: #FFFFFF;
   text-align: center;
+
+  .ly_inner {
+    padding-top: 61px;
+    padding-bottom: 53px;
+  }
 }
 
-.bl_price_btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 200px;
-  height: 50px;
-  margin: 0 auto;
-  border: 1px solid #FFFFFF;
-  border-radius: 30px;
-  box-sizing: border-box;
-  background: transparent;
+.bl_price_title {
+  margin-bottom: 27px;
   color: #FFFFFF;
-  &:hover {
-    background: #FFFFFF;
-    color: #1B224C;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1;
+}
+
+.bl_price_button {
+  .el_button {
+    width: 200px;
+    height: 50px;
+    border: 1px solid #FFFFFF;
+    border-radius: 30px;
+    background: transparent;
+    color: #FFFFFF;
+    &:hover {
+      background: #FFFFFF;
+      color: #1B224C;
+    }
   }
 }
 
