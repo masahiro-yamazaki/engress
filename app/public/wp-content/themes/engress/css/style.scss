@@ -3,16 +3,21 @@
 // CSSのファイルを分割
 // https://webdrawer.net/css/filesplit.html
 
+// margin-top / margin-leftをベースにする
+// https://qiita.com/yama-t/items/da7740769cfc0f8446a0
+
 // 全要素に共通するCSSを指定 (ベースグループ)
 // 背景色や背景画像は例外としてly_に追加してOK
 // クラス名はbl_(featureやpriceなどブロック名)_(titleやimgなどブロック内のパーツ名)という名前をつける
+// bl_要素やel_要素にレイアウトに関するスタイリングはしない (floatやwidth、margin、text-alignなど)
 
-// bl_要素やel_要素にレイアウトに関するスタイリングはしない (floatやwidth、marginなど)
-// line-heightなどを共通で指定したい
-// Sassのmixinを活用
-// できるだけPC表示をベースにする (SP/iPad表示をmax-widthで対応)
-// できるだけmargin-right / margin-bottomをベースにする
-// できるだけborder-boxをデフォルトにする
+// PCの場合のCSSをmin-widthで指定する方が良い? (モバイルファースト)
+// https://blog.tomoyukikashiro.me/post/ja/media-query-min-max/
+// https://maku77.github.io/web/mobile-first.html
+
+// TODO
+// border-boxをデフォルトにする
+// margin-top / margin-leftをベースにする
 
 /* 共通化 */
 @mixin font-size($size) {
