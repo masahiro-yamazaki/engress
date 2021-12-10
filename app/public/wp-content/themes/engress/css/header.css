@@ -1,0 +1,212 @@
+@charset "UTF-8";
+/* ヘッダー */
+.hp_noScroll {
+  overflow: hidden;
+}
+.ly_header {
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  height: 50px;
+  padding: 15px 0;
+  background-color: #FFFFFF;
+}
+.ly_header_inner {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1280px;
+  height: 50px;
+  margin: 0 auto;
+  padding: 0 10px 0 15px;
+}
+.ly_header_left {
+  display: flex;
+  padding: 11.5px 0;
+}
+.bl_headerNav {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  height: 100%;
+  margin: 0;
+  /* nav要素以下のul要素に自動でmarginが指定される */
+  padding: 0;
+  /* nav要素以下のul要素に自動でpaddingが指定される */
+}
+.bl_headerNav > * {
+  margin-left: 28px;
+}
+.bl_headerNav_link {
+  color: #1B224C;
+  font-weight: bold;
+  font-size: 16px;
+}
+.bl_headerNav_link:hover {
+  opacity: 0.7;
+}
+.ly_header_right {
+  display: flex;
+}
+.bl_headerInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: flex-end;
+}
+.bl_businessHours {
+  height: 12px;
+  margin-bottom: 10px;
+  color: #1B224C;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 12px;
+}
+.bl_tel {
+  height: 16px;
+  color: #1B224C;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 16px;
+}
+.bl_tel:hover {
+  opacity: 0.7;
+}
+.bl_headerCtaBtn_wrapper {
+  width: 137px;
+  padding-left: 10px;
+}
+.bl_drawerBtn {
+  z-index: 101;
+  width: 50px;
+  height: 50px;
+  border: #1B224C 1px solid;
+  border-radius: 50px;
+  background-color: #FFFFFF;
+}
+.bl_drawerBtn:hover {
+  box-shadow: 0 0 3px #1B224C;
+}
+.bl_drawerBtn > i {
+  display: none;
+  color: #1B224C;
+  font-size: 18px;
+}
+.bl_drawerBtn > i.is_drawerActive {
+  display: block;
+}
+.bl_drawerBg {
+  visibility: hidden;
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 30;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: #000000;
+  color: #FFFFFF;
+}
+.bl_drawerBg.is_drawerActive {
+  visibility: visible;
+  opacity: 0.8;
+  transition: 0.3s;
+}
+.bl_drawer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 40;
+  transform: translateX(280px);
+  width: 280px;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  transition: 0.3s;
+}
+.bl_drawer.is_drawerActive {
+  transform: translateX(0px);
+  transition: 0.3s;
+}
+.bl_drawerLogo {
+  display: flex;
+  align-items: center;
+  height: 80px;
+  padding-left: 20px;
+}
+.bl_drawerNav {
+  list-style-type: none;
+  margin: 0;
+  /* nav要素以下のul要素に自動でmarginが指定される */
+  padding: 0;
+  /* nav要素以下のul要素に自動でpaddingが指定される */
+}
+.bl_drawerNav_item {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  padding-left: 20px;
+  border-bottom: 1px solid #FFFFFF;
+  box-sizing: border-box;
+  background-color: #1B224C;
+}
+.bl_drawerNav_link {
+  display: inline-block;
+  width: 100px;
+  height: 30px;
+  font-size: 16px;
+  line-height: 30px;
+  color: #FFFFFF;
+}
+.bl_drawerNav_link:hover {
+  opacity: 0.7;
+}
+.bl_drawerCtaBtnGroup {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 20px;
+}
+.bl_drawerCtaBtn_wrapper {
+  display: inline-block;
+  width: 115px;
+  height: 50px;
+}
+.ly_paddingTop {
+  height: 80px;
+}
+.el_ctaBtn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border: transparent 1px solid;
+  border-radius: 5px;
+  box-sizing: border-box;
+  /* TODO: 必要に応じて共通化 */
+  font-weight: bold;
+  font-size: 14px;
+}
+.el_ctaBtn.el_ctaBtn__rounded {
+  border-radius: 31px;
+}
+.el_ctaBtn.el_ctaBtn__orange {
+  background-color: #F5A623;
+  color: #FFFFFF;
+}
+.el_ctaBtn.el_ctaBtn__orange:focus, .el_ctaBtn.el_ctaBtn__orange:hover {
+  border: currentColor 1px solid;
+  background-color: #FFFFFF;
+  color: #F5A623;
+}
+.el_ctaBtn.el_ctaBtn__navy {
+  background-color: #1B224C;
+  color: #FFFFFF;
+}
+.el_ctaBtn.el_ctaBtn__navy:focus, .el_ctaBtn.el_ctaBtn__navy:hover {
+  border: currentColor 1px solid;
+  background-color: #FFFFFF;
+  color: #1B224C;
+}
+/*# sourceMappingURL=header.css.map */
