@@ -114,6 +114,7 @@
   padding: 52px 0 93px;
 }
 .bl_strengths_ttl {
+  text-align: center;
   padding-bottom: 59px;
 }
 .bl_media {
@@ -306,6 +307,7 @@
 }
 .bl_flow_title {
   padding-bottom: 45px;
+  text-align: center;
 }
 .bl_flow_parts {
   display: flex;
