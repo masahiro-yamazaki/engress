@@ -6,8 +6,9 @@
   background-size: cover;
   text-align: center;
 }
-.ly_fv_inner {
-  padding: 7.25rem 0 5.375rem;
+.ly_fv .ly_inner {
+  padding-top: 7.25rem;
+  padding-bottom: 5.375rem;
 }
 .bl_fv_title {
   margin-bottom: 1.34375rem;
@@ -43,66 +44,63 @@
   font-size: 1rem;
 }
 /* こんなお悩みありませんか？ */
-.ly_problem {
-  min-height: 604px;
+.ly_about {
   background-color: #1B224C;
+  text-align: center;
 }
-.ly_problem_inner {
-  padding: 55px 20px 30px;
+.ly_about .ly_inner {
+  padding-top: 56px;
+  padding-bottom: 54px;
 }
-.bl_problemItems {
-  margin-top: 58px;
+.bl_about_title {
+  margin-bottom: 58px;
+}
+.bl_about_problems {
+  margin-bottom: 72.5px;
 }
 @media (min-width: 1025px) {
-  .bl_problemItems {
+  .bl_about_problems {
     display: flex;
     justify-content: center;
     gap: 0 30px;
   }
 }
-.bl_problemItem {
+.bl_about_problems .bl_about_problem {
   color: #FFFFFF;
   font-weight: bold;
   font-size: 14px;
   line-height: 39px;
-  text-align: center;
 }
-.bl_feature {
-  max-width: 900px;
+.bl_about_message {
   min-height: 248px;
-  margin: 72.5px auto 0;
   padding: 11px 16px 12px;
   background-color: #FFFFFF;
 }
-.bl_feature_inner {
+.bl_about_message .bl_about_message_innerFrame {
   min-height: 225px;
-  padding: 15px 0 0;
+  padding: 15px 20px 20px;
   border: 5px solid #1B224C;
-  box-sizing: border-box;
 }
-.bl_featureTitle {
+.bl_about_message .bl_about_message_title {
   margin-bottom: 25px;
   color: #1B224C;
   font-weight: bold;
   font-size: 24px;
   line-height: 36px;
-  text-align: center;
 }
 @media screen and (min-width: 1025px) {
-  .bl_featureTitle {
+  .bl_about_message .bl_about_message_title {
     font-size: 36px;
     line-height: 50px;
   }
 }
-.bl_featureDescription {
-  padding: 0 20px 20px;
+.bl_about_message .bl_about_message_explanation {
   color: #1B224C;
   font-size: 18px;
   line-height: 31px;
-  text-align: center;
 }
 @media screen and (max-width: 1024px) {
-  .bl_featureDescription {
+  .bl_about_message .bl_about_message_explanation {
     font-size: 14px;
     line-height: 21px;
     text-align: left;

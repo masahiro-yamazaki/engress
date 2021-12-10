@@ -2,7 +2,7 @@
 <main>
   <!-- ファーストビュー -->
   <section class='ly_fv'>
-    <div class='ly_fv_inner ly_inner'>
+    <div class='ly_inner'>
       <h1 class='bl_fv_title'>TOEFL対策はEngress</h2>
       <p class='bl_fv_subTitle'>日本人へのTOEFL指導歴豊かな講師陣の<br>コーチング型TOEFLスクール</p>
       <div class='bl_fv_document'>
@@ -14,22 +14,24 @@
     </div>
   </section>
   <!-- こんなお悩みありませんか？ -->
-  <section class='ly_problem'>
-    <div class='ly_problem_inner'>
-      <h2 class='el_title el_title__white'>TOEFL学習で<br class='md_only'>こんな悩みありませんか？</h2>
-      <div class='bl_problemItems'>
-        <p class='bl_problemItem'>勉強の習慣が<br class='lg_only'>身についていない</p>
-        <p class='bl_problemItem'>勉強しているはず<br class='lg_only'>なのに点数が伸びない</p>
-        <p class='bl_problemItem'>正しい勉強方法が<br class='lg_only'>分からない</p>
+  <section class='ly_about'>
+    <div class='ly_inner'>
+      <div class='bl_about_title'>
+        <h2 class='el_title el_title__white'>TOEFL学習で<br class='md_only'>こんな悩みありませんか？</h2>
       </div>
-      <div class='bl_feature'>
-        <div class='bl_feature_inner'>
-          <p class='bl_featureTitle'>Engressは<br><span class='hp_underline'>TOEFL対策に特化したスクール</span>です</p>
-          <p class='bl_featureDescription'>完全オーダーメイドで、１人１人の悩みに合わせた最適な指導で<br class='lg_only'>TOEFLの苦手分野を克服します。</p>
+      <div class='bl_about_problems'>
+        <p class='bl_about_problem'>勉強の習慣が<br class='lg_only'>身についていない</p>
+        <p class='bl_about_problem'>勉強しているはず<br class='lg_only'>なのに点数が伸びない</p>
+        <p class='bl_about_problem'>正しい勉強方法が<br class='lg_only'>分からない</p>
+      </div>
+      <div class='bl_about_message'>
+        <div class='bl_about_message_innerFrame'>
+          <p class='bl_about_message_title'>Engressは<br><span class='hp_underline'>TOEFL対策に特化したスクール</span>です</p>
+          <p class='bl_about_message_explanation'>完全オーダーメイドで、１人１人の悩みに合わせた最適な指導で<br class='lg_only'>TOEFLの苦手分野を克服します。</p>
         </div>
       </div>
-    </div><!-- /.ly_problem_inner -->
-  </section><!-- /.hp_problem -->
+    </div>
+  </section>
   <!-- Engress3つの強み -->
   <section class='ly_strengths'>
     <div class='ly_strengths_inner'>

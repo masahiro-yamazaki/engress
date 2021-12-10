@@ -4,10 +4,11 @@
   background-position: center;
   background-size: cover;
   text-align: center;
-}
 
-.ly_fv_inner {  
-  padding: 7.25rem 0 5.375rem; // 116px 0 86px
+  .ly_inner {
+    padding-top: 7.25rem; // 116px
+    padding-bottom: 5.375rem; // 86px
+  }
 }
 
 .bl_fv_title {
@@ -46,70 +47,68 @@
 }
 
 /* こんなお悩みありませんか？ */
-.ly_problem {
-  min-height: 604px;
+.ly_about {
   background-color: #1B224C;
+  text-align: center;
+
+  .ly_inner {
+    padding-top: 56px;
+    padding-bottom: 54px;
+  }
 }
 
-.ly_problem_inner {
-  padding: 55px 20px 30px;
+.bl_about_title {
+  margin-bottom: 58px;
 }
 
-.bl_problemItems {
-  margin-top: 58px;
+.bl_about_problems {
+  margin-bottom: 72.5px;
   @media (min-width: 1025px) {
     display: flex;
     justify-content: center;
     gap: 0 30px;
   }
-}
 
-.bl_problemItem {
-  color: #FFFFFF;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 39px;
-  text-align: center;
-}
-
-.bl_feature {
-  max-width: 900px;
-  min-height: 248px;
-  margin: 72.5px auto 0;
-  padding: 11px 16px 12px;
-  background-color: #FFFFFF;
-}
-
-.bl_feature_inner {
-  min-height: 225px;
-  padding: 15px 0 0;
-  border: 5px solid #1B224C;
-  box-sizing: border-box;
-}
-
-.bl_featureTitle {
-  margin-bottom: 25px;
-  color: #1B224C;
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 36px;
-  text-align: center;
-  @media screen and (min-width: 1025px) {
-    font-size: 36px;
-    line-height: 50px;
+  .bl_about_problem {
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 39px;
   }
 }
 
-.bl_featureDescription {
-  padding: 0 20px 20px;
-  color: #1B224C;
-  font-size: 18px;
-  line-height: 31px;
-  text-align: center;
-  @media screen and (max-width: 1024px) {
-    font-size: 14px;
-    line-height: 21px;
-    text-align: left;
+.bl_about_message {
+  min-height: 248px;
+  padding: 11px 16px 12px;
+  background-color: #FFFFFF;
+
+  .bl_about_message_innerFrame {
+    min-height: 225px;
+    padding: 15px 20px 20px;
+    border: 5px solid #1B224C;
+  }
+  
+  .bl_about_message_title {
+    margin-bottom: 25px;
+    color: #1B224C;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 36px;
+    @media screen and (min-width: 1025px) {
+      font-size: 36px;
+      line-height: 50px;
+    }
+  }
+  
+  .bl_about_message_explanation {
+    color: #1B224C;
+    font-size: 18px;
+    line-height: 31px;
+    @media screen and (max-width: 1024px) {
+      font-size: 14px;
+      line-height: 21px;
+      text-align: left;
+    }
   }
 }
 
