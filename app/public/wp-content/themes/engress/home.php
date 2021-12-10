@@ -44,9 +44,9 @@
             <img src='<?php echo get_template_directory_uri() ?>/img/feature01.png'>
           </figure>
           <div class='bl_feature_media_body'>
-            <div class='bl_feature_media_label'>特長 １</div>
-            <h3 class='bl_feature_media_title'>TOEFLに最適化された<br>無駄のないカリキュラム</h3>
-            <p class='bl_feature_media_txt'>TOEFLではビジネス英語には登場しない数多くの学術的内容が出題されます。そのため、ベースとなる知識も必要になります。Engressでは過去1000題を分析し、最適なカリキュラムを組んでいます。</p>
+            <div class='bl_feature_media_body_label'>特長 １</div>
+            <h3 class='bl_feature_media_body_title'>TOEFLに最適化された<br>無駄のないカリキュラム</h3>
+            <p class='bl_feature_media_body_text'>TOEFLではビジネス英語には登場しない数多くの学術的内容が出題されます。そのため、ベースとなる知識も必要になります。Engressでは過去1000題を分析し、最適なカリキュラムを組んでいます。</p>
           </div>
         </div>
         <div class='bl_feature_media bl_feature_media__reverse'>
@@ -54,9 +54,9 @@
             <img src='<?php echo get_template_directory_uri() ?>/img/feature02.png'>
           </figure>
           <div class='bl_feature_media_body'>
-            <div class='bl_feature_media_label'>特長 ２</div>
-            <h3 class='bl_feature_media_title'>日本人指導歴10年以上の<br>経験豊富な講師陣</h3>
-            <p class='bl_feature_media_txt'>TOEFLではビジネス英語には登場しない数多くの学術的内容が出題されます。そのため、ベースとなる知識も必要になります。Engressでは過去1000題を分析し、最適なカリキュラムを組んでいます。</p>
+            <div class='bl_feature_media_body_label'>特長 ２</div>
+            <h3 class='bl_feature_media_body_title'>日本人指導歴10年以上の<br>経験豊富な講師陣</h3>
+            <p class='bl_feature_media_body_text'>TOEFLではビジネス英語には登場しない数多くの学術的内容が出題されます。そのため、ベースとなる知識も必要になります。Engressでは過去1000題を分析し、最適なカリキュラムを組んでいます。</p>
           </div>
         </div>
         <div class='bl_feature_media'>
@@ -64,9 +64,9 @@
             <img src='<?php echo get_template_directory_uri() ?>/img/feature03.png'>
           </figure>
           <div class='bl_feature_media_body'>
-            <div class='bl_feature_media_label'>特長 ３</div>
-            <h3 class='bl_feature_media_title'>平均3ヶ月でTOEFL <br class='md_only'>iBT20点アップ</h3>
-            <p class='bl_feature_media_txt'>TOEFLではビジネス英語には登場しない数多くの学術的内容が出題されます。そのため、ベースとなる知識も必要になります。Engressでは過去1000題を分析し、最適なカリキュラムを組んでいます。</p>
+            <div class='bl_feature_media_body_label'>特長 ３</div>
+            <h3 class='bl_feature_media_body_title'>平均3ヶ月でTOEFL <br class='md_only'>iBT20点アップ</h3>
+            <p class='bl_feature_media_body_text'>TOEFLではビジネス英語には登場しない数多くの学術的内容が出題されます。そのため、ベースとなる知識も必要になります。Engressでは過去1000題を分析し、最適なカリキュラムを組んでいます。</p>
           </div>
         </div>
       </div>
