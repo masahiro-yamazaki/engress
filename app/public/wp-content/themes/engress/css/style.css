@@ -11,7 +11,7 @@ a {
 button {
   cursor: pointer;
 }
-h1, h2, h3, p {
+h1, h2, h3, p, figure {
   margin: 0;
 }
 .ly_fv *, .ly_about *, .ly_feature * {

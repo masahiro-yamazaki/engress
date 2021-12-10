@@ -132,36 +132,39 @@
 
   .bl_feature_media {
     display: flex;
-    flex-direction: column;
-    gap: 20px 0;
-    @media screen and (min-width: 1025px) {
-      flex-direction: row;
-      gap: 0 50px;
+    gap: 0 50px;
+    @media screen and (max-width: 1024px) {
+      display: block;
     }
     &.bl_feature_media__reverse {
-      @media screen and (min-width: 1025px) {
-        flex-direction: row-reverse;
-      }
+      flex-direction: row-reverse;
     }
 
     .bl_feature_media_imgWrapper {
-      width: 90%;
-      max-width: 350px;
-      margin: 0 auto;
-      @media screen and (min-width: 1025px) {
-        width: 40%;
-      }
+      flex-grow: 0;
+      flex-shrink: 1;
+      flex-basis: 40%;
+      // width: 90%;
+      // max-width: 350px;
+      // margin: 0 auto;
+      // @media screen and (min-width: 1025px) {
+      //   width: 40%;
+      // }
       img {
         width: 100%;
       }
     }
 
     .bl_feature_media_body {
-      @media screen and (max-width: 1024px) {
-        width: 90%;
-        max-width: 700px;
-        margin: 0 auto;
-      }
+      // flex: 1と指定した場合以下と同じ
+      flex-grow: 1;
+      flex-shrink: 1;
+      flex-basis: 0%;
+      // @media screen and (max-width: 1024px) {
+      //   width: 90%;
+      //   max-width: 700px;
+      //   margin: 0 auto;
+      // }
 
       .bl_feature_media_body_label {
         display: flex;
@@ -176,10 +179,11 @@
       }
 
       .bl_feature_media_body_title {
+        margin-bottom: 39px; // TODO: 修正
         color: #1B224C;
         font-weight: bold;
         font-size: 26px;
-        line-height: 39px;
+        line-height: 1.5;
       }
 
       .bl_feature_media_body_text {

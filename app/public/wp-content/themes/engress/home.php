@@ -39,7 +39,7 @@
         <h2 class='el_title el_title__navy'>TOEFL対策に特化した<br class='md_only'>Engress3つの強み</h2>
       </div>
       <div class='bl_feature_items'>
-        <div class='bl_feature_media'>
+        <div class='bl_feature_media bl_feature_media__reverse'>
           <figure class='bl_feature_media_imgWrapper'>
             <img src='<?php echo get_template_directory_uri() ?>/img/feature01.png'>
           </figure>
@@ -49,7 +49,7 @@
             <p class='bl_feature_media_body_text'>TOEFLではビジネス英語には登場しない数多くの学術的内容が出題されます。そのため、ベースとなる知識も必要になります。Engressでは過去1000題を分析し、最適なカリキュラムを組んでいます。</p>
           </div>
         </div>
-        <div class='bl_feature_media bl_feature_media__reverse'>
+        <div class='bl_feature_media'>
           <figure class='bl_feature_media_imgWrapper'>
             <img src='<?php echo get_template_directory_uri() ?>/img/feature02.png'>
           </figure>
@@ -59,7 +59,7 @@
             <p class='bl_feature_media_body_text'>TOEFLではビジネス英語には登場しない数多くの学術的内容が出題されます。そのため、ベースとなる知識も必要になります。Engressでは過去1000題を分析し、最適なカリキュラムを組んでいます。</p>
           </div>
         </div>
-        <div class='bl_feature_media'>
+        <div class='bl_feature_media bl_feature_media__reverse'>
           <figure class='bl_feature_media_imgWrapper'>
             <img src='<?php echo get_template_directory_uri() ?>/img/feature03.png'>
           </figure>
