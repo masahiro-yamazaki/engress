@@ -1,5 +1,4 @@
 @charset "UTF-8";
-/* 共通化 */
 /* ファーストビュー */
 .ly_fv {
   background-image: url('../img/first-view.png');
@@ -8,10 +7,10 @@
   text-align: center;
 }
 .ly_fv_inner {
-  padding: 116px 0 86px;
+  padding: 7.25rem 0 5.375rem;
 }
 .bl_fv_title {
-  margin-bottom: 21.5px;
+  margin-bottom: 1.34375rem;
   color: #FFFFFF;
   font-weight: bold;
   font-size: 3rem;
@@ -20,14 +19,13 @@
 }
 @media (max-width: 599px) {
   .bl_fv_title {
-    font-size: 0.15625rem;
+    font-size: 2.5rem;
   }
 }
 .bl_fv_subTitle {
-  margin-bottom: 44.5px;
+  margin-bottom: 2.78125rem;
   color: #FFFFFF;
   font-size: 1.125rem;
-  font-size: 18px;
   line-height: 1.7;
 }
 @media (max-width: 599px) {
@@ -36,7 +34,7 @@
   }
 }
 .bl_fv_document {
-  margin-bottom: 22px;
+  margin-bottom: 1.375rem;
 }
 .bl_fv_document .el_button {
   width: 260px;

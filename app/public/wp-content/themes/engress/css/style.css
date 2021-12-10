@@ -109,7 +109,7 @@ h1, h2, h3, p {
 .el_contactLink {
   color: #FFFFFF;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1;
   text-decoration: underline;
 }
