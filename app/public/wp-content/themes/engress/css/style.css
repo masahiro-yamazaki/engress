@@ -14,7 +14,7 @@ button {
 h1, h2, h3, p {
   margin: 0;
 }
-.ly_fv *, .ly_about * {
+.ly_fv *, .ly_about *, .ly_feature * {
   box-sizing: border-box;
 }
 /* 共通で使う要素 */

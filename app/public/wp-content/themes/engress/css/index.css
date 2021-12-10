@@ -107,54 +107,56 @@
   }
 }
 /* 3つの強み */
-.ly_feature_inner {
-  width: 90%;
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 52px 0 93px;
+.ly_feature .ly_inner {
+  padding-top: 52px;
+  padding-bottom: 93px;
 }
 .bl_feature_title {
+  margin-bottom: 59px;
   text-align: center;
-  padding-bottom: 59px;
 }
-.bl_feature_media {
+.bl_feature_items {
+  display: flex;
+  flex-direction: column;
+  gap: 60px 0;
+}
+.bl_feature_items .bl_feature_media {
   display: flex;
   flex-direction: column;
   gap: 20px 0;
-  padding: 0 0 60px;
 }
 @media screen and (min-width: 1025px) {
-  .bl_feature_media {
+  .bl_feature_items .bl_feature_media {
     flex-direction: row;
     gap: 0 50px;
   }
 }
 @media screen and (min-width: 1025px) {
-  .bl_feature_media.bl_feature_media__reverse {
+  .bl_feature_items .bl_feature_media.bl_feature_media__reverse {
     flex-direction: row-reverse;
   }
 }
-.bl_feature_media_imgWrapper {
+.bl_feature_items .bl_feature_media .bl_feature_media_imgWrapper {
   width: 90%;
   max-width: 350px;
   margin: 0 auto;
 }
 @media screen and (min-width: 1025px) {
-  .bl_feature_media_imgWrapper {
+  .bl_feature_items .bl_feature_media .bl_feature_media_imgWrapper {
     width: 40%;
   }
 }
-.bl_feature_media_imgWrapper img {
+.bl_feature_items .bl_feature_media .bl_feature_media_imgWrapper img {
   width: 100%;
 }
 @media screen and (max-width: 1024px) {
-  .bl_feature_media_body {
+  .bl_feature_items .bl_feature_media .bl_feature_media_body {
     width: 90%;
     max-width: 700px;
     margin: 0 auto;
   }
 }
-.bl_feature_media_label {
+.bl_feature_items .bl_feature_media .bl_feature_media_body .bl_feature_media_label {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -165,13 +167,13 @@
   color: white;
   font-size: 12px;
 }
-.bl_feature_media_ttl {
+.bl_feature_items .bl_feature_media .bl_feature_media_body .bl_feature_media_title {
   color: #1B224C;
   font-weight: bold;
   font-size: 26px;
   line-height: 39px;
 }
-.bl_feature_media_txt {
+.bl_feature_items .bl_feature_media .bl_feature_media_body .bl_feature_media_txt {
   color: #1B224C;
   font-weight: 500;
   font-size: 16px;
