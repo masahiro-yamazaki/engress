@@ -210,12 +210,14 @@
   </div>
   <!-- 資料請求 -->
   <section class='ly_document'>
-    <h2 class='bl_document_title'>まずは無料で資料請求から</h2>
-    <div class='bl_document_ctaButton_wrapper'>
-      <a class='bl_document_ctaButton'>資料請求</a>
-    </div>
-    <div class='bl_document_contactLink_wrapper'>
-      <a href='' class='bl_document_contactLink'>お問い合わせ</a>
+    <div class='ly_inner'>
+      <h2 class='bl_document_title'>まずは無料で資料請求から</h2>
+      <div class='bl_document_button'>
+        <a class='el_button el_button__orange'>資料請求</a>
+      </div>
+      <div class='bl_document_contact'>
+        <a href='' class='el_contactLink'>お問い合わせ</a>
+      </div>
     </div>
   </section>
 </main>
