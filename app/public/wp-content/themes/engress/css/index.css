@@ -284,7 +284,10 @@
 /* ご利用の流れ */
 .ly_flow .ly_inner {
   padding-top: 51px;
-  padding-bottom: 30px;
+  padding-bottom: 68px;
+}
+.bl_flow_title {
+  text-align: center;
 }
 .bl_flow_parts {
   display: flex;
@@ -292,13 +295,13 @@
   gap: 8px 0;
   margin-top: 46px;
 }
-.bl_flow_part {
+.bl_flow_parts .bl_flow_part {
   display: flex;
   width: 100%;
   min-height: 64px;
   background-color: #F8F8F8;
 }
-.bl_flow_number {
+.bl_flow_parts .bl_flow_part .bl_flow_part_number {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -309,30 +312,30 @@
   font-weight: bold;
   font-size: 16px;
 }
-.bl_flow_summary_content {
+.bl_flow_parts .bl_flow_part .bl_flow_part_info {
   display: flex;
   flex-direction: column;
   gap: 5px 0;
   padding: 10px 21px;
 }
 @media screen and (min-width: 1025px) {
-  .bl_flow_summary_content {
+  .bl_flow_parts .bl_flow_part .bl_flow_part_info {
     flex-direction: row;
   }
 }
-.bl_flow_summary {
+.bl_flow_parts .bl_flow_part .bl_flow_part_info .bl_flow_part_info_summary {
   display: flex;
   align-items: center;
   position: relative;
   width: 193.5px;
 }
-.bl_flow_summary h3 {
+.bl_flow_parts .bl_flow_part .bl_flow_part_info .bl_flow_part_info_summary h3 {
   color: #1B224C;
   font-weight: bold;
   font-size: 18px;
   line-height: 18px;
 }
-.bl_flow_summary::before {
+.bl_flow_parts .bl_flow_part .bl_flow_part_info .bl_flow_part_info_summary::before {
   position: absolute;
   top: 7.5px;
   right: 0px;
@@ -342,11 +345,11 @@
   content: '';
 }
 @media screen and (max-width: 1024px) {
-  .bl_flow_summary::before {
+  .bl_flow_parts .bl_flow_part .bl_flow_part_info .bl_flow_part_info_summary::before {
     display: none;
   }
 }
-.bl_flow_content {
+.bl_flow_parts .bl_flow_part .bl_flow_part_info .bl_flow_part_info_content {
   display: flex;
   align-items: center;
   color: #1B224C;
@@ -355,7 +358,7 @@
   line-height: 27px;
 }
 @media screen and (min-width: 1025px) {
-  .bl_flow_content {
+  .bl_flow_parts .bl_flow_part .bl_flow_part_info .bl_flow_part_info_content {
     padding-left: 53.5px;
   }
 }
