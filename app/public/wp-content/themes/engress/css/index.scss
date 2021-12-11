@@ -332,20 +332,20 @@
 
   .bl_flow_part {
     display: flex;
-    width: 100%;
-    min-height: 64px; // TODO: 削除してpaddingで高さを指定
+    min-height: 64px;
     background-color: #F8F8F8;
+    > *:first-child {
+      min-width: 64px;
+    }
 
     .bl_flow_part_number {
       display: flex;
       justify-content: center;
       align-items: center;
-      min-width: 64px;
-      min-height: 64px;
       background-color: #F5A623;
       color: #FFFFFF;
       font-weight: bold;
-      font-size: 16px;
+      font-size: 1rem; // 16px
     }
     
     .bl_flow_part_info {
@@ -355,30 +355,32 @@
       padding: 10px 21px;
       @media screen and (min-width: 1025px) {
         flex-direction: row;
+        > *:first-child {
+          position: relative;
+          width: 193.5px;
+          &::before {
+            position: absolute;
+            top: 7.5px;
+            right: 0px;
+            width: 1px;
+            height: 29px;
+            background-color: #C3C3C3;
+            content: '';
+          }
+        }
+        > *:nth-child(2) {
+          margin-left: 53.5px;
+        }
       }
 
       .bl_flow_part_info_summary {
         display: flex;
         align-items: center;
-        position: relative;
-        width: 193.5px;
         h3 {
           color: #1B224C;
           font-weight: bold;
           font-size: 18px;
           line-height: 18px;
-        }
-        &::before {
-          position: absolute;
-          top: 7.5px;
-          right: 0px;
-          width: 1px;
-          height: 29px;
-          background-color: #C3C3C3;
-          content: '';
-          @media screen and (max-width: 1024px) {
-            display: none;
-          }
         }
       }
       
@@ -389,9 +391,6 @@
         font-weight: 500;
         font-size: 16px;
         line-height: 27px;
-        @media screen and (min-width: 1025px) {
-          padding-left: 53.5px;
-        }
       }
     }
   }

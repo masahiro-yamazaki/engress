@@ -297,20 +297,20 @@
 }
 .bl_flow_parts .bl_flow_part {
   display: flex;
-  width: 100%;
   min-height: 64px;
   background-color: #F8F8F8;
+}
+.bl_flow_parts .bl_flow_part > *:first-child {
+  min-width: 64px;
 }
 .bl_flow_parts .bl_flow_part .bl_flow_part_number {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-width: 64px;
-  min-height: 64px;
   background-color: #F5A623;
   color: #FFFFFF;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 1rem;
 }
 .bl_flow_parts .bl_flow_part .bl_flow_part_info {
   display: flex;
@@ -322,32 +322,32 @@
   .bl_flow_parts .bl_flow_part .bl_flow_part_info {
     flex-direction: row;
   }
+  .bl_flow_parts .bl_flow_part .bl_flow_part_info > *:first-child {
+    position: relative;
+    width: 193.5px;
+  }
+  .bl_flow_parts .bl_flow_part .bl_flow_part_info > *:first-child::before {
+    position: absolute;
+    top: 7.5px;
+    right: 0px;
+    width: 1px;
+    height: 29px;
+    background-color: #C3C3C3;
+    content: '';
+  }
+  .bl_flow_parts .bl_flow_part .bl_flow_part_info > *:nth-child(2) {
+    margin-left: 53.5px;
+  }
 }
 .bl_flow_parts .bl_flow_part .bl_flow_part_info .bl_flow_part_info_summary {
   display: flex;
   align-items: center;
-  position: relative;
-  width: 193.5px;
 }
 .bl_flow_parts .bl_flow_part .bl_flow_part_info .bl_flow_part_info_summary h3 {
   color: #1B224C;
   font-weight: bold;
   font-size: 18px;
   line-height: 18px;
-}
-.bl_flow_parts .bl_flow_part .bl_flow_part_info .bl_flow_part_info_summary::before {
-  position: absolute;
-  top: 7.5px;
-  right: 0px;
-  width: 1px;
-  height: 29px;
-  background-color: #C3C3C3;
-  content: '';
-}
-@media screen and (max-width: 1024px) {
-  .bl_flow_parts .bl_flow_part .bl_flow_part_info .bl_flow_part_info_summary::before {
-    display: none;
-  }
 }
 .bl_flow_parts .bl_flow_part .bl_flow_part_info .bl_flow_part_info_content {
   display: flex;
@@ -356,11 +356,6 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 27px;
-}
-@media screen and (min-width: 1025px) {
-  .bl_flow_parts .bl_flow_part .bl_flow_part_info .bl_flow_part_info_content {
-    padding-left: 53.5px;
-  }
 }
 .ly_blog_news_container {
   padding: 0 20px 119px;
