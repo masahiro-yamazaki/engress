@@ -282,22 +282,15 @@
   line-height: 32px;
 }
 /* ご利用の流れ */
-.ly_flow {
-  padding: 50px 0 30px;
-}
-.ly_flow_inner {
-  width: 90%;
-  max-width: 900px;
-  margin: 0 auto;
-}
-.bl_flow_title {
-  padding-bottom: 45px;
-  text-align: center;
+.ly_flow .ly_inner {
+  padding-top: 51px;
+  padding-bottom: 30px;
 }
 .bl_flow_parts {
   display: flex;
   flex-direction: column;
   gap: 8px 0;
+  margin-top: 46px;
 }
 .bl_flow_part {
   display: flex;

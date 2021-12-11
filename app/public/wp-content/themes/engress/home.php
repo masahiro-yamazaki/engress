@@ -119,7 +119,7 @@
   </section>
   <!-- ご利用の流れ -->
   <section class='ly_flow'>
-    <div class='ly_flow_inner'>
+    <div class='ly_inner'>
       <div class='bl_flow_title'>
         <h2 class='el_title el_title__navy'>ご利用の流れ</h2>
       </div>
