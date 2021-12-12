@@ -126,30 +126,46 @@
       <div class='bl_flow_parts'>
         <div class='bl_flow_part'>
           <div class='bl_flow_part_number'>01</div>
-          <div class='bl_flow_part_info'>
-            <div class='bl_flow_part_info_summary'><h3>お問い合わせ</h3></div>
-            <div class='bl_flow_part_info_content'>まずはフォームまたはお電話からお申し込みください。</div>
+          <div class='bl_flow_part_infos'>
+            <div class='bl_flow_part_info'>
+              <h3 class='bl_flow_part_info_summary'>お問い合わせ</h3>
+            </div>
+            <div class='bl_flow_part_info'>
+              <p class='bl_flow_part_info_content'>まずはフォームまたはお電話からお申し込みください。</p>
+            </div>
           </div>
         </div>
         <div class='bl_flow_part'>
           <div class='bl_flow_part_number'>02</div>
-          <div class='bl_flow_part_info'>
-            <div class='bl_flow_part_info_summary'><h3>ヒアリング</h3></div>
-            <div class='bl_flow_part_info_content'>現在の学習状況やTOEFLスコア、目標のスコアをお聞きします。</div>
+          <div class='bl_flow_part_infos'>
+            <div class='bl_flow_part_info'>
+              <h3 class='bl_flow_part_info_summary'>ヒアリング</h3>
+            </div>
+            <div class='bl_flow_part_info'>
+              <p class='bl_flow_part_info_content'>現在の学習状況やTOEFLスコア、目標のスコアをお聞きします。</p>
+            </div>
           </div>
         </div>
         <div class='bl_flow_part'>
           <div class='bl_flow_part_number'>03</div>
-          <div class='bl_flow_part_info'>
-            <div class='bl_flow_part_info_summary'><h3>学習プランのご提供</h3></div>
-            <div class='bl_flow_part_info_content'>目標達成のために最適な学習プランをご提案致します。</div>
+          <div class='bl_flow_part_infos'>
+            <div class='bl_flow_part_info'>
+              <h3 class='bl_flow_part_info_summary'>学習プランのご提供</h3>
+            </div>
+            <div class='bl_flow_part_info'>
+              <p class='bl_flow_part_info_content'>目標達成のために最適な学習プランをご提案致します。</p>
+            </div>
           </div>
         </div>
         <div class='bl_flow_part'>
           <div class='bl_flow_part_number'>04</div>
-          <div class='bl_flow_part_info'>
-            <div class='bl_flow_part_info_summary'><h3>ご入会</h3></div>
-            <div class='bl_flow_part_info_content'>お申込み完了後、レッスンがスタートします。</div>
+          <div class='bl_flow_part_infos'>
+            <div class='bl_flow_part_info'>
+              <h3 class='bl_flow_part_info_summary'>ご入会</h3>
+            </div>
+            <div class='bl_flow_part_info'>
+              <p class='bl_flow_part_info_content'>お申込み完了後、レッスンがスタートします。</p>
+            </div>
           </div>
         </div>
       </div>
