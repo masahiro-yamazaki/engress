@@ -300,13 +300,11 @@
   min-height: 64px;
   background-color: #F8F8F8;
 }
-.bl_flow_parts .bl_flow_part > *:first-child {
-  min-width: 64px;
-}
 .bl_flow_parts .bl_flow_part .bl_flow_part_number {
   display: flex;
   justify-content: center;
   align-items: center;
+  min-width: 64px;
   background-color: #F5A623;
   color: #FFFFFF;
   font-weight: bold;
@@ -321,19 +319,19 @@
 @media screen and (min-width: 1025px) {
   .bl_flow_parts .bl_flow_part .bl_flow_part_infos {
     flex-direction: row;
+    gap: 0 53.5px;
   }
 }
 .bl_flow_parts .bl_flow_part .bl_flow_part_infos .bl_flow_part_info {
   display: flex;
   align-items: center;
-  height: 100%;
 }
 @media screen and (min-width: 1025px) {
-  .bl_flow_parts .bl_flow_part .bl_flow_part_infos .bl_flow_part_info:first-child {
+  .bl_flow_parts .bl_flow_part .bl_flow_part_infos .bl_flow_part_info:not(:last-child) {
     position: relative;
     width: 193.5px;
   }
-  .bl_flow_parts .bl_flow_part .bl_flow_part_infos .bl_flow_part_info:first-child::before {
+  .bl_flow_parts .bl_flow_part .bl_flow_part_infos .bl_flow_part_info:not(:last-child)::before {
     position: absolute;
     top: 7.5px;
     right: 0px;
@@ -341,9 +339,6 @@
     height: 29px;
     background-color: #C3C3C3;
     content: '';
-  }
-  .bl_flow_parts .bl_flow_part .bl_flow_part_infos .bl_flow_part_info:nth-child(2) {
-    margin-left: 53.5px;
   }
 }
 .bl_flow_parts .bl_flow_part .bl_flow_part_infos .bl_flow_part_info .bl_flow_part_info_summary {

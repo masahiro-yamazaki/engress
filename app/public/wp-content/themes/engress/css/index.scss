@@ -334,14 +334,12 @@
     display: flex;
     min-height: 64px;
     background-color: #F8F8F8;
-    > *:first-child {
-      min-width: 64px;
-    }
 
     .bl_flow_part_number {
       display: flex;
       justify-content: center;
       align-items: center;
+      min-width: 64px;
       background-color: #F5A623;
       color: #FFFFFF;
       font-weight: bold;
@@ -355,14 +353,14 @@
       padding: 10px 21px;
       @media screen and (min-width: 1025px) {
         flex-direction: row;
+        gap: 0 53.5px;
       }
 
       .bl_flow_part_info {
         display: flex;
         align-items: center;
-        height: 100%;
         @media screen and (min-width: 1025px) {
-          &:first-child {
+          &:not(:last-child) {
             position: relative;
             width: 193.5px;
             &::before {
@@ -374,9 +372,6 @@
               background-color: #C3C3C3;
               content: '';
             }
-          }
-          &:nth-child(2) {
-            margin-left: 53.5px;
           }
         }
 
