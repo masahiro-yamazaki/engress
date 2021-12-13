@@ -182,6 +182,14 @@
           <?php if ( have_posts() ) : ?>
             <?php while ( have_posts() ) : the_post(); ?>
               <a class='bl_blog_item' href="<?php the_permalink(); ?>">
+                <div class='bl_blog_category'>
+                <?php
+                  $category = get_the_category();
+                  if ($category[0] ) {
+                    echo $category[0] -> cat_name;
+                  }
+                ?>
+                </div>
                 <figure class='bl_blog_img'>
                   <?php
                     if (has_post_thumbnail() ) {
