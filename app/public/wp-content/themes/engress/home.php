@@ -172,10 +172,12 @@
     </div>
   </section>
   <!-- ブログ＆お知らせ -->
-  <div class='ly_blog_news_container'>
-    <div class='ly_blog_news_container_inner'>
+  <div class='ly_blog_news'>
+    <div class='ly_inner'>
       <section class='ly_blog'>
-        <h2 class='bl_blog_title'>ブログ</h2>
+        <div class='bl_blog_title'>
+          <h2 class='el_title el_title__navy'>ブログ</h2>
+        </div>
         <div class='bl_blog_items'>
           <?php if ( have_posts() ) : ?>
             <?php while ( have_posts() ) : the_post(); ?>
@@ -201,7 +203,9 @@
         </div>
       </section>
       <section class='ly_news'>
-        <h2 class='bl_news_title'>お知らせ</h2>
+        <div class='bl_news_title'>
+          <h2 class='el_title el_title__navy'>お知らせ</h2>
+        </div>
         <div class='bl_news_items'>
           <?php
             global $post;
