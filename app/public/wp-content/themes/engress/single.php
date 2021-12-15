@@ -1,11 +1,16 @@
 <?php get_header(); ?>
 <main>
-  <section style='height: 80px; background-color: green;'>
-    <h1>single.php</h1>
-  </section>
-  <section style='height: 80px; background-color: red;'>
-    <span>TODO: パンくずリスト</span>
-  </section>
+  <?php if( !(is_home() || is_front_page() )): ?>
+    <section class='ly_breadcrumb'>
+      <div class='ly_inner bl_breadcrumb'>
+        <?php
+        if ( function_exists('bcn_display') ) {
+          bcn_display();
+        }
+        ?>
+      </div>
+    </section>
+  <?php endif; ?>
 
   <!-- ブログ記事 -->
   <section>
