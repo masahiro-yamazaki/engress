@@ -15,3 +15,15 @@
     text-decoration: underline;
   }
 }
+
+.ly_content {
+  .ly_inner {
+    display: flex;
+  }
+}
+
+.ly_sidebar {
+  width: 269px;
+  min-height: 100px; // wip
+  background-color: pink; // wip
+}

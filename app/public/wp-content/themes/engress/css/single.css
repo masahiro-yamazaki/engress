@@ -14,4 +14,12 @@
   color: #1B224C;
   text-decoration: underline;
 }
+.ly_content .ly_inner {
+  display: flex;
+}
+.ly_sidebar {
+  width: 269px;
+  min-height: 100px;
+  background-color: pink;
+}
 /*# sourceMappingURL=single.css.map */
