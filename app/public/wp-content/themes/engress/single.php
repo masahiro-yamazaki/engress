@@ -13,7 +13,7 @@
 
   <div class='ly_content'>
     <div class='ly_inner'>
-      <main>
+      <main class='ly_main'>
         <!-- ブログ記事 -->
         <section>
           <div class="entry-header">
@@ -50,6 +50,33 @@
         </section>
       </main>
       <aside class='ly_sidebar lg_only'>
+        <div class='bl_sidebar_blogTitle'>関連記事</div>
+        <div class='bl_sidebar_blogItems'>
+          <a href='' class='bl_sidebar_blogItem'>
+            <figure class='bl_sidebar_blogItem_img'>
+              <img src="http://localhost:10008/wp-content/themes/engress/img/noimg.png"></img>
+            </figure>
+            <div class='bl_sidebar_blogItem_info'>
+              <h3 class='bl_sidebar_blogItem_title'>関連記事のタイトル関連記事のタイトル関連記事のタイトル</h3>
+            </div>
+          </a>
+          <a href='' class='bl_sidebar_blogItem'>
+            <figure class='bl_sidebar_blogItem_img'>
+              <img src="http://localhost:10008/wp-content/themes/engress/img/noimg.png"></img>
+            </figure>
+            <div class='bl_sidebar_blogItem_info'>
+              <h3 class='bl_sidebar_blogItem_title'>関連記事のタイトル</h3>
+            </div>
+          </a>
+          <a href='' class='bl_sidebar_blogItem'>
+            <figure class='bl_sidebar_blogItem_img'>
+              <img src="http://localhost:10008/wp-content/themes/engress/img/noimg.png"></img>
+            </figure>
+            <div class='bl_sidebar_blogItem_info'>
+              <h3 class='bl_sidebar_blogItem_title'>関連記事のタイトル</h3>
+            </div>
+          </a>
+        </div>
       </aside>
     </div>
   </div>
