@@ -10,13 +10,13 @@
           <nav>
             <ul class='bl_footerNav'>
                 <li class='bl_footerNav_item'>
-                  <a class='bl_footerNav_link' href=''>ホーム</a>
+                  <a class='bl_footerNav_link' href="<?php echo home_url(); ?>">ホーム</a>
                 </li>
                 <li class='bl_footerNav_item'>
                   <a class='bl_footerNav_link' href=''>お知らせ</a>
                 </li>
                 <li class='bl_footerNav_item'>
-                  <a class='bl_footerNav_link' href=''>ブログ</a>
+                  <a class='bl_footerNav_link' href="<?php echo home_url('/blog/'); ?>">ブログ</a>
                 </li>
                 <li class='bl_footerNav_item'>
                   <a class='bl_footerNav_link' href=''>コース・料金</a>
@@ -25,7 +25,7 @@
           </nav>
         </div>
         <div class='bl_footerMenu_info'>
-          <a class='bl_footerMenu_logo' href='#'>
+          <a class='bl_footerMenu_logo' href="<?php echo home_url(); ?>">
             <img src='<?php echo get_template_directory_uri() ?>/img/header-logo.png' alt='Engress'>
           </a>
           <a class='bl_footer_tel'>

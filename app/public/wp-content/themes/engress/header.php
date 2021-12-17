@@ -29,19 +29,19 @@
   <header class='ly_header'>
     <div class='ly_header_inner'>
       <div class='ly_header_left'>
-        <a class='el_companyLogo' href='#'>
+        <a class='el_companyLogo' href="<?php echo home_url(); ?>">
           <img src='<?php echo get_template_directory_uri() ?>/img/header-logo.png' alt='Engress'>
         </a>
         <nav class='lg_only'>
           <ul class='bl_headerNav'>
             <li class='bl_headerNav_item'>
-              <a class='bl_headerNav_link' href=''>ホーム</a>
+              <a class='bl_headerNav_link' href="<?php echo home_url(); ?>">ホーム</a>
             </li>
             <li class='bl_headerNav_item'>
               <a class='bl_headerNav_link' href=''>お知らせ</a>
             </li>
             <li class='bl_headerNav_item'>
-              <a class='bl_headerNav_link' href=''>ブログ</a>
+              <a class='bl_headerNav_link' href="<?php echo home_url('/blog/'); ?>">ブログ</a>
             </li>
             <li class='bl_headerNav_item'>
               <a class='bl_headerNav_link' href=''>コース・料金</a>
@@ -78,13 +78,13 @@
           <nav>
             <ul class='bl_drawerNav'>
               <li class='bl_drawerNav_item'>
-                <a class='bl_drawerNav_link' href=''>ホーム</a>
+                <a class='bl_drawerNav_link' href="<?php echo home_url(); ?>">ホーム</a>
               </li>
               <li class='bl_drawerNav_item'>
                 <a class='bl_drawerNav_link' href=''>お知らせ</a>
               </li>
               <li class='bl_drawerNav_item'>
-                <a class='bl_drawerNav_link' href=''>ブログ</a>
+                <a class='bl_drawerNav_link' href="<?php echo home_url('/blog/'); ?>">ブログ</a>
               </li>
               <li class='bl_drawerNav_item'>
                 <a class='bl_drawerNav_link' href=''>コース・料金</a>
