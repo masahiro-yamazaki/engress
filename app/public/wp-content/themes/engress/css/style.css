@@ -11,8 +11,9 @@ a {
 button {
   cursor: pointer;
 }
-h1, h2, h3, p, figure {
+h1, h2, h3, p, figure, ul {
   margin: 0;
+  padding: 0;
 }
 .ly_fv *, .ly_about *, .ly_feature *, .ly_flow *, .ly_blog_news *, .ly_breadcrumb * {
   box-sizing: border-box;

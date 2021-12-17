@@ -49,35 +49,56 @@
           <span>TODO: おすすめ記事</span>
         </section>
       </main>
-      <aside class='ly_sidebar lg_only'>
-        <div class='bl_sidebar_blogTitle'>関連記事</div>
-        <div class='bl_sidebar_blogItems'>
-          <a href='' class='bl_sidebar_blogItem'>
-            <figure class='bl_sidebar_blogItem_img'>
-              <img src="http://localhost:10008/wp-content/themes/engress/img/noimg.png"></img>
-            </figure>
-            <div class='bl_sidebar_blogItem_info'>
-              <h3 class='bl_sidebar_blogItem_title'>関連記事のタイトル関連記事のタイトル関連記事のタイトル</h3>
-            </div>
-          </a>
-          <a href='' class='bl_sidebar_blogItem'>
-            <figure class='bl_sidebar_blogItem_img'>
-              <img src="http://localhost:10008/wp-content/themes/engress/img/noimg.png"></img>
-            </figure>
-            <div class='bl_sidebar_blogItem_info'>
-              <h3 class='bl_sidebar_blogItem_title'>関連記事のタイトル</h3>
-            </div>
-          </a>
-          <a href='' class='bl_sidebar_blogItem'>
-            <figure class='bl_sidebar_blogItem_img'>
-              <img src="http://localhost:10008/wp-content/themes/engress/img/noimg.png"></img>
-            </figure>
-            <div class='bl_sidebar_blogItem_info'>
-              <h3 class='bl_sidebar_blogItem_title'>関連記事のタイトル</h3>
-            </div>
-          </a>
-        </div>
-      </aside>
+      <div class='ly_sidebar lg_only'>
+        <aside class='ly_sidebar_blog'>
+          <div class='bl_sidebar_title'>
+            <h2 class='bl_sidebar_title_text'>関連記事</h2>
+          </div>
+          <div class='bl_sidebar_blogItems'>
+            <a href='' class='bl_sidebar_blogItem'>
+              <figure class='bl_sidebar_blogItem_img'>
+                <img src="http://localhost:10008/wp-content/themes/engress/img/noimg.png"></img>
+              </figure>
+              <div class='bl_sidebar_blogItem_info'>
+                <h3 class='bl_sidebar_blogItem_title'>関連記事のタイトル関連記事のタイトル関連記事のタイトル</h3>
+              </div>
+            </a>
+            <a href='' class='bl_sidebar_blogItem'>
+              <figure class='bl_sidebar_blogItem_img'>
+                <img src="http://localhost:10008/wp-content/themes/engress/img/noimg.png"></img>
+              </figure>
+              <div class='bl_sidebar_blogItem_info'>
+                <h3 class='bl_sidebar_blogItem_title'>関連記事のタイトル</h3>
+              </div>
+            </a>
+            <a href='' class='bl_sidebar_blogItem'>
+              <figure class='bl_sidebar_blogItem_img'>
+                <img src="http://localhost:10008/wp-content/themes/engress/img/noimg.png"></img>
+              </figure>
+              <div class='bl_sidebar_blogItem_info'>
+                <h3 class='bl_sidebar_blogItem_title'>関連記事のタイトル</h3>
+              </div>
+            </a>
+          </div>
+          
+        </aside>
+        <aside class='ly_sidebar_category'>
+          <div class='bl_sidebar_title'>
+            <h2 class='bl_sidebar_title_text'>カテゴリー</h2>
+          </div>
+          <ul class='bl_sidebar_category_listItems'>
+            <li class='bl_sidebar_category_listItem'>
+              <a href='' class='bl_sidebar_category_link'>カテゴリー1</a>
+            </li>
+            <li class='bl_sidebar_category_listItem'>
+              <a href='' class='bl_sidebar_category_link'>カテゴリー2</a>
+            </li>
+            <li class='bl_sidebar_category_listItem'>
+              <a href='' class='bl_sidebar_category_link'>カテゴリー3</a>
+            </li>
+          </ul>
+        </aside>
+      </div>
     </div>
   </div>
 

@@ -32,7 +32,7 @@
   width: 268px;
 }
 
-.bl_sidebar_blogTitle {
+.bl_sidebar_title {
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -41,10 +41,13 @@
   box-sizing: border-box; // TODO: 全体で対応後に削除
   background-color: #1B224C;
   border: 1px solid #707070;
-  color: #FFFFFF;
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 40px;
+
+  .bl_sidebar_title_text {
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 2;
+  }
 }
 
 .bl_sidebar_blogItems {
@@ -76,8 +79,40 @@
   color: #1B224C;
   font-weight: 500;
   font-size: 12px;
-  line-height: 24px;
+  line-height: 2;
   text-decoration: underline;
+}
+
+.ly_sidebar_category {
+  margin-top: 48px;
+}
+
+.bl_sidebar_category_listItems {
+  margin-top: 30px;
+}
+
+.bl_sidebar_category_listItem {
+  list-style-type: none;
+}
+
+.bl_sidebar_category_listItem + .bl_sidebar_category_listItem {
+  margin-top: 16px;
+}
+
+.bl_sidebar_category_link {
+  color: #1B224C;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1;
+
+  &::before {
+    color: #1B224C;
+    content: '・';
+  }
+
+  &:hover {
+    opacity: .7;
+  }
 }
 
 // TODO: 削除
