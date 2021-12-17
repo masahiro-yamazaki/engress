@@ -87,15 +87,18 @@
             <h2 class='bl_sidebar_title_text'>カテゴリー</h2>
           </div>
           <ul class='bl_sidebar_category_listItems'>
+          <?php
+            $categories = get_categories();
+            foreach ($categories as $category) {
+              $category_link = get_category_link($category->term_id);
+              $category_name = $category->name;
+          ?>
             <li class='bl_sidebar_category_listItem'>
-              <a href='' class='bl_sidebar_category_link'>カテゴリー1</a>
+              <a href='<?php echo $category_link ?>' class='bl_sidebar_category_link'><?php echo $category_name ?></a>
             </li>
-            <li class='bl_sidebar_category_listItem'>
-              <a href='' class='bl_sidebar_category_link'>カテゴリー2</a>
-            </li>
-            <li class='bl_sidebar_category_listItem'>
-              <a href='' class='bl_sidebar_category_link'>カテゴリー3</a>
-            </li>
+          <?php
+            }
+          ?>
           </ul>
         </aside>
       </div>
