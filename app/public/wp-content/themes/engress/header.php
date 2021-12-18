@@ -41,7 +41,7 @@
               <a class='bl_headerNav_link' href=''>お知らせ</a>
             </li>
             <li class='bl_headerNav_item'>
-              <a class='bl_headerNav_link' href="<?php echo home_url('/blog/'); ?>">ブログ</a>
+              <a class='bl_headerNav_link' href="<?php echo home_url('/blogs/'); ?>">ブログ</a>
             </li>
             <li class='bl_headerNav_item'>
               <a class='bl_headerNav_link' href=''>コース・料金</a>
@@ -84,7 +84,7 @@
                 <a class='bl_drawerNav_link' href=''>お知らせ</a>
               </li>
               <li class='bl_drawerNav_item'>
-                <a class='bl_drawerNav_link' href="<?php echo home_url('/blog/'); ?>">ブログ</a>
+                <a class='bl_drawerNav_link' href="<?php echo home_url('/blogs/'); ?>">ブログ</a>
               </li>
               <li class='bl_drawerNav_item'>
                 <a class='bl_drawerNav_link' href=''>コース・料金</a>

@@ -16,7 +16,7 @@
                   <a class='bl_footerNav_link' href=''>お知らせ</a>
                 </li>
                 <li class='bl_footerNav_item'>
-                  <a class='bl_footerNav_link' href="<?php echo home_url('/blog/'); ?>">ブログ</a>
+                  <a class='bl_footerNav_link' href="<?php echo home_url('/blogs/'); ?>">ブログ</a>
                 </li>
                 <li class='bl_footerNav_item'>
                   <a class='bl_footerNav_link' href=''>コース・料金</a>

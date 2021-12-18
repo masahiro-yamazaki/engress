@@ -32,12 +32,15 @@ function my_script_init()
   wp_enqueue_style('my', get_template_directory_uri() . '/css/style.css', array(), '1.0.0', 'all');
   wp_enqueue_style('header', get_template_directory_uri() . '/css/header.css', array(), '1.0.0', 'all');
   wp_enqueue_style('single', get_template_directory_uri() . '/css/single.css', array(), '1.0.0', 'all');
-  wp_enqueue_style('blogs', get_template_directory_uri() . '/css/blogs.css', array(), '1.0.0', 'all');
   wp_enqueue_style('footer', get_template_directory_uri() . '/css/footer.css', array(), '1.0.0', 'all');
   wp_enqueue_script('my', get_template_directory_uri() . '/js/script.js', array( 'jquery' ), '1.0.0', true);
-  // トップページ用のCSS
+  // トップページ
   if (is_front_page()) {
     wp_enqueue_style('front-page', get_template_directory_uri() . '/css/front-page.css', array(), '1.0.0', 'all');
+  }
+  // ブログ一覧ページ
+  if (is_page('blogs')) {
+    wp_enqueue_style('blogs', get_template_directory_uri() . '/css/blogs.css', array(), '1.0.0', 'all');
   }
 }
 add_action('wp_enqueue_scripts', 'my_script_init');
