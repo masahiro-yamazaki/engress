@@ -44,11 +44,9 @@ h1, h2, h3, p, figure, ul {
   padding: 0;
 }
 
-// TODO: 全要素で対応後に削除予定
-.ly_fv, .ly_about, .ly_feature, .ly_flow, .ly_blog_news, .ly_breadcrumb {
-  * {
-    box-sizing: border-box;
-  }
+// TODO: box-sizing: content-box;とすべき箇所を個別に指定
+* {
+  box-sizing: border-box;
 }
 
 /* 共通で使う要素 */
@@ -147,4 +145,11 @@ h1, h2, h3, p, figure, ul {
 
 .hp_underline {
   background: linear-gradient(transparent 70%, #F5A623 70%);
+}
+
+.el_fvTitle {
+  color: #FFFFFF;
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 1.5;
 }

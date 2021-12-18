@@ -150,6 +150,7 @@
   width: 159px;
   height: 31px;
   padding: 14px 19px 13px;
+  box-sizing: content-box; // TODO: border-boxに修正
   background-color: #FFFFFF;
   @media screen and (max-width: 1024px) {
     width: 80px;
