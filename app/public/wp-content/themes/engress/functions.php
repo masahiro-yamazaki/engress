@@ -38,6 +38,10 @@ function my_script_init()
   if (is_front_page()) {
     wp_enqueue_style('front-page', get_template_directory_uri() . '/css/front-page.css', array(), '1.0.0', 'all');
   }
+  // コース・料金ページ
+  if (is_page('price')) {
+    wp_enqueue_style('price', get_template_directory_uri() . '/css/price.css', array(), '1.0.0', 'all');
+  }
   // ブログ一覧ページ
   if (is_page('blogs')) {
     wp_enqueue_style('blogs', get_template_directory_uri() . '/css/blogs.css', array(), '1.0.0', 'all');
