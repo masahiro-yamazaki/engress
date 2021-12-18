@@ -19,8 +19,12 @@
   gap: 0 48px;
   height: 148px;
 }
+.bl_newBlog_item:hover {
+  opacity: 0.7;
+}
 .bl_newBlog_item_img {
-  width: 240px;
+  min-width: 240px;
+  max-width: 240px;
 }
 .bl_newBlog_item_img img {
   width: 100%;
@@ -33,7 +37,7 @@
   line-height: 1;
 }
 .bl_newBlog_item_info_title {
-  margin-top: 20px;
+  margin-top: 12px;
   color: #1B224C;
   font-weight: bold;
   font-size: 28px;
@@ -41,7 +45,7 @@
   text-decoration: underline;
 }
 .bl_newBlog_item_info_text {
-  margin-top: 20px;
+  margin-top: 8px;
   color: #1B224C;
   font-weight: 500;
   font-size: 1rem;

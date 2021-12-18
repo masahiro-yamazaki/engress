@@ -4,7 +4,7 @@
   <!-- TODO: 画像を修正 -->
   <section class='ly_fv'>
     <div class='ly_inner'>
-      <h1 class='bl_fv_title'>ブログ</h2>
+      <h1 class='bl_fv_title'>ブログ</h1>
     </div>
   </section>
   <?php if( !(is_home() || is_front_page() )): ?>
@@ -20,19 +20,56 @@
   <?php endif; ?>
   <section class='ly_newBlog'>
     <div class='ly_inner'>
-      <h1 class='bl_newBlog_title'>新着一覧</h2>
+      <h2 class='bl_newBlog_title'>新着一覧</h2>
       <div class='bl_newBlog_items'>
-        <a href='' class='bl_newBlog_item'>
-          <figure class='bl_newBlog_item_img'>
-            <img src="http://localhost:10008/wp-content/themes/engress/img/noimg.png"></img>
-          </figure>
-          <div class='bl_newBlog_item_info'>
-            <time class='bl_newBlog_item_info_time'>2021-12-12</time>
-            <h3 class='bl_newBlog_item_info_title'>タイトル</h3>
-            <p class='bl_newBlog_item_info_text'>テキストテキストテキスト</p>
-          </div>
-        </a>
+        <!-- https://since-inc.jp/blog/3460 -->
+        <?php
+          // 一覧ページでは get_query_var('paged') でページ番号を取得
+          $paged = (int) get_query_var('paged');
+          $args = array(
+            // TODO: 1ページ10投稿に設定
+            'posts_per_page' => 2,
+            'paged' => $paged,
+            'orderby' => 'post_date',
+            'order' => 'DESC',
+            'post_type' => 'post',
+            'post_status' => 'publish'
+          );
+          $the_query = new WP_Query($args);
+          if ( $the_query->have_posts() ) :
+          while ( $the_query->have_posts() ) : $the_query->the_post();
+        ?>
+          <a href="<?php the_permalink(); ?>" class='bl_newBlog_item'>
+            <figure class='bl_newBlog_item_img'>
+              <?php
+                if (has_post_thumbnail() ) {
+                  the_post_thumbnail('thumbnail');
+                } else {
+                  echo '<img src="' . esc_url(get_template_directory_uri()) . '/img/noimg.png" alt="">';
+                }
+              ?>
+            </figure>
+            <div class='bl_newBlog_item_info'>
+              <time class='bl_newBlog_item_info_time'><?php the_date('Y-m-d'); ?></time>
+              <?php
+                $blog_title = get_the_title();
+                $blog_trim_title = wp_trim_words($blog_title, 30, '...')
+              ?>
+              <h3 class='bl_newBlog_item_info_title'><?php echo $blog_trim_title; ?></h3>
+              <?php
+                $content = get_the_content();
+                // FIXME: h3タグが含まれる
+                $content = wp_strip_all_tags($content);
+                $content = strip_shortcodes($content);
+                $content = wp_trim_words($content, 50, '...')
+              ?>
+              <p class='bl_newBlog_item_info_text'><?php echo $content; ?></p>
+            </div>
+          </a>
+        <?php endwhile; endif; ?>
       </div>
+      <!-- ページネーション -->
+      <!-- ページネーション -->
     </div>
   </section>
   <!-- 資料請求 -->
