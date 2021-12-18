@@ -38,7 +38,7 @@
               <a class='bl_headerNav_link' href="<?php echo home_url(); ?>">ホーム</a>
             </li>
             <li class='bl_headerNav_item'>
-              <a class='bl_headerNav_link' href=''>お知らせ</a>
+              <a class='bl_headerNav_link' href="<?php echo home_url('/news/'); ?>">お知らせ</a>
             </li>
             <li class='bl_headerNav_item'>
               <a class='bl_headerNav_link' href="<?php echo home_url('/blogs/'); ?>">ブログ</a>
@@ -81,7 +81,7 @@
                 <a class='bl_drawerNav_link' href="<?php echo home_url(); ?>">ホーム</a>
               </li>
               <li class='bl_drawerNav_item'>
-                <a class='bl_drawerNav_link' href=''>お知らせ</a>
+                <a class='bl_drawerNav_link' href="<?php echo home_url('/news/'); ?>">お知らせ</a>
               </li>
               <li class='bl_drawerNav_item'>
                 <a class='bl_drawerNav_link' href="<?php echo home_url('/blogs/'); ?>">ブログ</a>

@@ -13,7 +13,7 @@
                   <a class='bl_footerNav_link' href="<?php echo home_url(); ?>">ホーム</a>
                 </li>
                 <li class='bl_footerNav_item'>
-                  <a class='bl_footerNav_link' href=''>お知らせ</a>
+                  <a class='bl_footerNav_link' href="<?php echo home_url('/news/'); ?>">お知らせ</a>
                 </li>
                 <li class='bl_footerNav_item'>
                   <a class='bl_footerNav_link' href="<?php echo home_url('/blogs/'); ?>">ブログ</a>
