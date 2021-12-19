@@ -55,6 +55,7 @@ function my_script_init()
   // ブログ一覧ページ
   if (is_post_type_archive()) {
     wp_enqueue_style('blogs', get_template_directory_uri() . '/css/blogs.css', array(), '1.0.0', 'all');
+    wp_enqueue_style('pagination', get_template_directory_uri() . '/css/pagination.css', array(), '1.0.0', 'all');
   }
   // お知らせ一覧ページ
   if (is_post_type_archive('news')) {
