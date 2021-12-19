@@ -68,8 +68,7 @@
           </a>
         <?php endwhile; endif; ?>
       </div>
-      <!-- ページネーション -->
-      <!-- ページネーション -->
+      <?php get_template_part('template-parts/pagination'); ?>
     </div>
   </section>
   <!-- 資料請求 -->
