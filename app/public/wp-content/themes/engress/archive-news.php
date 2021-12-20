@@ -1,10 +1,9 @@
 <?php get_header(); ?>
 <main>
   <!-- ファーストビュー -->
-  <!-- TODO: 画像を修正 -->
-  <section class='ly_fv'>
+  <section class='ly_newsFv'>
     <div class='ly_inner'>
-      <h1 class='bl_fv_title'>ブログ</h1>
+      <h1 class='el_fvTitle'>お知らせ</h1>
     </div>
   </section>
   <?php if( !(is_home() || is_front_page() )): ?>
