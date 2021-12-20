@@ -9,6 +9,8 @@
   width: 100%;
   height: 50px;
   padding: 15px 0;
+  // TODO: border-boxに修正
+  box-sizing: content-box;
   background-color: #FFFFFF;
 }
 
