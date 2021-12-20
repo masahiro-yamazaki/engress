@@ -22,22 +22,9 @@
     <div class='ly_inner'>
       <h2 class='bl_newBlog_title'>新着一覧</h2>
       <div class='bl_newBlog_items'>
-        <!-- https://since-inc.jp/blog/3460 -->
         <?php
-          // 一覧ページでは get_query_var('paged') でページ番号を取得
-          $paged = (int) get_query_var('paged');
-          $args = array(
-            // TODO: 1ページ10投稿に設定
-            'posts_per_page' => 2,
-            'paged' => $paged,
-            'orderby' => 'post_date',
-            'order' => 'DESC',
-            'post_type' => 'post',
-            'post_status' => 'publish'
-          );
-          $the_query = new WP_Query($args);
-          if ( $the_query->have_posts() ) :
-          while ( $the_query->have_posts() ) : $the_query->the_post();
+          if ( have_posts() ) :
+          while ( have_posts() ) : the_post();
         ?>
           <a href="<?php the_permalink(); ?>" class='bl_newBlog_item'>
             <figure class='bl_newBlog_item_img'>
