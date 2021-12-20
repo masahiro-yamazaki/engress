@@ -1,7 +1,6 @@
 <?php get_header(); ?>
 <main>
   <!-- ファーストビュー -->
-  <!-- TODO: 画像を修正 -->
   <section class='ly_priceFv'>
     <div class='ly_inner'>
       <h1 class='el_fvTitle'>コース・料金</h1>
