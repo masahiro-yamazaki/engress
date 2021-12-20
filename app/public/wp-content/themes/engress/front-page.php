@@ -170,6 +170,14 @@
       </div>
     </div>
   </section>
+  <!-- よくある質問 -->
+  <section class='ly_faq'>
+    <div class='ly_inner'>
+      <div class='bl_faq_title'>
+        <h2 class='el_title el_title__navy'>よくある質問</h2>
+      </div>
+    </div>
+  </section>
   <!-- ブログ＆お知らせ -->
   <div class='ly_blog_news'>
     <div class='ly_inner'>
