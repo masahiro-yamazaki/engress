@@ -176,7 +176,12 @@
       <div class='bl_faq_title'>
         <h2 class='el_title el_title__navy'>よくある質問</h2>
       </div>
-    </div>
+      <div class='bl_faq_items'>
+        <div class='bl_faq_item'>
+          <h3 class='bl_faq_question'>Engressはサラリーマンでも学習を続けられるでしょうか？</h3>
+          <p class='bl_faq_answer'>Engressは各個人に最適な学習プランをご提供しております。サラリーマンの方でも継続できます。</p>
+        </div>
+      </div>
   </section>
   <!-- ブログ＆お知らせ -->
   <div class='ly_blog_news'>
