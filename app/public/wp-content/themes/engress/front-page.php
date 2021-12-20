@@ -87,32 +87,31 @@
       <h2 class='bl_success_title'>TOEFL成功事例</h2>
       <div class='bl_success_examples'>
         <div class='bl_success_example'>
-          <h3 class='bl_success_summary'>TOEFL iBT 100点を突破してコロンビア大学大学院に進学できました！</h3>
-          <!-- <h3 class='bl_success_summary'><?php get_field('title'); ?></h3> -->
-          <div class='bl_success_picture'></div>
+          <h3 class='bl_success_summary'><?php echo post_custom('title1'); ?></h3>
+          <div class='bl_success_picture'><?php echo post_custom('image1'); ?></div>
           <div class='bl_success_profile'>
-            <div class='bl_success_status'>会社員</div>
-            <div class='bl_success_name'>T.Fujiyamaさん</div>
+            <div class='bl_success_status'><?php echo post_custom('status1'); ?></div>
+            <div class='bl_success_name'><?php echo post_custom('name1'); ?></div>
           </div>
-          <div class='bl_success_result'>3ヶ月でTOEFL80→108点</div>
+          <div class='bl_success_result'><?php echo post_custom('result1'); ?></div>
         </div>
         <div class='bl_success_example'>
-          <h3 class='bl_success_summary'>TOEFL iBT 100点を突破してコロンビア大学大学院に進学できました！</h3>
-          <div class='bl_success_picture'></div>
+          <h3 class='bl_success_summary'><?php echo post_custom('title2'); ?></h3>
+          <div class='bl_success_picture'><?php echo post_custom('image2'); ?></div>
           <div class='bl_success_profile'>
-            <div class='bl_success_status'>会社員</div>
-            <div class='bl_success_name'>T.Fujiyamaさん</div>
+            <div class='bl_success_status'><?php echo post_custom('status2'); ?></div>
+            <div class='bl_success_name'><?php echo post_custom('name2'); ?></div>
           </div>
-          <div class='bl_success_result'>3ヶ月でTOEFL80→108点</div>
+          <div class='bl_success_result'><?php echo post_custom('result2'); ?></div>
         </div>
         <div class='bl_success_example'>
-          <h3 class='bl_success_summary'>TOEFL iBT 100点を突破してコロンビア大学大学院に進学できました！</h3>
-          <div class='bl_success_picture'></div>
+          <h3 class='bl_success_summary'><?php echo post_custom('title3'); ?></h3>
+          <div class='bl_success_picture'><?php echo post_custom('image3'); ?></div>
           <div class='bl_success_profile'>
-            <div class='bl_success_status'>会社員</div>
-            <div class='bl_success_name'>T.Fujiyamaさん</div>
+            <div class='bl_success_status'><?php echo post_custom('status3'); ?></div>
+            <div class='bl_success_name'><?php echo post_custom('name3'); ?></div>
           </div>
-          <div class='bl_success_result'>3ヶ月でTOEFL80→108点</div>
+          <div class='bl_success_result'><?php echo post_custom('result3'); ?></div>
         </div>
       </div>
     </div>
