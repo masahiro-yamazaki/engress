@@ -178,8 +178,17 @@
           <h2 class='el_title el_title__navy'>ブログ</h2>
         </div>
         <div class='bl_blog_items'>
-          <?php if ( have_posts() ) : ?>
-            <?php while ( have_posts() ) : the_post(); ?>
+          <?php
+            global $post;
+            $args = array(
+              'posts_per_page' => 3,
+              'post_type'=> 'post', // default
+              'orderby' => 'date', // default
+              'order' => 'DESC' // default
+            );
+            $myposts = get_posts($args);
+            foreach ($myposts as $post) : setup_postdata($post);
+          ?>
               <a class='bl_blog_item' href="<?php the_permalink(); ?>">
                 <div class='bl_blog_category'>
                 <?php
@@ -205,8 +214,10 @@
                   <time class='bl_blog_info_time'><?php the_date('Y-m-d'); ?></time>
                 </div>
               </a>
-            <?php endwhile; ?>
-          <?php endif; ?>
+          <?php
+            endforeach;
+            wp_reset_postdata();
+          ?>
         </div>
       </section>
       <section class='ly_news'>
@@ -218,7 +229,9 @@
             global $post;
             $args = array(
               'posts_per_page' => 3,
-              'post_type'=> 'news'
+              'post_type'=> 'news',
+              'orderby' => 'date', // default
+              'order' => 'DESC' // default
             );
             $myposts = get_posts($args);
             foreach ($myposts as $post) : setup_postdata($post);
