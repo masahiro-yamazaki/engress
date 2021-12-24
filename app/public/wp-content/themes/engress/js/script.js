@@ -27,3 +27,9 @@ jQuery('.js_drawerBg').click(function () {
   jQuery('.js_drawer').attr('aria-hidden', 'true');
   jQuery('.js_drawerBg').attr('aria-hidden', 'true');
 });
+
+// アコーディオン
+jQuery('.js_faq_question').click(function() {
+  jQuery(this).toggleClass('is_open');
+  jQuery(this).next().slideToggle(200); // 0.2秒
+});

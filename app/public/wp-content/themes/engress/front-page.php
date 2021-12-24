@@ -178,19 +178,19 @@
       </div>
       <div class='bl_faq_items'>
         <div class='bl_faq_item'>
-          <h3 class='bl_faq_question'>Engressはサラリーマンでも学習を続けられるでしょうか？</h3>
+          <h3 class='bl_faq_question js_faq_question'>Engressはサラリーマンでも学習を続けられるでしょうか？</h3>
           <p class='bl_faq_answer'>Engressは各個人に最適な学習プランをご提供しております。サラリーマンの方でも継続できます。</p>
         </div>
         <div class='bl_faq_item'>
-          <h3 class='bl_faq_question'>教材はオリジナルのものを使用しているのでしょうか？</h3>
+          <h3 class='bl_faq_question js_faq_question'>教材はオリジナルのものを使用しているのでしょうか？</h3>
           <p class='bl_faq_answer'>Engressの教材は完全オリジナルです。専門家が1から作成しています。</p>
         </div>
         <div class='bl_faq_item'>
-          <h3 class='bl_faq_question'>講師に日本人はいますか？</h3>
+          <h3 class='bl_faq_question js_faq_question'>講師に日本人はいますか？</h3>
           <p class='bl_faq_answer'>Engressには日本人の講師が100名在籍しています。</p>
         </div>
         <div class='bl_faq_item'>
-          <h3 class='bl_faq_question'>TOEFL以外の海外大学合格のサポートもしてもらえるのでしょうか？</h3>
+          <h3 class='bl_faq_question js_faq_question'>TOEFL以外の海外大学合格のサポートもしてもらえるのでしょうか？</h3>
           <p class='bl_faq_answer'>各個人ごとにプランを考えておりまして、TOEFL以外の海外大学合格のサポートももちろんしております。</p>
         </div>
       </div>
