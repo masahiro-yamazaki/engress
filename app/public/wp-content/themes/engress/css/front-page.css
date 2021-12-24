@@ -372,15 +372,6 @@
 .bl_faq_question {
   position: relative;
   padding: 24px 56px 16px 0;
-}
-.bl_faq_question_icon {
-  position: absolute;
-  top: 50%;
-  right: 20px;
-  transform: translateY(-50%);
-  font-size: 24px;
-}
-.bl_faq_question_text {
   color: #1B224C;
   font-weight: 500;
   font-size: 16px;
@@ -389,8 +380,6 @@
 .bl_faq_answer {
   padding: 16px 24px;
   background-color: #F8F8F8;
-}
-.bl_faq_answer_text {
   color: #1B224C;
   font-weight: 500;
   font-size: 16px;

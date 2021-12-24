@@ -178,40 +178,20 @@
       </div>
       <div class='bl_faq_items'>
         <div class='bl_faq_item'>
-          <div class='bl_faq_question'>
-            <h3 class='bl_faq_question_text'>Engressはサラリーマンでも学習を続けられるでしょうか？</h3>
-            <i class='fa fa-plus bl_faq_question_icon'></i>
-          </div>
-          <div class='bl_faq_answer'>
-            <p class='bl_faq_answer_text'>Engressは各個人に最適な学習プランをご提供しております。サラリーマンの方でも継続できます。</p>
-          </div>
+          <h3 class='bl_faq_question'>Engressはサラリーマンでも学習を続けられるでしょうか？</h3>
+          <p class='bl_faq_answer'>Engressは各個人に最適な学習プランをご提供しております。サラリーマンの方でも継続できます。</p>
         </div>
         <div class='bl_faq_item'>
-          <div class='bl_faq_question'>
-            <h3 class='bl_faq_question_text'>教材はオリジナルのものを使用しているのでしょうか？</h3>
-            <i class='fa fa-plus bl_faq_question_icon'></i>
-          </div>
-          <div class='bl_faq_answer'>
-            <p class='bl_faq_answer_text'>Engressの教材は完全オリジナルです。専門家が1から作成しています。</p>
-          </div>
+          <h3 class='bl_faq_question'>教材はオリジナルのものを使用しているのでしょうか？</h3>
+          <p class='bl_faq_answer'>Engressの教材は完全オリジナルです。専門家が1から作成しています。</p>
         </div>
         <div class='bl_faq_item'>
-          <div class='bl_faq_question'>
-            <h3 class='bl_faq_question_text'>講師に日本人はいますか？</h3>
-            <i class='fa fa-plus bl_faq_question_icon'></i>
-          </div>
-          <div class='bl_faq_answer'>
-            <p class='bl_faq_answer_text'>Engressには日本人の講師が100名在籍しています。</p>
-          </div>
+          <h3 class='bl_faq_question'>講師に日本人はいますか？</h3>
+          <p class='bl_faq_answer'>Engressには日本人の講師が100名在籍しています。</p>
         </div>
         <div class='bl_faq_item'>
-          <div class='bl_faq_question'>
-            <h3 class='bl_faq_question_text'>TOEFL以外の海外大学合格のサポートもしてもらえるのでしょうか？</h3>
-            <i class='fa fa-plus bl_faq_question_icon'></i>
-          </div>
-          <div class='bl_faq_answer'>
-            <p class='bl_faq_answer_text'>各個人ごとにプランを考えておりまして、TOEFL以外の海外大学合格のサポートももちろんしております。</p>
-          </div>
+          <h3 class='bl_faq_question'>TOEFL以外の海外大学合格のサポートもしてもらえるのでしょうか？</h3>
+          <p class='bl_faq_answer'>各個人ごとにプランを考えておりまして、TOEFL以外の海外大学合格のサポートももちろんしております。</p>
         </div>
       </div>
   </section>
