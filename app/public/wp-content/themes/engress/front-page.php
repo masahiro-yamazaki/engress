@@ -86,12 +86,11 @@
     <div class='ly_success_inner'>
       <h2 class='bl_success_title'>TOEFL成功事例</h2>
       <div class='bl_success_examples'>
-        <!-- タイトルは最大30文字 -->
+        <!-- タイトルは最大30文字(?) / 身分は最大5文字 / 名前は最大10文字 / 結果は最大18文字 -->
         <!-- TODO: タイトルが全て入力されている場合のみ表示対象にする -->
-        <!-- TODO: カスタムフィールドに文字数制限を追加 -->
-        <!-- TODO: 画像が未入力の場合はデフォルト画像を表示 -->
-        <!-- TODO: 名前が未入力の場合は「匿名希望」を表示 -->
-        <!-- TODO: 身分、結果が未入力の場合は欄(白色の背景色)を表示しない -->
+        <!-- TODO: 画像が未入力の場合、デフォルト画像を表示 -->
+        <!-- TODO: 名前が未入力の場合、「匿名希望」を表示 -->
+        <!-- TODO: 身分、結果が未入力の場合、白色の背景色の欄を表示しない -->
         <div class='bl_success_example'>
           <h3 class='bl_success_summary'><?php the_field('title1'); ?></h3>
           <figure class='bl_success_picture'><img src="<?php the_field('image1'); ?>"></figure>
@@ -103,7 +102,7 @@
         </div>
         <div class='bl_success_example'>
           <h3 class='bl_success_summary'><?php the_field('title2'); ?></h3>
-          <figure class='bl_success_picture'><?php the_field('image2'); ?></figure>
+          <figure class='bl_success_picture'><img src="<?php the_field('image2'); ?>"></figure>
           <div class='bl_success_profile'>
             <div class='bl_success_status'><?php the_field('status2'); ?></div>
             <div class='bl_success_name'><?php the_field('name2'); ?></div>
@@ -112,7 +111,7 @@
         </div>
         <div class='bl_success_example'>
           <h3 class='bl_success_summary'><?php the_field('title3'); ?></h3>
-          <figure class='bl_success_picture'><?php the_field('image3'); ?></figure>
+          <figure class='bl_success_picture'><img src="<?php the_field('image3'); ?>"></figure>
           <div class='bl_success_profile'>
             <div class='bl_success_status'><?php the_field('status3'); ?></div>
             <div class='bl_success_name'><?php the_field('name3'); ?></div>

@@ -244,12 +244,12 @@
   height: 56px;
   color: #FFFFFF;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.75;
 }
 .bl_success_picture {
   margin-top: 4px;
-  height: 171px;
+  height: 172px;
   background-color: #FFFFFF;
 }
 .bl_success_picture img {
@@ -266,27 +266,27 @@
 .bl_success_status {
   width: 35%;
   height: 32px;
-  padding: 0 4px;
+  padding: 0 8px;
   background-color: #FFFFFF;
   color: #1B224C;
-  font-size: 16px;
-  line-height: 32px;
+  font-size: 1rem;
+  line-height: 2;
 }
 .bl_success_name {
   width: 65%;
   height: 32px;
-  padding: 0 4px;
+  padding: 0 8px;
   background-color: #FFFFFF;
-  font-size: 16px;
-  line-height: 32px;
+  font-size: 1rem;
+  line-height: 2;
 }
 .bl_success_result {
   height: 32px;
   margin-top: 10px;
-  padding: 0 4px;
+  padding: 0 8px;
   background-color: #FFFFFF;
-  font-size: 16px;
-  line-height: 32px;
+  font-size: 1rem;
+  line-height: 2;
 }
 /* ご利用の流れ */
 .ly_flow .ly_inner {
