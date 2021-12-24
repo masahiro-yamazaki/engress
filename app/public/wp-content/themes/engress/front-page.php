@@ -86,9 +86,12 @@
     <div class='ly_success_inner'>
       <h2 class='bl_success_title'>TOEFL成功事例</h2>
       <div class='bl_success_examples'>
-        <!-- TODO: タイトル、身分、結果が全て入力されている場合のみ表示対象にする -->
+        <!-- タイトルは最大30文字 -->
+        <!-- TODO: タイトルが全て入力されている場合のみ表示対象にする -->
+        <!-- TODO: カスタムフィールドに文字数制限を追加 -->
         <!-- TODO: 画像が未入力の場合はデフォルト画像を表示 -->
         <!-- TODO: 名前が未入力の場合は「匿名希望」を表示 -->
+        <!-- TODO: 身分、結果が未入力の場合は欄(白色の背景色)を表示しない -->
         <div class='bl_success_example'>
           <h3 class='bl_success_summary'><?php the_field('title1'); ?></h3>
           <figure class='bl_success_picture'><img src="<?php the_field('image1'); ?>"></figure>

@@ -241,10 +241,11 @@
   }
 }
 .bl_success_summary {
+  height: 56px;
   color: #FFFFFF;
   font-weight: bold;
   font-size: 16px;
-  line-height: 29px;
+  line-height: 1.75;
 }
 .bl_success_picture {
   margin-top: 4px;
