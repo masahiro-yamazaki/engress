@@ -377,6 +377,31 @@
   line-height: 1.5;
   cursor: pointer;
 }
+.bl_faq_question::before {
+  position: absolute;
+  top: calc(50% - 2px);
+  right: 20px;
+  width: 24px;
+  height: 4px;
+  background-color: #1B224C;
+  content: '';
+}
+.bl_faq_question::after {
+  position: absolute;
+  top: calc(50% - 12px);
+  right: 30px;
+  width: 4px;
+  height: 24px;
+  background-color: #1B224C;
+  content: '';
+  transition: transform 0.5s;
+}
+.bl_faq_question.is_open::before {
+  opacity: 0;
+}
+.bl_faq_question.is_open::after {
+  transform: rotate(-90deg);
+}
 .bl_faq_answer {
   display: none;
   margin-bottom: 16px;

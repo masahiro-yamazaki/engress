@@ -420,6 +420,37 @@
   font-size: 16px;
   line-height: 1.5;
   cursor: pointer;
+
+  &::before {
+    position: absolute;
+    top: calc(50% - 2px);
+    right: 20px;
+    width: 24px;
+    height: 4px;
+    background-color: #1B224C;
+    content: '';
+  }
+
+  &::after {
+    position: absolute;
+    top: calc(50% - 12px);
+    right: 30px;
+    width: 4px;
+    height: 24px;
+    background-color: #1B224C;
+    content: '';
+    transition: transform 0.5s;
+  }
+
+  &.is_open {
+    &::before {
+      opacity: 0;
+    }
+
+    &::after {
+      transform: rotate(-90deg);
+    }
+  }
 }
 
 .bl_faq_answer {
