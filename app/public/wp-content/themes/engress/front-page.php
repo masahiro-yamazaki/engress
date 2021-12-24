@@ -86,9 +86,12 @@
     <div class='ly_success_inner'>
       <h2 class='bl_success_title'>TOEFL成功事例</h2>
       <div class='bl_success_examples'>
+        <!-- TODO: タイトル、身分、結果が全て入力されている場合のみ表示対象にする -->
+        <!-- TODO: 画像が未入力の場合はデフォルト画像を表示 -->
+        <!-- TODO: 名前が未入力の場合は「匿名希望」を表示 -->
         <div class='bl_success_example'>
           <h3 class='bl_success_summary'><?php the_field('title1'); ?></h3>
-          <div class='bl_success_picture'><img src="<?php the_field('image1'); ?>"></div>
+          <figure class='bl_success_picture'><img src="<?php the_field('image1'); ?>"></figure>
           <div class='bl_success_profile'>
             <div class='bl_success_status'><?php the_field('status1'); ?></div>
             <div class='bl_success_name'><?php the_field('name1'); ?></div>
@@ -97,7 +100,7 @@
         </div>
         <div class='bl_success_example'>
           <h3 class='bl_success_summary'><?php the_field('title2'); ?></h3>
-          <div class='bl_success_picture'><?php the_field('image2'); ?></div>
+          <figure class='bl_success_picture'><?php the_field('image2'); ?></figure>
           <div class='bl_success_profile'>
             <div class='bl_success_status'><?php the_field('status2'); ?></div>
             <div class='bl_success_name'><?php the_field('name2'); ?></div>
@@ -106,7 +109,7 @@
         </div>
         <div class='bl_success_example'>
           <h3 class='bl_success_summary'><?php the_field('title3'); ?></h3>
-          <div class='bl_success_picture'><?php the_field('image3'); ?></div>
+          <figure class='bl_success_picture'><?php the_field('image3'); ?></figure>
           <div class='bl_success_profile'>
             <div class='bl_success_status'><?php the_field('status3'); ?></div>
             <div class='bl_success_name'><?php the_field('name3'); ?></div>

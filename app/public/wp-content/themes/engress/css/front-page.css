@@ -241,13 +241,13 @@
   }
 }
 .bl_success_summary {
-  margin-bottom: 3.5px;
   color: #FFFFFF;
   font-weight: bold;
   font-size: 16px;
   line-height: 29px;
 }
 .bl_success_picture {
+  margin-top: 4px;
   height: 171px;
   background-color: #FFFFFF;
 }
