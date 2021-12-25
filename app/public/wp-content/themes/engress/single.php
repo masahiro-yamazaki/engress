@@ -55,32 +55,40 @@
             <h2 class='bl_sidebar_title_text'>関連記事</h2>
           </div>
           <div class='bl_sidebar_blogItems'>
-            <a href='' class='bl_sidebar_blogItem'>
-              <figure class='bl_sidebar_blogItem_img'>
-                <img src="http://localhost:10008/wp-content/themes/engress/img/noimg.png"></img>
-              </figure>
-              <div class='bl_sidebar_blogItem_info'>
-                <h3 class='bl_sidebar_blogItem_title'>関連記事のタイトル関連記事のタイトル関連記事のタイトル</h3>
-              </div>
-            </a>
-            <a href='' class='bl_sidebar_blogItem'>
-              <figure class='bl_sidebar_blogItem_img'>
-                <img src="http://localhost:10008/wp-content/themes/engress/img/noimg.png"></img>
-              </figure>
-              <div class='bl_sidebar_blogItem_info'>
-                <h3 class='bl_sidebar_blogItem_title'>関連記事のタイトル</h3>
-              </div>
-            </a>
-            <a href='' class='bl_sidebar_blogItem'>
-              <figure class='bl_sidebar_blogItem_img'>
-                <img src="http://localhost:10008/wp-content/themes/engress/img/noimg.png"></img>
-              </figure>
-              <div class='bl_sidebar_blogItem_info'>
-                <h3 class='bl_sidebar_blogItem_title'>関連記事のタイトル</h3>
-              </div>
-            </a>
+            <?php if( has_category() ) {
+              $post_cats = get_the_category();
+              $cat_ids = array();
+              //所属カテゴリーのIDリストを作っておく
+              foreach($post_cats as $cat) {
+                $cat_ids[] = $cat->term_id;
+              }
+            }
+            $myposts = get_posts( array(
+              'post_type' => 'post', // 投稿タイプ
+              'posts_per_page' => '3', // ８件を取得
+              'post__not_in' => array( $post->ID ), // 表示中の投稿を除外
+              'category__in' => $cat_ids, // この投稿と同じカテゴリーに属する投稿の中から
+              'orderby' => 'rand' // ランダムに
+            ) );
+            if( $myposts ): ?>
+              <?php foreach($myposts as $post): setup_postdata($post);?>
+              <a href='' class='bl_sidebar_blogItem'>
+                <figure class='bl_sidebar_blogItem_img'>
+                  <?php
+                    if (has_post_thumbnail() ) {
+                      the_post_thumbnail('thumbnail');
+                    } else {
+                      echo '<img src="' . esc_url(get_template_directory_uri()) . '/img/noimg.png" alt="">';
+                    }
+                  ?>
+                </figure>
+                <div class='bl_sidebar_blogItem_info'>
+                  <h3 class='bl_sidebar_blogItem_title'><?php the_title(); ?></h3>
+                </div>
+              </a>
+              <?php endforeach; wp_reset_postdata(); ?>
+            <?php endif; ?>
           </div>
-          
         </aside>
         <aside class='ly_sidebar_category'>
           <div class='bl_sidebar_title'>
