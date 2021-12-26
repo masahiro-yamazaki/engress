@@ -24,6 +24,54 @@
   }
 }
 
+.ly_recommended {
+  padding: 0 0 68px;
+}
+
+.bl_recommended_title {
+  color: #1B224C;
+  font-weight: bold;
+  font-size: 1.75rem;
+  line-height: 1.5;
+}
+
+.bl_recommended_items {
+  margin-top: 24px;
+}
+
+.bl_recommended_item {
+  display: flex;
+  gap: 0 32px;
+  height: 128px;
+}
+
+.bl_recommended_item + .bl_recommended_item {
+  margin-top: 28px;
+}
+
+.bl_recommended_item_img {
+  width: 210px;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.bl_recommended_item_time {
+  color: #1B224C;
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.bl_recommended_item_title {
+  margin-top: 24px;
+  color: #1B224C;
+  font-weight: bold;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  text-decoration: underline;
+}
+
 .ly_main {
   width: calc(100% - 298px);
 }

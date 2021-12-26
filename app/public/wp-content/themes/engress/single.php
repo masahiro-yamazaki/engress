@@ -45,10 +45,31 @@
           <?php the_content(); ?>
         </section>
 
-        <section style='height: 80px; background-color: green;'>
-          <span>TODO: おすすめ記事</span>
+        <section class='ly_recommended'>
+          <h2 class='bl_recommended_title'>おすすめの記事</h2>
+          <div class='bl_recommended_items'>
+            <a href='' class='bl_recommended_item'>
+              <figure class='bl_recommended_item_img'>
+                <img src="http://localhost:10008/wp-content/themes/engress/img/noimg.png"></img>
+              </figure>
+              <div class='bl_recommended_item_info'>
+                <time class='bl_recommended_item_time'>2021-12-01</time>
+                <h3 class='bl_recommended_item_title'>関連記事のタイトル</h3>
+              </div>
+            </a>
+            <a href='' class='bl_recommended_item'>
+              <figure class='bl_recommended_item_img'>
+                <img src="http://localhost:10008/wp-content/themes/engress/img/noimg.png"></img>
+              </figure>
+              <div class='bl_recommended_item_info'>
+                <time class='bl_recommended_item_time'>2021-12-01</time>
+                <h3 class='bl_recommended_item_title'>関連記事のタイトル</h3>
+              </div>
+            </a>
+          </div>
         </section>
       </main>
+      <!-- TODO: sidebar.phpを作成 -->
       <div class='ly_sidebar lg_only'>
         <aside class='ly_sidebar_blog'>
           <div class='bl_sidebar_title'>
