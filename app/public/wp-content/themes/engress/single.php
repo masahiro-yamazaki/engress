@@ -48,24 +48,31 @@
         <section class='ly_recommended'>
           <h2 class='bl_recommended_title'>おすすめの記事</h2>
           <div class='bl_recommended_items'>
-            <a href='' class='bl_recommended_item'>
-              <figure class='bl_recommended_item_img'>
-                <img src="http://localhost:10008/wp-content/themes/engress/img/noimg.png"></img>
-              </figure>
-              <div class='bl_recommended_item_info'>
-                <time class='bl_recommended_item_time'>2021-12-01</time>
-                <h3 class='bl_recommended_item_title'>関連記事のタイトル</h3>
-              </div>
-            </a>
-            <a href='' class='bl_recommended_item'>
-              <figure class='bl_recommended_item_img'>
-                <img src="http://localhost:10008/wp-content/themes/engress/img/noimg.png"></img>
-              </figure>
-              <div class='bl_recommended_item_info'>
-                <time class='bl_recommended_item_time'>2021-12-01</time>
-                <h3 class='bl_recommended_item_title'>関連記事のタイトル</h3>
-              </div>
-            </a>
+            <?php
+              $pickup_posts = get_posts(array(
+                'post_type' => 'post', // 投稿タイプ
+                'posts_per_page' => '3', // 3件取得
+                'tag' => 'pickup', // pickupタグがついたものを
+                'orderby' => 'DESC', // 新しい順に
+              ));
+            ?>
+            <?php foreach ( $pickup_posts as $post ) : setup_postdata( $post ); ?>
+              <a href="<?php echo esc_url( get_permalink() ); ?>" class='bl_recommended_item'>
+                <figure class='bl_recommended_item_img'>
+                  <?php
+                    if (has_post_thumbnail() ) {
+                      the_post_thumbnail('thumbnail');
+                    } else {
+                      echo '<img src="' . esc_url(get_template_directory_uri()) . '/img/noimg.png" alt="">';
+                    }
+                  ?>
+                </figure>
+                <div class='bl_recommended_item_info'>
+                  <time class='bl_recommended_item_time'><?php the_date('Y-m-d'); ?></time>
+                  <h3 class='bl_recommended_item_title'><?php echo wp_trim_words(get_the_title(), 30, '...'); ?></h3>
+                </div>
+              </a>
+            <?php endforeach; wp_reset_postdata(); ?>
           </div>
         </section>
       </main>

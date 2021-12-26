@@ -48,6 +48,8 @@
 .bl_recommended_item_img img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
+  object-position: center center;
 }
 .bl_recommended_item_time {
   color: #1B224C;
@@ -99,10 +101,10 @@
   width: 110px;
 }
 .bl_sidebar_blogItem_img img {
-  object-fit: cover;
-  object-position: center center;
   width: 100%;
   height: 100%;
+  object-fit: cover;
+  object-position: center center;
 }
 .bl_sidebar_blogItem_info {
   width: 152px;
