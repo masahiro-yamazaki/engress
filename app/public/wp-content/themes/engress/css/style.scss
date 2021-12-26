@@ -73,6 +73,25 @@ h1, h2, h3, p, figure, ul {
   }
 }
 
+.ly_breadcrumb {
+  height: 50px;
+  padding: 19px 0;
+  box-sizing: border-box; // TODO: 全体で対応後に削除
+  background-color: #F8F8F8;
+}
+
+// TODO: 共通で使っているので、名称変更を検討
+.bl_breadcrumb {
+  color: #1B224C;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 20px;
+  a {
+    color: #1B224C;
+    text-decoration: underline;
+  }
+}
+
 .el_companyLogo {
   display: inline-block;
   width: 136px; // TODO: 削除？

@@ -45,6 +45,22 @@ h1, h2, h3, p, figure, ul {
     max-width: 600px;
   }
 }
+.ly_breadcrumb {
+  height: 50px;
+  padding: 19px 0;
+  box-sizing: border-box;
+  background-color: #F8F8F8;
+}
+.bl_breadcrumb {
+  color: #1B224C;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 20px;
+}
+.bl_breadcrumb a {
+  color: #1B224C;
+  text-decoration: underline;
+}
 .el_companyLogo {
   display: inline-block;
   width: 136px;

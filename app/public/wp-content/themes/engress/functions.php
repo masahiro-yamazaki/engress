@@ -41,7 +41,6 @@ function my_script_init()
   wp_enqueue_style('fontawesome', 'https://use.fontawesome.com/releases/v5.8.2/css/all.css', array(), '5.8.2', 'all');
   wp_enqueue_style('my', get_template_directory_uri() . '/css/style.css', array(), '1.0.0', 'all');
   wp_enqueue_style('header', get_template_directory_uri() . '/css/header.css', array(), '1.0.0', 'all');
-  wp_enqueue_style('single', get_template_directory_uri() . '/css/single.css', array(), '1.0.0', 'all');
   wp_enqueue_style('footer', get_template_directory_uri() . '/css/footer.css', array(), '1.0.0', 'all');
   wp_enqueue_script('my', get_template_directory_uri() . '/js/script.js', array( 'jquery' ), '1.0.0', true);
   // トップページ
@@ -56,6 +55,14 @@ function my_script_init()
   if (is_post_type_archive()) {
     wp_enqueue_style('blogs', get_template_directory_uri() . '/css/blogs.css', array(), '1.0.0', 'all');
     wp_enqueue_style('pagination', get_template_directory_uri() . '/css/pagination.css', array(), '1.0.0', 'all');
+  }
+  // ブログ詳細ページ
+  if (is_single() && !is_singular('news')) {
+    wp_enqueue_style('single', get_template_directory_uri() . '/css/single.css', array(), '1.0.0', 'all');
+  }
+  // お知らせ詳細ページ
+  if (is_single() && is_singular('news')) {
+    wp_enqueue_style('single-news', get_template_directory_uri() . '/css/single-news.css', array(), '1.0.0', 'all');
   }
   // お知らせ一覧ページ
   if (is_post_type_archive('news')) {
