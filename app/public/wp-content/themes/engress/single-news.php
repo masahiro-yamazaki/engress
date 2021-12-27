@@ -15,7 +15,9 @@
     <div class='ly_inner'>
       <h1 class='bl_newsDetail_title'><?php the_title(); ?></h1>
       <time class='bl_newsDetail_time'><?php the_time('Y-m-d'); ?></time>
-      <?php the_content(); ?>
+      <div class='bl_newsDetail_content'>
+        <?php the_content(); ?>
+      </div>
     </div>
   </section>
 
