@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .ly_newsDetail {
   padding: 60px 0;
 }
@@ -30,6 +31,9 @@
   font-weight: bold;
   font-size: 1.5rem;
   line-height: 28px;
+}
+.bl_newsDetail_content h3 {
+  margin: 24px 0;
 }
 .bl_newsDetail_content p {
   margin: 24px 0;
@@ -69,6 +73,7 @@
   margin: 24px 0;
 }
 .bl_newsDetail_content blockquote {
+  position: relative;
   margin: 24px 0;
   padding: 28px 28px 16px 72px;
   background-color: #F8F8F8;
@@ -76,5 +81,13 @@
 .bl_newsDetail_content blockquote cite {
   display: block;
   margin-bottom: 24px;
+}
+.bl_newsDetail_content blockquote::before {
+  position: absolute;
+  top: 36px;
+  left: 20px;
+  color: #B4B4B4;
+  font-size: 92px;
+  content: '“';
 }
 /*# sourceMappingURL=single-news.css.map */
