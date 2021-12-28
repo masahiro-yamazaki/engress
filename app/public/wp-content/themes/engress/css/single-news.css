@@ -72,6 +72,10 @@
 .bl_newsDetail_content figure {
   margin: 24px 0;
 }
+.bl_newsDetail_content figure img {
+  width: auto;
+  height: auto;
+}
 .bl_newsDetail_content blockquote {
   position: relative;
   margin: 24px 0;
