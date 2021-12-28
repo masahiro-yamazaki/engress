@@ -20,6 +20,7 @@
 
 .bl_newsDetail_content {
   h1 {
+    margin: 24px 0;
     color: #1B224C;
     font-weight: bold;
     font-size: 1.75rem;
@@ -27,13 +28,21 @@
   }
 
   h2 {
+    margin: 24px 0;
+    padding-left: 10px;
+    border-left: #1B224C 4px solid;
     color: #1B224C;
     font-weight: bold;
     font-size: 1.5rem;
-    line-height: 1.5;
+    line-height: 28px;
+  }
+
+  h3 {
+    margin: 24px 0;
   }
 
   p {
+    margin: 24px 0;
     color: #1B224C;
     font-weight: 500;
     font-size: 1rem;
@@ -49,6 +58,7 @@
   }
 
   ul {
+    margin: 24px 0;
     padding-left: 44px;
     li {
       position: relative;
@@ -68,9 +78,17 @@
     }
   }
 
+  figure {
+    margin: 24px 0;
+  }
+
   blockquote {
-    margin: 0;
+    margin: 24px 0;
     padding: 28px 28px 16px 72px;
     background-color: #F8F8F8;
+    cite {
+      display: block;
+      margin-bottom: 24px;
+    }
   }
 }
