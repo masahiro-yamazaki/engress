@@ -65,7 +65,7 @@
         </section>
       </main>
       <!-- TODO: sidebar.phpを作成 -->
-      <div class='ly_sidebar lg_only'>
+      <div class='ly_sidebar'>
         <aside class='ly_sidebar_blog'>
           <div class='bl_sidebar_title'>
             <h2 class='bl_sidebar_title_text'>関連記事</h2>
