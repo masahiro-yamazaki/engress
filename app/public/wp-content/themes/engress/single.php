@@ -15,6 +15,15 @@
     <div class='ly_inner'>
       <main class='ly_main'>
         <section class='ly_blogDetail'>
+          <?php
+            $category = get_the_category();
+            if ( $category[0] ) : ?>
+            <div class='bl_blogDetail_category'>
+              <div class='el_category'>
+                <?php echo $category[0]->cat_name; ?>
+              </div>
+            </div>
+          <?php endif; ?>
           <h1 class='bl_blogDetail_title'><?php the_title(); ?></h1>
           <time class='bl_blogDetail_time'><?php the_time('Y-m-d'); ?></time>
           <div class='bl_blogDetail_content'>

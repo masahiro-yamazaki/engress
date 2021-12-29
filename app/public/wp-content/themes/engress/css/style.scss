@@ -92,6 +92,22 @@ h1, h2, h3, p, figure, ul {
   }
 }
 
+.el_category {
+  display: inline-block;
+  width: 112px;
+  height: 32px;
+  padding: 10px 8px;
+  overflow: hidden;
+  background-color: #1B224C;
+  color: #FFFFFF;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
 .el_companyLogo {
   display: inline-block;
   width: 136px; // TODO: 削除？

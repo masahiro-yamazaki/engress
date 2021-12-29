@@ -6,6 +6,9 @@
   display: flex;
   justify-content: space-between;
 }
+.bl_blogDetail_category {
+  margin-bottom: 20px;
+}
 .bl_blogDetail_title {
   color: #1B224C;
   font-weight: bold;
