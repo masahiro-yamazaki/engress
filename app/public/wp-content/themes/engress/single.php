@@ -25,7 +25,10 @@
             </div>
           <?php endif; ?>
           <h1 class='bl_blogDetail_title'><?php the_title(); ?></h1>
-          <time class='bl_blogDetail_time'><?php the_time('Y-m-d'); ?></time>
+          <div class='bl_blogDetail_snsLink_time'>
+            <?php wp_social_bookmarking_light_output_e(null, get_permalink(), the_title("", "", false)); ?>
+            <time class='bl_blogDetail_time'><?php the_time('Y-m-d'); ?></time>
+          </div>
           <div class='bl_blogDetail_content'>
             <?php the_content(); ?>
           </div>

@@ -15,13 +15,19 @@
   font-size: 1.75rem;
   line-height: 3rem;
 }
+.bl_blogDetail_snsLink_time {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.bl_blogDetail_snsLink_time .wp_social_bookmarking_light {
+  height: 20px;
+  padding: 0px !important;
+}
 .bl_blogDetail_time {
-  display: block;
-  margin-top: 36px;
   color: #1B224C;
   font-size: 1rem;
-  line-height: 1;
-  text-align: right;
+  line-height: 1.5;
 }
 .bl_blogDetail_content h1 {
   margin: 24px 0;
