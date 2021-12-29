@@ -14,37 +14,13 @@
   <div class='ly_content'>
     <div class='ly_inner'>
       <main class='ly_main'>
-        <!-- ブログ記事 -->
-        <section>
-          <div class="entry-header">
-            <?php
-              $category = get_the_category();
-              if ( $category[0] ) : ?>
-              <div class="entry-label">
-                <a href="<?php echo esc_url( get_category_link( $category[0]->term_id ) ); ?>"><?php echo $category[0]->cat_name; ?></a>
-              </div>
-            <?php endif; ?>
-            <h1 class="entry-title"><?php the_title(); ?></h1>
-
-            <div class="entry-meta">
-              <time class="entry-published" datetime="<?php the_time( 'c' ); ?>">公開日 <?php the_time( 'Y/n/j' ); ?></time>
-              <?php if ( get_the_modified_time( 'Y-m-d' ) !== get_the_time( 'Y-m-d' ) ) : ?>
-                <time class="entry-updated" datetime="<?php the_modified_time( 'c' ); ?>">最終更新日 <?php the_modified_time( 'Y/n/j' ); ?></time>
-              <?php endif; ?>
-            </div>
-
-            <div class="entry-img">
-              <?php
-                if ( has_post_thumbnail() ) {
-                  the_post_thumbnail( 'large' );
-                }
-              ?>
-            </div>
+        <section class='ly_blogDetail'>
+          <h1 class='bl_blogDetail_title'><?php the_title(); ?></h1>
+          <time class='bl_blogDetail_time'><?php the_time('Y-m-d'); ?></time>
+          <div class='bl_blogDetail_content'>
+            <?php the_content(); ?>
           </div>
-
-          <?php the_content(); ?>
         </section>
-
         <section class='ly_recommended'>
           <h2 class='bl_recommended_title'>おすすめの記事</h2>
           <div class='bl_recommended_items'>
