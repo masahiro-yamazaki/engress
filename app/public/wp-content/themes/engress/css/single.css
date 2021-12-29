@@ -23,11 +23,15 @@
 .bl_blogDetail_content h1 {
   margin: 24px 0;
   color: #1B224C;
+}
+.bl_blogDetail_content h2 {
+  margin: 24px 0;
+  color: #1B224C;
   font-weight: bold;
   font-size: 1.75rem;
   line-height: 1.5;
 }
-.bl_blogDetail_content h2 {
+.bl_blogDetail_content h3 {
   margin: 24px 0;
   padding-left: 10px;
   border-left: #1B224C 4px solid;
@@ -35,9 +39,6 @@
   font-weight: bold;
   font-size: 1.5rem;
   line-height: 28px;
-}
-.bl_blogDetail_content h3 {
-  margin: 24px 0;
 }
 .bl_blogDetail_content p {
   margin: 24px 0;
