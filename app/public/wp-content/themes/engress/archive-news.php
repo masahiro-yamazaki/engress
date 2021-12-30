@@ -44,7 +44,7 @@
               <h3 class='bl_newBlog_item_info_title'><?php echo $blog_trim_title; ?></h3>
               <?php
                 $content = get_the_content();
-                // FIXME: h3タグが含まれる
+                // h3などのタグが含まれる
                 $content = wp_strip_all_tags($content);
                 $content = strip_shortcodes($content);
                 $content = wp_trim_words($content, 50, '...')
