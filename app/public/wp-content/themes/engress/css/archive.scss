@@ -30,7 +30,7 @@
 
 .bl_newBlog_item {
   display: flex;
-  gap: 0 48px;
+  justify-content: space-between;
   height: 148px;
   &:hover {
     opacity: .7;
@@ -39,17 +39,20 @@
 
 .bl_newBlog_item_img {
   width: 30%;
-  max-width: 240px;
   img {
     width: 100%;
     height: 100%;
   }
-  @media screen and (max-width: 599px) {
-    width: 45%;
+  @media screen and (max-width: 767px) {
+    width: 42%;
   }
 }
 
 .bl_newBlog_item_info {
+  width: 65%;
+  @media screen and (max-width: 767px) {
+    width: 55%;
+  }
 }
 
 .bl_newBlog_item_info_time {
@@ -63,9 +66,12 @@
   margin-top: 12px;
   color: #1B224C;
   font-weight: bold;
-  font-size: 28px;
+  font-size: 1.75rem;
   line-height: 1.5;
   text-decoration: underline;
+  @media screen and (max-width: 767px) {
+    font-size: 1rem;
+  }
 }
 
 .bl_newBlog_item_info_text {
