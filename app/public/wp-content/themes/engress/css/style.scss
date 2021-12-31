@@ -191,6 +191,7 @@ h1, h2, h3, p, figure, ul {
 
 .el_blogCategory {
   position: absolute;
+  z-index: 1; // ブログの画像が拡大した場合でもカテゴリーが表示されるように設定
   width: 80px;
   height: 28px;
   padding: 8px 8px;
