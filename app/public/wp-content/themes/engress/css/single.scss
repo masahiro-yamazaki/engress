@@ -151,6 +151,15 @@
   justify-content: space-between;
   position: relative;
   height: 128px;
+  transition: 0.3s;
+  &:hover {
+    opacity: 0.4;
+    .bl_recommended_item_img {
+      img {
+        transform: scale(1.2);
+      }
+    }
+  }
 }
 
 .bl_recommended_item + .bl_recommended_item {
@@ -159,11 +168,13 @@
 
 .bl_recommended_item_img {
   width: 35%;
+  overflow: hidden;
   img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: center center;
+    transition: 0.3s;
   }
 }
 
