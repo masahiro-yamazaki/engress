@@ -26,6 +26,7 @@
 .bl_newBlog_item {
   display: flex;
   justify-content: space-between;
+  position: relative;
   height: 148px;
 }
 .bl_newBlog_item:hover {

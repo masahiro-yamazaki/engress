@@ -26,6 +26,14 @@
           while ( have_posts() ) : the_post();
         ?>
           <a href="<?php the_permalink(); ?>" class='bl_newBlog_item'>
+            <div class='el_blogCategory'>
+              <?php
+                $category = get_the_category();
+                if ($category[0] ) {
+                  echo $category[0] -> cat_name;
+                }
+              ?>
+            </div>
             <figure class='bl_newBlog_item_img'>
               <?php
                 if (has_post_thumbnail() ) {

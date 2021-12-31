@@ -46,6 +46,14 @@
             ?>
             <?php foreach ( $pickup_posts as $post ) : setup_postdata( $post ); ?>
               <a href="<?php echo esc_url( get_permalink() ); ?>" class='bl_recommended_item'>
+                <div class='el_blogCategory'>
+                <?php
+                  $category = get_the_category();
+                  if ($category[0] ) {
+                    echo $category[0] -> cat_name;
+                  }
+                ?>
+                </div>
                 <figure class='bl_recommended_item_img'>
                   <?php
                     if (has_post_thumbnail() ) {

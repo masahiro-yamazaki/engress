@@ -220,7 +220,7 @@
             foreach ($myposts as $post) : setup_postdata($post);
           ?>
               <a class='bl_blog_item' href="<?php the_permalink(); ?>">
-                <div class='bl_blog_category'>
+                <div class='el_blogCategory'>
                 <?php
                   $category = get_the_category();
                   if ($category[0] ) {
