@@ -19,7 +19,11 @@
   <?php endif; ?>
   <section class='ly_system'>
     <div class='ly_inner'>
-      <h2>料金体系</h2>
+      <h2 class='bl_price_title'>料金体系</h2>
+      <div class='bl_system_items'>
+        <div class='bl_system_item'>入会金 39,800円</div>
+        <div class='bl_system_item'>月額費用</div>
+      </div>
     </div>
   </section>
   <section class='ly_plan'>

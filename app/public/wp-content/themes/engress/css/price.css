@@ -6,4 +6,53 @@
   background-repeat: no-repeat;
   text-align: center;
 }
+.ly_system {
+  padding: 60px 0 90px;
+}
+.bl_price_title {
+  color: #1B224C;
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 1;
+  text-align: center;
+}
+.bl_system_items {
+  display: flex;
+  justify-content: center;
+  gap: 0 96px;
+  height: 90px;
+  margin-top: 60px;
+}
+@media screen and (max-width: 767px) {
+  .bl_system_items {
+    gap: 0 48px;
+  }
+}
+@media screen and (max-width: 499px) {
+  .bl_system_items {
+    height: 60px;
+  }
+}
+.bl_system_item {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 280px;
+  height: 100%;
+  background-color: #1B224C;
+  color: #FFFFFF;
+  font-weight: bold;
+  font-size: 1.25rem;
+  line-height: 1;
+}
+@media screen and (max-width: 767px) {
+  .bl_system_item {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 499px) {
+  .bl_system_item {
+    font-size: 0.75rem;
+  }
+}
 /*# sourceMappingURL=price.css.map */
