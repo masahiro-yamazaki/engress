@@ -29,7 +29,21 @@
   </section>
   <section class='ly_plan'>
     <div class='ly_inner'>
-      <h2>料金表</h2>
+      <h2 class='bl_price_title'>料金表</h2>
+      <div class='bl_plans'>
+        <div class='bl_plan'>
+          <h3 class='bl_plan_title'>基礎プラン</h3>
+        </div>
+        <div class='bl_plan'>
+          <h3 class='bl_plan_title'>演習プラン</h3>
+        </div>
+        <div class='bl_plan'>
+          <h3 class='bl_plan_title'>志望校対策プラン</h3>
+        </div>
+        <div class='bl_plan'>
+          <h3 class='bl_plan_title'>フレックスプラン</h3>
+        </div>
+      </div>
     </div>
   </section>
   <div class='price-test'></div>
