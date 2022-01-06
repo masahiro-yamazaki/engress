@@ -25,6 +25,7 @@
         <div class='bl_system_plus'>+</div>
         <div class='bl_system_item'>月額費用</div>
       </div>
+      <p class='bl_system_description'>Engressのカリキュラムは完全オーダーメイドのため、カリキュラム内のサポート内容によって料金が変動します。おすすめのスタンダードプランでは、進学先に合わせたサポートまで包括的に行います。</p>
     </div>
   </section>
   <section class='ly_plan'>
