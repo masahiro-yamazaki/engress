@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .ly_priceFv {
   padding: 88px 0;
   background-image: url('../img/plan.png');
@@ -78,12 +79,11 @@
 .bl_plans {
   display: flex;
   gap: 0 8px;
+  align-items: end;
   margin-top: 60px;
 }
 .bl_plan {
   width: 100%;
-  height: 474px;
-  border: 0.5px solid #1B224C;
 }
 .bl_plan_title {
   display: flex;
@@ -93,16 +93,30 @@
   background-color: #1B224C;
   color: #FFFFFF;
   font-weight: bold;
-  font-size: 1rem;
-  line-height: 1;
+  font-size: 16px;
+  line-height: 36px;
+  text-align: center;
+}
+.bl_plan_title.bl_plan_title__recommended {
+  height: 96px;
+  background-color: #F5A623;
+}
+.bl_plan_body {
+  height: 414px;
+  padding: 32px 20px 20px;
+  border-right: 0.5px solid #1B224C;
+  border-bottom: 0.5px solid #1B224C;
+  border-left: 0.5px solid #1B224C;
 }
 .bl_plan_price {
-  margin-top: 32px;
   color: #1B224C;
   font-weight: bold;
   font-size: 24px;
   line-height: 1;
   text-align: center;
+}
+.bl_plan_price.bl_plan_price__recommended {
+  color: #F5A623;
 }
 .bl_plan_remark {
   margin-top: 16px;
@@ -111,5 +125,27 @@
   font-size: 16px;
   line-height: 1;
   text-align: center;
+}
+.bl_plan_contents {
+  margin-top: 48px;
+}
+.bl_plan_content {
+  color: #1B224C;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  list-style-type: none;
+}
+.bl_plan_content.bl_plan_content__checked::before {
+  width: 10px;
+  height: 10px;
+  margin-right: 12px;
+  font-weight: 900;
+  font-family: 'Font Awesome 5 Free';
+  content: "";
+}
+.bl_plan_content + .bl_plan_content {
+  margin-top: 12px;
 }
 /*# sourceMappingURL=price.css.map */

@@ -78,15 +78,15 @@
 .bl_plans {
   display: flex;
   gap: 0 8px;
+  align-items: end;
   margin-top: 60px;
 }
 
 .bl_plan {
   width: 100%;
-  height: 474px;
-  border: 0.5px solid #1B224C;
 }
 
+// .bl_より.el_の方が適切？
 .bl_plan_title {
   display: flex;
   justify-content: center;
@@ -95,17 +95,33 @@
   background-color: #1B224C;
   color: #FFFFFF;
   font-weight: bold;
-  font-size: 1rem;
-  line-height: 1;
+  font-size: 16px;
+  line-height: 36px;
+  text-align: center;
+
+  &.bl_plan_title__recommended {
+    height: 96px;
+    background-color: #F5A623;
+  }
+}
+
+.bl_plan_body {
+  height: 414px;
+  padding: 32px 20px 20px;
+  border-right: 0.5px solid #1B224C;
+  border-bottom: 0.5px solid #1B224C;
+  border-left: 0.5px solid #1B224C;
 }
 
 .bl_plan_price {
-  margin-top: 32px;
   color: #1B224C;
   font-weight: bold;
   font-size: 24px;
   line-height: 1;
   text-align: center;
+  &.bl_plan_price__recommended {
+    color: #F5A623;
+  }
 }
 
 .bl_plan_remark {
@@ -115,4 +131,31 @@
   font-size: 16px;
   line-height: 1;
   text-align: center;
+}
+
+.bl_plan_contents {
+  margin-top: 48px;
+}
+
+.bl_plan_content {
+  color: #1B224C;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  list-style-type: none;
+  &.bl_plan_content__checked {
+    &::before {
+      width: 10px;
+      height: 10px;
+      margin-right: 12px;
+      font-weight: 900;
+      font-family: 'Font Awesome 5 Free';
+      content: "\f00c";
+    }
+  }
+}
+
+.bl_plan_content + .bl_plan_content {
+  margin-top: 12px;
 }
