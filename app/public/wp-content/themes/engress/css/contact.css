@@ -1,4 +1,9 @@
-.contact-test {
-  color: blue;
+.ly_contactFv {
+  padding: 88px 0;
+  background-image: url('../img/cta.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
 }
 /*# sourceMappingURL=contact.css.map */
