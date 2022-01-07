@@ -34,15 +34,23 @@
       <div class='bl_plans'>
         <div class='bl_plan'>
           <h3 class='bl_plan_title'>基礎プラン</h3>
+          <p class='bl_plan_price'>59,000円〜</p>
+          <p class='bl_plan_remark'>*月額（税抜価格）</p>
         </div>
         <div class='bl_plan'>
           <h3 class='bl_plan_title'>演習プラン</h3>
+          <p class='bl_plan_price'>75,000円〜</p>
+          <p class='bl_plan_remark'>*月額（税抜価格）</p>
         </div>
         <div class='bl_plan'>
           <h3 class='bl_plan_title'>志望校対策プラン</h3>
+          <p class='bl_plan_price'>95,000円〜</p>
+          <p class='bl_plan_remark'>*月額（税抜価格）</p>
         </div>
         <div class='bl_plan'>
           <h3 class='bl_plan_title'>フレックスプラン</h3>
+          <p class='bl_plan_price'>60,000円〜</p>
+          <p class='bl_plan_remark'>*月額（税抜価格）</p>
         </div>
       </div>
     </div>
