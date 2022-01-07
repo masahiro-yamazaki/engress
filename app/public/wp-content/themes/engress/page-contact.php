@@ -17,5 +17,19 @@
       </div>
     </section>
   <?php endif; ?>
+  <!-- お問い合わせ -->
+  <div class='ly_contact'>
+    <div class='ly_inner'>
+      <p class='bl_contact_description'>弊社に興味を持って頂きありがとうございます。商談やサービスのご利用、資料請求について下記のフォームよりお問い合わせください。</p>
+      <div class='bl_contact_items'>
+        <div class='bl_contact_item'>
+          <input class='bl_contact_item_text' placeholder='Engress' />
+        </div>
+        <div class='bl_contact_item'>
+          <input class='bl_contact_item_text' placeholder='田中　太郎' />
+        </div>
+      </div>
+    </div>
+  </div>
 </main>
 <?php get_footer(); ?>
