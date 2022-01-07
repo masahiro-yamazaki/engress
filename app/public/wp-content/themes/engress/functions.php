@@ -72,6 +72,10 @@ function my_script_init()
   if (is_single() && is_singular('news')) {
     wp_enqueue_style('single-news', get_template_directory_uri() . '/css/single-news.css', array(), '1.0.0', 'all');
   }
+  // お問い合わせページ
+  if (is_page('contact')) {
+    wp_enqueue_style('contact', get_template_directory_uri() . '/css/contact.css', array(), '1.0.0', 'all');
+  }
 }
 add_action('wp_enqueue_scripts', 'my_script_init');
 

@@ -61,7 +61,7 @@
           <a class='el_button el_button__orange'>資料請求</a>
         </div>
         <div class='bl_headerCtaBtn_wrapper lg_only'>
-          <a class='el_button el_button__navy'>お問い合わせ</a>
+          <a class='el_button el_button__navy' href="<?php echo home_url('/contact/'); ?>">お問い合わせ</a>
         </div>
         <button class='bl_drawerBtn md_only js_drawerBtn'
                 aria-controls='js_glabalMenu' aria-expanded='false' area-label='メニューを開閉する'>
@@ -96,7 +96,7 @@
               <a class='el_button el_button__orange'>資料請求</a>
             </div>
             <div class='bl_drawerCtaBtn_wrapper'>
-              <a class='el_button el_button__navy'>お問い合わせ</a>
+              <a class='el_button el_button__navy' href="<?php echo home_url('/contact/'); ?>">お問い合わせ</a>
             </div>
           </div>
         </div>
