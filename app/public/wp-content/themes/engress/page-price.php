@@ -31,7 +31,7 @@
   <section class='ly_plan'>
     <div class='ly_inner'>
       <h2 class='bl_price_title'>料金表</h2>
-      <div class='bl_plans_wrapper'>
+      <div class='bl_plans_wrapper js-scrollable'>
         <div class='bl_plans'>
           <div class='bl_plan'>
             <h3 class='bl_plan_title'>基礎プラン</h3>

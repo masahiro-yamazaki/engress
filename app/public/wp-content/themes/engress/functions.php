@@ -49,7 +49,10 @@ function my_script_init()
   }
   // コース・料金ページ
   if (is_page('price')) {
+    wp_enqueue_style('scroll-hint', 'https://unpkg.com/scroll-hint@latest/css/scroll-hint.css', array(), '1.0.0', 'all');
     wp_enqueue_style('price', get_template_directory_uri() . '/css/price.css', array(), '1.0.0', 'all');
+    wp_enqueue_script('scroll-hint', 'https://unpkg.com/scroll-hint@latest/js/scroll-hint.min.js', array(), '1.0.0', true);
+    wp_enqueue_script('price', get_template_directory_uri() . '/js/price.js', array( 'jquery' ), '1.0.0', true);
   }
   // ブログ一覧ページ
   if (is_post_type_archive() && !is_post_type_archive('news')) {
