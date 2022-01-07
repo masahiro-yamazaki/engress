@@ -6,10 +6,10 @@
       <h1 class='bl_fv_title'>TOEFL対策はEngress</h2>
       <p class='bl_fv_subTitle'>日本人へのTOEFL指導歴豊かな講師陣の<br>コーチング型TOEFLスクール</p>
       <div class='bl_fv_document'>
-        <a class='el_button el_button__orange'>資料請求</a>
+        <a class='el_button el_button__orange' href=''>資料請求</a>
       </div>
       <div class='bl_fv_contact'>
-        <a href='' class='el_contactLink'>お問い合わせ</a>
+        <a class='el_contactLink' href="<?php echo home_url('/contact/'); ?>">お問い合わせ</a>
       </div>
     </div>
   </section>
