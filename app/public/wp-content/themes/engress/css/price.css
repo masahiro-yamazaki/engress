@@ -76,6 +76,9 @@
 .ly_plan {
   padding: 0 0 60px;
 }
+.bl_plans_wrapper {
+  overflow-x: auto;
+}
 .bl_plans {
   display: flex;
   gap: 0 8px;
@@ -84,6 +87,11 @@
 }
 .bl_plan {
   width: 100%;
+}
+@media screen and (max-width: 767px) {
+  .bl_plan {
+    min-width: 220px;
+  }
 }
 .bl_plan_title {
   display: flex;
@@ -102,7 +110,7 @@
   background-color: #F5A623;
 }
 .bl_plan_body {
-  height: 414px;
+  min-height: 414px;
   padding: 32px 20px 20px;
   border-right: 0.5px solid #1B224C;
   border-bottom: 0.5px solid #1B224C;
