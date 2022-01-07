@@ -38,17 +38,6 @@
       <?php get_template_part('template-parts/pagination'); ?>
     </div>
   </section>
-  <!-- 資料請求 -->
-  <section class='ly_document'>
-    <div class='ly_inner'>
-      <h2 class='bl_document_title'>まずは無料で資料請求から</h2>
-      <div class='bl_document_button'>
-        <a class='el_button el_button__orange'>資料請求</a>
-      </div>
-      <div class='bl_document_contact'>
-        <a href='' class='el_contactLink'>お問い合わせ</a>
-      </div>
-    </div>
-  </section>
+  <?php get_template_part('template-parts/contact'); ?>
 </main>
 <?php get_footer(); ?>
