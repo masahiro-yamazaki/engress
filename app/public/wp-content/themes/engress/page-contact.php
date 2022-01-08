@@ -71,7 +71,7 @@
         <textarea class='el_contact_item_text el_contact_item_text__content' placeholder='入力して下さい'></textarea>
       </div>
       <div class='bl_contact_privacyPolicy'>
-        <p class='bl_contact_privacyPolicy_text'>プライバシーポリシーに同意の上、送信ください。</p>
+        <p class='bl_contact_privacyPolicy_text'><a href='' class='bl_contact_privacyPolicy_link'>プライバシーポリシー</a>に同意の上、送信ください。</p>
         <div class='bl_contact_privacyPolicy_check'>
           <label class='bl_contact_privacyPolicy_checkLabel'>
             <input type='checkbox' class='bl_contact_privacyPolicy_checkbox' />

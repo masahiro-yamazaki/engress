@@ -78,6 +78,16 @@
   margin-top: 26px;
   text-align: center;
 }
+.bl_contact_privacyPolicy_link {
+  color: #F5A623;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  text-decoration: underline;
+}
+.bl_contact_privacyPolicy_link:hover {
+  opacity: 0.7;
+}
 .bl_contact_privacyPolicy_text {
   color: #1B224C;
   font-weight: 500;
