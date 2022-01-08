@@ -87,3 +87,45 @@
 .bl_contact_content {
   margin-top: 16px;
 }
+
+.bl_contact_privacyPolicy {
+  margin-top: 26px;
+  text-align: center;
+}
+
+.bl_contact_privacyPolicy_text {
+  color: #1B224C;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.bl_contact_privacyPolicy_check {
+  margin-top: 24px;
+}
+
+.bl_contact_privacyPolicy_checkLabel {
+  display: inline-block;
+  position: relative;
+  .bl_contact_privacyPolicy_text {
+    margin-left: 36px;
+  }
+}
+
+.bl_contact_privacyPolicy_checkbox {
+  position: absolute;
+  top: 2px;
+  left: 0px;
+  width: 20px;
+  height: 20px;
+}
+
+.bl_contact_submit {
+  margin-top: 46px;
+  text-align: center;
+  .el_button {
+    width: 200px;
+    height: 50px;
+    font-size: 1rem;
+  }
+}

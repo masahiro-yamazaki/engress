@@ -70,6 +70,18 @@
         <p class='el_contact_item_name'>お問い合わせ内容</p>
         <textarea class='el_contact_item_text el_contact_item_text__content' placeholder='入力して下さい'></textarea>
       </div>
+      <div class='bl_contact_privacyPolicy'>
+        <p class='bl_contact_privacyPolicy_text'>プライバシーポリシーに同意の上、送信ください。</p>
+        <div class='bl_contact_privacyPolicy_check'>
+          <label class='bl_contact_privacyPolicy_checkLabel'>
+            <input type='checkbox' class='bl_contact_privacyPolicy_checkbox' />
+            <span class='bl_contact_privacyPolicy_text'>プライバシーポリシーに同意する</span>
+          </label>
+        </div>
+      </div>
+      <div class='bl_contact_submit'>
+        <a class='el_button el_button__navy' href=''>送信する</a>
+      </div>
     </div>
   </div>
 </main>
