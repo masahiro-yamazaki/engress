@@ -21,6 +21,10 @@
   <div class='ly_contact'>
     <div class='ly_inner'>
       <p class='bl_contact_description'>弊社に興味を持って頂きありがとうございます。商談やサービスのご利用、資料請求について下記のフォームよりお問い合わせください。</p>
+      <div class='bl_contact_form'>
+        <?php the_content(); ?>
+      </div>
+      <!-- TODO: この内容を固定ページ内で定義した後、削除する -->
       <div class='bl_contact_items'>
         <div class='bl_contact_item'>
           <p class='el_contact_item_name'>会社名</p>
