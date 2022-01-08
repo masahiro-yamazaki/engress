@@ -40,10 +40,36 @@
         </div>
       </div>
       <p class='bl_contact_purpose'>お問い合わせの種類を選択してください<span class='hp_bold'>（資料請求の方は資料請求を選択ください）</span></p>
-      <div class='bl_contact_item'>
-          <p class='el_contact_item_name'>お問い合わせ内容</p>
-          <textarea class='el_contact_item_text el_contact_item_text__content' placeholder='入力して下さい'></textarea>
+      <div class='bl_contact_purpose_selects'>
+        <div class='bl_contact_purpose_select'>
+          <label>
+            <input type='radio' name='contact_purpose' class='bl_contact_purpose_select_radio' />
+            <span class='bl_contact_purpose_select_text'>商談のご相談</span>
+          </label>
         </div>
+        <div class='bl_contact_purpose_select'>
+          <label>
+            <input type='radio' name='contact_purpose' class='bl_contact_purpose_select_radio' />
+            <span class='bl_contact_purpose_select_text'>サービスに関するお問い合わせ</span>
+          </label>
+        </div>
+        <div class='bl_contact_purpose_select'>
+          <label>
+            <input type='radio' name='contact_purpose' class='bl_contact_purpose_select_radio' />
+            <span class='bl_contact_purpose_select_text'>資料請求</span>
+          </label>
+        </div>
+        <div class='bl_contact_purpose_select'>
+          <label>
+            <input type='radio' name='contact_purpose' class='bl_contact_purpose_select_radio' />
+            <span class='bl_contact_purpose_select_text'>その他</span>
+          </label>
+        </div>
+      </div>
+      <div class='bl_contact_content'>
+        <p class='el_contact_item_name'>お問い合わせ内容</p>
+        <textarea class='el_contact_item_text el_contact_item_text__content' placeholder='入力して下さい'></textarea>
+      </div>
     </div>
   </div>
 </main>
