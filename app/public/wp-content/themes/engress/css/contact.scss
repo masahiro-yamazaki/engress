@@ -57,7 +57,34 @@
 }
 
 .bl_contact_purpose_selects {
+  display: flex;
+  flex-direction: column;
   margin-top: 12px;
+
+  .mwform-radio-field.horizontal-item {
+    position: relative;
+    margin-left: 0px;
+    &:not(:first-child) {
+      margin-top: 10px;
+    }
+
+    label {
+      input {
+        position: absolute;
+        top: 2px;
+        left: 0px;
+        width: 20px;
+        height: 20px;
+      }
+      span {
+        margin-left: 39px;
+        color: #1B224C;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+      }
+    }
+  }
 }
 
 .bl_contact_purpose_select {
@@ -112,6 +139,28 @@
 
 .bl_contact_privacyPolicy_check {
   margin-top: 24px;
+
+  span {
+    label {
+      display: inline-block;
+      position: relative;
+      span {
+        margin-left: 36px;
+        color: #1B224C;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+      }
+    }
+  }
+}
+
+.bl_contact_privacyCheck {
+  position: absolute;
+  top: 2px;
+  left: 0px;
+  width: 20px;
+  height: 20px;
 }
 
 .bl_contact_privacyPolicy_checkLabel {

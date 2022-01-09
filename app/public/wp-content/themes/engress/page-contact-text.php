@@ -27,7 +27,9 @@
 </div>
 <div class='bl_contact_privacyPolicy'>
   <p class='bl_contact_privacyPolicy_text'><a href='' class='bl_contact_privacyPolicy_link'>プライバシーポリシー</a>に同意の上、送信ください。</p>
-  [mwform_checkbox name="privacy-check" class="bl_contact_privacyCheck" children="プライバシーポリシーに同意する" separator=","]
+  <div class='bl_contact_privacyPolicy_check'>
+    [mwform_checkbox name="privacy-check" class="bl_contact_privacyCheck" children="プライバシーポリシーに同意する" separator=","]
+  </div>
 </div>
 <div class='bl_contact_submit'>
   [mwform_bsubmit name="submit" class='el_button el_button__navy' value="send" display_input="true"]送信する[/mwform_bsubmit]
