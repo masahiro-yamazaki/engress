@@ -74,25 +74,12 @@
   font-size: 16px;
   line-height: 1.5;
 }
-.bl_contact_purpose_select {
-  position: relative;
-}
-.bl_contact_purpose_select + .bl_contact_purpose_select {
-  margin-top: 10px;
-}
 .bl_contact_purpose_select_radio {
   position: absolute;
   top: 2px;
   left: 0px;
   width: 20px;
   height: 20px;
-}
-.bl_contact_purpose_select_text {
-  margin-left: 39px;
-  color: #1B224C;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
 }
 .bl_contact_content {
   margin-top: 16px;
@@ -131,20 +118,6 @@
   line-height: 1.5;
 }
 .bl_contact_privacyCheck {
-  position: absolute;
-  top: 2px;
-  left: 0px;
-  width: 20px;
-  height: 20px;
-}
-.bl_contact_privacyPolicy_checkLabel {
-  display: inline-block;
-  position: relative;
-}
-.bl_contact_privacyPolicy_checkLabel .bl_contact_privacyPolicy_text {
-  margin-left: 36px;
-}
-.bl_contact_privacyPolicy_checkbox {
   position: absolute;
   top: 2px;
   left: 0px;
