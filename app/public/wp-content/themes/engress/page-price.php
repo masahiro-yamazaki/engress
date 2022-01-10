@@ -21,7 +21,7 @@
     <div class='ly_inner'>
       <h2 class='bl_price_title'>料金体系</h2>
       <div class='bl_system_items'>
-        <div class='bl_system_item'>入会金 39,800円</div>
+        <div class='bl_system_item'>入会金 <?php echo number_format(get_field('admission_fee')); ?>円</div>
         <div class='bl_system_plus'>+</div>
         <div class='bl_system_item'>月額費用</div>
       </div>
