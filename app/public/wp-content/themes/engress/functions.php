@@ -55,7 +55,7 @@ function my_script_init()
     wp_enqueue_script('price', get_template_directory_uri() . '/js/price.js', array( 'jquery' ), '1.0.0', true);
   }
   // ブログ一覧ページ
-  if (is_post_type_archive() && !is_post_type_archive('news')) {
+  if ((is_post_type_archive() && !is_post_type_archive('news')) || is_category() ) {
     wp_enqueue_style('archive', get_template_directory_uri() . '/css/archive.css', array(), '1.0.0', 'all');
     wp_enqueue_style('pagination', get_template_directory_uri() . '/css/pagination.css', array(), '1.0.0', 'all');
   }
