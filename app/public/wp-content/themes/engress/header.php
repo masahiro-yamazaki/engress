@@ -58,7 +58,7 @@
           </a>
         </div>
         <div class='bl_headerCtaBtn_wrapper lg_only'>
-          <a class='el_button el_button__orange'>資料請求</a>
+          <a class='el_button el_button__orange' href="<?php echo home_url('/contact/'); ?>">資料請求</a>
         </div>
         <div class='bl_headerCtaBtn_wrapper lg_only'>
           <a class='el_button el_button__navy' href="<?php echo home_url('/contact/'); ?>">お問い合わせ</a>
@@ -93,7 +93,7 @@
           </nav>
           <div class='bl_drawerCtaBtnGroup'>
             <div class='bl_drawerCtaBtn_wrapper'>
-              <a class='el_button el_button__orange'>資料請求</a>
+              <a class='el_button el_button__orange' href="<?php echo home_url('/contact/'); ?>">資料請求</a>
             </div>
             <div class='bl_drawerCtaBtn_wrapper'>
               <a class='el_button el_button__navy' href="<?php echo home_url('/contact/'); ?>">お問い合わせ</a>

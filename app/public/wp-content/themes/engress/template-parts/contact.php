@@ -3,7 +3,7 @@
   <div class='ly_inner'>
     <h2 class='bl_document_title'>まずは無料で資料請求から</h2>
     <div class='bl_document_button'>
-      <a class='el_button el_button__orange' href=''>資料請求</a>
+      <a class='el_button el_button__orange' href="<?php echo home_url('/contact/'); ?>">資料請求</a>
     </div>
     <div class='bl_document_contact'>
       <a class='el_contactLink' href="<?php echo home_url('/contact/'); ?>">お問い合わせ</a>
