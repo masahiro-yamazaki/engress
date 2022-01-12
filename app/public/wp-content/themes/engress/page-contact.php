@@ -3,7 +3,7 @@
   <!-- ファーストビュー -->
   <section class='ly_contactFv'>
     <div class='ly_inner'>
-      <h1 class='el_fvTitle'>ブログ</h1>
+      <h1 class='el_fvTitle'>お問い合わせ・資料請求</h1>
     </div>
   </section>
   <?php if( !(is_home() || is_front_page() )): ?>
