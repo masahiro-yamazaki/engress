@@ -26,7 +26,7 @@
           while ( have_posts() ) : the_post();
         ?>
           <a href="<?php the_permalink(); ?>" class='bl_newsList_item'>
-            <time class='bl_newsList_item_time'><?php the_date('Y-m-d'); ?></time>
+            <time class='bl_newsList_item_time'><?php the_time('Y-m-d'); ?></time>
             <?php
               $blog_title = get_the_title();
               $blog_trim_title = wp_trim_words($blog_title, 30, '...')

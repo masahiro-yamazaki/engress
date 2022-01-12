@@ -241,7 +241,7 @@
                   <?php $blog_title = get_the_title(); ?>
                   <?php $blog_trim_title = wp_trim_words($blog_title, 30, '...') ?>
                   <h3 class='bl_blog_info_title'><?php echo $blog_trim_title; ?></h3>
-                  <time class='bl_blog_info_time'><?php the_date('Y-m-d'); ?></time>
+                  <time class='bl_blog_info_time'><?php the_time('Y-m-d'); ?></time>
                 </div>
               </a>
           <?php
@@ -267,7 +267,7 @@
             foreach ($myposts as $post) : setup_postdata($post);
           ?>
           <a class='bl_news_item' href="<?php the_permalink(); ?>">
-            <time class='bl_news_item_time'><?php the_date('Y-m-d'); ?></time>
+            <time class='bl_news_item_time'><?php the_time('Y-m-d'); ?></time>
             <h3 class='bl_news_item_title'><?php echo wp_trim_words(get_the_title(), 30, '...'); ?></h3>
           </a>
           <?php

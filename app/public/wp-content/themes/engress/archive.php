@@ -44,7 +44,7 @@
               ?>
             </figure>
             <div class='bl_newBlog_item_info'>
-              <time class='bl_newBlog_item_info_time'><?php the_date('Y-m-d'); ?></time>
+              <time class='bl_newBlog_item_info_time'><?php the_time('Y-m-d'); ?></time>
               <?php
                 $blog_title = get_the_title();
                 $blog_trim_title = wp_trim_words($blog_title, 30, '...')
