@@ -52,7 +52,7 @@
       <div class='ly_header_right'>
         <div class='bl_headerInfo lg_only'>
           <div class='bl_businessHours'>平日08:00〜20:00</div>
-          <a class='bl_tel'>
+          <a href='#' class='bl_tel'>
             <img src='<?php echo get_template_directory_uri() ?>/img/header-tel-icon.svg' alt='tel'>
             <span>0123-456-7890</span>
           </a>

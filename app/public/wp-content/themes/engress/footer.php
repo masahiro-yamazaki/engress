@@ -23,7 +23,7 @@
           <a class='bl_footerMenu_logo' href="<?php echo home_url(); ?>">
             <img src='<?php echo get_template_directory_uri() ?>/img/header-logo.png' alt='Engress'>
           </a>
-          <a class='bl_footer_tel'>
+          <a href='#' class='bl_footer_tel'>
             <img src='<?php echo get_template_directory_uri() ?>/img/footer-tel-icon.png' alt='tel'>
             <span>0123-456-7890</span>
           </a>
