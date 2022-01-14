@@ -96,7 +96,7 @@
                   ?>
                 </figure>
                 <div class='bl_sidebar_blogItem_info'>
-                  <h3 class='bl_sidebar_blogItem_title'><?php the_title(); ?></h3>
+                  <h3 class='bl_sidebar_blogItem_title'><?php echo wp_trim_words(get_the_title(), 30, '...'); ?></h3>
                 </div>
               </a>
               <?php endforeach; wp_reset_postdata(); ?>
