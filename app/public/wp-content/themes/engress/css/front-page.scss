@@ -132,14 +132,15 @@
 
   .bl_feature_media {
     display: flex;
-    gap: 0 50px;
+    flex-direction: column;
+    gap: 20px 0;
     // スマホで見た時のみ画像と文章を縦に並べる (iPadの横幅が768px)
-    @media screen and (max-width: 767px) {
-      flex-direction: column;
-      gap: 20px 0;
-    }
-    &.bl_feature_media__reverse {
-      flex-direction: row-reverse;
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+      gap: 0 50px;
+      &.bl_feature_media__reverse {
+        flex-direction: row-reverse;
+      }
     }
 
     .bl_feature_media_imgWrapper {

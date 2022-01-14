@@ -117,9 +117,8 @@
   margin-left: auto;
 }
 .bl_blogDetail_content img {
-  max-width: 100%;
+  width: auto;
   height: auto;
-  object-fit: cover;
 }
 .bl_blogDetail_content blockquote {
   position: relative;
