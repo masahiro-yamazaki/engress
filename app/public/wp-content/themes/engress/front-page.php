@@ -77,7 +77,7 @@
     <div class='ly_inner'>
       <h2 class='bl_price_title'>Engressの料金プランはこちら</h2>
       <div class='bl_price_button'>
-        <a href='' class='el_button'>料金を見てみる</a>
+        <a href="<?php echo home_url('/price/'); ?>" class='el_button'>料金を見てみる</a>
       </div>
     </div>
   </section>

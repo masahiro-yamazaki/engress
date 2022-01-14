@@ -96,7 +96,7 @@
             ) );
             if( $myposts ): ?>
               <?php foreach($myposts as $post): setup_postdata($post);?>
-              <a href='' class='bl_sidebar_blogItem'>
+              <a href="<?php the_permalink(); ?>" class='bl_sidebar_blogItem'>
                 <figure class='bl_sidebar_blogItem_img'>
                   <?php
                     if (has_post_thumbnail() ) {
