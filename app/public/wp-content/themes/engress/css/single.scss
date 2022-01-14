@@ -124,10 +124,17 @@
 
   figure {
     margin: 24px 0;
-    img {
-      width: auto;
-      height: auto;
+    &.aligncenter {
+      margin: 24px auto;
     }
+    &.alignright {
+      margin-left: auto;
+    }
+  }
+
+  img {
+    width: auto;
+    height: auto;
   }
 
   blockquote {

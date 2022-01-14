@@ -110,9 +110,16 @@
 .bl_blogDetail_content figure {
   margin: 24px 0;
 }
-.bl_blogDetail_content figure img {
-  width: auto;
+.bl_blogDetail_content figure.aligncenter {
+  margin: 24px auto;
+}
+.bl_blogDetail_content figure.alignright {
+  margin-left: auto;
+}
+.bl_blogDetail_content img {
+  max-width: 100%;
   height: auto;
+  object-fit: cover;
 }
 .bl_blogDetail_content blockquote {
   position: relative;
