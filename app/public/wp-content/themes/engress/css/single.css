@@ -22,6 +22,7 @@
   font-weight: bold;
   font-size: 1.75rem;
   line-height: 3rem;
+  word-wrap: break-word;
 }
 .bl_blogDetail_snsLink_time {
   display: flex;
@@ -40,6 +41,7 @@
 .bl_blogDetail_content h1 {
   margin: 24px 0;
   color: #1B224C;
+  word-wrap: break-word;
 }
 .bl_blogDetail_content h2 {
   margin: 24px 0;
@@ -47,6 +49,7 @@
   font-weight: bold;
   font-size: 1.75rem;
   line-height: 1.5;
+  word-wrap: break-word;
 }
 .bl_blogDetail_content h3 {
   margin: 24px 0;
@@ -56,6 +59,16 @@
   font-weight: bold;
   font-size: 1.5rem;
   line-height: 28px;
+  word-wrap: break-word;
+}
+.bl_blogDetail_content h4 {
+  word-wrap: break-word;
+}
+.bl_blogDetail_content h5 {
+  word-wrap: break-word;
+}
+.bl_blogDetail_content h6 {
+  word-wrap: break-word;
 }
 .bl_blogDetail_content p {
   margin: 24px 0;
@@ -63,6 +76,7 @@
   font-weight: 500;
   font-size: 1rem;
   line-height: 1.5;
+  word-wrap: break-word;
 }
 .bl_blogDetail_content a {
   color: #F5A623;
@@ -70,6 +84,7 @@
   font-size: 1rem;
   line-height: 1.5;
   text-decoration: underline;
+  word-wrap: break-word;
 }
 .bl_blogDetail_content ul {
   margin: 24px 0;
@@ -78,6 +93,7 @@
 .bl_blogDetail_content ul li {
   position: relative;
   list-style: none;
+  word-wrap: break-word;
 }
 .bl_blogDetail_content ul li::before {
   display: inline-block;
@@ -103,10 +119,12 @@
   margin: 24px 0;
   padding: 28px 28px 16px 72px;
   background-color: #F8F8F8;
+  word-wrap: break-word;
 }
 .bl_blogDetail_content blockquote cite {
   display: block;
   margin-bottom: 24px;
+  word-wrap: break-word;
 }
 .bl_blogDetail_content blockquote::before {
   position: absolute;

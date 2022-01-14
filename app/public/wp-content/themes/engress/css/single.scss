@@ -23,6 +23,7 @@
   font-weight: bold;
   font-size: 1.75rem;
   line-height: 3rem;
+  word-wrap: break-word;
 }
 
 .bl_blogDetail_snsLink_time {
@@ -46,6 +47,7 @@
   h1 {
     margin: 24px 0;
     color: #1B224C;
+    word-wrap: break-word;
   }
 
   h2 {
@@ -54,6 +56,7 @@
     font-weight: bold;
     font-size: 1.75rem;
     line-height: 1.5;
+    word-wrap: break-word;
   }
 
   h3 {
@@ -64,6 +67,19 @@
     font-weight: bold;
     font-size: 1.5rem;
     line-height: 28px;
+    word-wrap: break-word;
+  }
+
+  h4 {
+    word-wrap: break-word;
+  }
+
+  h5 {
+    word-wrap: break-word;
+  }
+
+  h6 {
+    word-wrap: break-word;
   }
 
   p {
@@ -72,6 +88,7 @@
     font-weight: 500;
     font-size: 1rem;
     line-height: 1.5;
+    word-wrap: break-word;
   }
 
   a {
@@ -80,6 +97,7 @@
     font-size: 1rem;
     line-height: 1.5;
     text-decoration: underline;
+    word-wrap: break-word;
   }
 
   ul {
@@ -88,6 +106,7 @@
     li {
       position: relative;
       list-style: none;
+      word-wrap: break-word;
       &::before {
         display:  inline-block;
         position: absolute;
@@ -116,9 +135,11 @@
     margin: 24px 0;
     padding: 28px 28px 16px 72px;
     background-color: #F8F8F8;
+    word-wrap: break-word;
     cite {
       display: block;
       margin-bottom: 24px;
+      word-wrap: break-word;
     }
     &::before {
       position: absolute;
