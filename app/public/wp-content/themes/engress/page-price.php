@@ -6,17 +6,7 @@
       <h1 class='el_fvTitle'>コース・料金</h1>
     </div>
   </section>
-  <?php if( !(is_home() || is_front_page() )): ?>
-    <section class='ly_breadcrumb'>
-      <div class='ly_inner bl_breadcrumb'>
-        <?php
-        if ( function_exists('bcn_display') ) {
-          bcn_display();
-        }
-        ?>
-      </div>
-    </section>
-  <?php endif; ?>
+  <?php get_template_part('template-parts/breadcrumb'); ?>
   <section class='ly_system'>
     <div class='ly_inner'>
       <h2 class='bl_price_title'>料金体系</h2>

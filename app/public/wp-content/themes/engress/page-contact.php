@@ -6,17 +6,7 @@
       <h1 class='el_fvTitle'>お問い合わせ・資料請求</h1>
     </div>
   </section>
-  <?php if( !(is_home() || is_front_page() )): ?>
-    <section class='ly_breadcrumb'>
-      <div class='ly_inner bl_breadcrumb'>
-        <?php
-        if ( function_exists('bcn_display') ) {
-          bcn_display();
-        }
-        ?>
-      </div>
-    </section>
-  <?php endif; ?>
+  <?php get_template_part('template-parts/breadcrumb'); ?>
   <!-- お問い合わせ -->
   <div class='ly_contact'>
     <div class='ly_inner'>

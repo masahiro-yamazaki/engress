@@ -46,18 +46,17 @@ h1, h2, h3, p, figure, ul {
   }
 }
 .ly_breadcrumb {
-  height: 50px;
   padding: 19px 0;
-  box-sizing: border-box;
   background-color: #F8F8F8;
 }
-.bl_breadcrumb {
+.el_breadcrumb {
   color: #1B224C;
   font-weight: 500;
   font-size: 12px;
   line-height: 20px;
+  word-break: break-all;
 }
-.bl_breadcrumb a {
+.el_breadcrumb a {
   color: #1B224C;
   text-decoration: underline;
 }
