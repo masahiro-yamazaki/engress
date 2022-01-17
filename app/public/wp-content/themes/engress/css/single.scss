@@ -44,8 +44,13 @@
 }
 
 .bl_blogDetail_catchImg {
+  max-width: 100%;
   padding: 30px 20px;
   text-align: center;
+  img {
+    max-width: 100%;
+    height: auto;
+  }
 }
 
 .bl_blogDetail_content {
