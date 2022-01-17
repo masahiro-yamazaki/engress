@@ -4,7 +4,7 @@
     <?php
       $args = array(
         'end_size' => 1,
-        'mid_size' => 2,
+        'mid_size' => 1, // default: 2
         'prev_next' => false
       );
       echo paginate_links($args);
