@@ -135,11 +135,16 @@
   figure {
     max-width: 100%;
     margin: 24px 0;
+    &.alignleft {
+      float: left;
+      margin-right: 20px;
+    }
     &.aligncenter {
       margin: 24px auto;
     }
     &.alignright {
-      margin-left: auto;
+      float: right;
+      margin-left: 20px;
     }
   }
 
@@ -154,6 +159,14 @@
     width: auto;
     max-width: 100%;
     height: auto;
+    &.alignleft {
+      float: left;
+      margin-right: 20px;
+    }
+    &.alignright {
+      float: right;
+      margin-left: 20px;
+    }
   }
 
   blockquote {

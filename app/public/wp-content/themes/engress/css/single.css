@@ -120,11 +120,16 @@
   max-width: 100%;
   margin: 24px 0;
 }
+.bl_blogDetail_content figure.alignleft {
+  float: left;
+  margin-right: 20px;
+}
 .bl_blogDetail_content figure.aligncenter {
   margin: 24px auto;
 }
 .bl_blogDetail_content figure.alignright {
-  margin-left: auto;
+  float: right;
+  margin-left: 20px;
 }
 .bl_blogDetail_content figcaption {
   font-size: 85%;
@@ -136,6 +141,14 @@
   width: auto;
   max-width: 100%;
   height: auto;
+}
+.bl_blogDetail_content img.alignleft {
+  float: left;
+  margin-right: 20px;
+}
+.bl_blogDetail_content img.alignright {
+  float: right;
+  margin-left: 20px;
 }
 .bl_blogDetail_content blockquote {
   position: relative;
