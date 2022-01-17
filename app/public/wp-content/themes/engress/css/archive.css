@@ -74,15 +74,21 @@
 }
 @media screen and (max-width: 767px) {
   .bl_newBlog_item_info_title {
+    margin-top: 8px;
     font-size: 1rem;
   }
 }
 .bl_newBlog_item_info_text {
-  margin-top: 8px;
+  margin-top: 4px;
   color: #1B224C;
   font-weight: 500;
   font-size: 1rem;
   line-height: 1.5;
   word-wrap: break-word;
+}
+@media screen and (max-width: 767px) {
+  .bl_newBlog_item_info_text {
+    font-size: 0.75rem;
+  }
 }
 /*# sourceMappingURL=archive.css.map */
