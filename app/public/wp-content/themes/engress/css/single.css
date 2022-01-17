@@ -116,6 +116,12 @@
 .bl_blogDetail_content figure.alignright {
   margin-left: auto;
 }
+.bl_blogDetail_content figcaption {
+  font-size: 85%;
+  color: #949494;
+  text-align: center;
+  font-style: italic;
+}
 .bl_blogDetail_content img {
   width: auto;
   height: auto;
