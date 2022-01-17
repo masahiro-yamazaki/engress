@@ -75,3 +75,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 /** Sets up WordPress vars and included files. */
 require_once ABSPATH . 'wp-settings.php';
+
+// ローカル環境でJetpackを導入
+define( 'JETPACK_DEV_DEBUG', true );
