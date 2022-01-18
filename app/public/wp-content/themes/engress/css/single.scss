@@ -113,7 +113,7 @@
   ul {
     margin: 24px 0;
     padding-left: 44px;
-    li {
+    > li {
       position: relative;
       list-style: none;
       word-wrap: break-word;
@@ -129,6 +129,10 @@
         content:  ''; 
       }
     }
+  }
+
+  ol {
+    margin: 24px 0;
   }
 
   figure {

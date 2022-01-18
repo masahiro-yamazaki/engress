@@ -99,12 +99,12 @@
   margin: 24px 0;
   padding-left: 44px;
 }
-.bl_blogDetail_content ul li {
+.bl_blogDetail_content ul > li {
   position: relative;
   list-style: none;
   word-wrap: break-word;
 }
-.bl_blogDetail_content ul li::before {
+.bl_blogDetail_content ul > li::before {
   display: inline-block;
   position: absolute;
   top: 4px;
@@ -114,6 +114,9 @@
   border-radius: 50%;
   background-color: #F5A623;
   content: '';
+}
+.bl_blogDetail_content ol {
+  margin: 24px 0;
 }
 .bl_blogDetail_content figure {
   max-width: 100%;
