@@ -63,8 +63,8 @@ define('NONCE_SALT',       'DqwGYW9ADsIioStIhtpu7gtT57FWvPtTuVFLUJv33DjOmF0JgwUA
  */
 $table_prefix = 'wp_';
 
-
-
+// ローカル環境でJetpackを導入
+define( 'JETPACK_DEV_DEBUG', true );
 
 /* That's all, stop editing! Happy publishing. */
 
@@ -75,6 +75,3 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 /** Sets up WordPress vars and included files. */
 require_once ABSPATH . 'wp-settings.php';
-
-// ローカル環境でJetpackを導入
-define( 'JETPACK_DEV_DEBUG', true );
