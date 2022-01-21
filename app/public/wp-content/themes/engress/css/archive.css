@@ -23,12 +23,22 @@
 .bl_newBlog_item + .bl_newBlog_item {
   margin-top: 92px;
 }
+@media screen and (max-width: 767px) {
+  .bl_newBlog_item + .bl_newBlog_item {
+    margin-top: 40px;
+  }
+}
 .bl_newBlog_item {
   display: flex;
   justify-content: space-between;
   position: relative;
   height: 148px;
   transition: 0.3s;
+}
+@media screen and (max-width: 767px) {
+  .bl_newBlog_item {
+    height: 100px;
+  }
 }
 .bl_newBlog_item:hover {
   opacity: 0.4;
@@ -88,7 +98,7 @@
 }
 @media screen and (max-width: 767px) {
   .bl_newBlog_item_info_text {
-    font-size: 0.75rem;
+    display: none;
   }
 }
 /*# sourceMappingURL=archive.css.map */
