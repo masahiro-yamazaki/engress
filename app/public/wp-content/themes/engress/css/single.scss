@@ -215,6 +215,9 @@
   position: relative;
   height: 128px;
   transition: 0.3s;
+  @media screen and (max-width: 767px) {
+    height: 80px;
+  }
   &:hover {
     opacity: 0.4;
     .bl_recommended_item_img {
@@ -259,6 +262,10 @@
   line-height: 1.5;
   text-decoration: underline;
   word-break: break-all;
+  @media screen and (max-width: 767px) {
+    margin-top: 12px;
+    font-size: 1rem;
+  }
 }
 
 .bl_sidebar_title {
