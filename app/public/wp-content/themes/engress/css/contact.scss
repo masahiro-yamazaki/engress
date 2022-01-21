@@ -69,6 +69,8 @@
     }
 
     label {
+      cursor: pointer;
+
       input {
         position: absolute;
         top: 2px;
@@ -129,6 +131,7 @@
     label {
       display: inline-block;
       position: relative;
+      cursor: pointer;
       span {
         margin-left: 36px;
         color: #1B224C;

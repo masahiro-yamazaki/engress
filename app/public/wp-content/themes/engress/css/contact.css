@@ -60,6 +60,9 @@
 .bl_contact_purpose_selects .mwform-radio-field.horizontal-item:not(:first-child) {
   margin-top: 10px;
 }
+.bl_contact_purpose_selects .mwform-radio-field.horizontal-item label {
+  cursor: pointer;
+}
 .bl_contact_purpose_selects .mwform-radio-field.horizontal-item label input {
   position: absolute;
   top: 2px;
@@ -109,6 +112,7 @@
 .bl_contact_privacyPolicy_check span label {
   display: inline-block;
   position: relative;
+  cursor: pointer;
 }
 .bl_contact_privacyPolicy_check span label span {
   margin-left: 36px;
