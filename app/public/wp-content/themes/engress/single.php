@@ -19,7 +19,11 @@
             <time class='bl_blogDetail_time'><?php the_time('Y-m-d'); ?></time>
           </div>
           <div class='bl_blogDetail_catchImg'>
-            <?php the_post_thumbnail(); ?>
+            <?php if (has_post_thumbnail()) : ?>
+              <?php the_post_thumbnail(); ?>
+            <?php else: ?>
+              <img alt="" src="<?php echo get_template_directory_uri(); ?>/img/noimg.png" />
+            <?php endif; ?>
           </div>
           <div class='bl_blogDetail_content'>
             <?php the_content(); ?>
