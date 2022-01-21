@@ -79,10 +79,11 @@
   overflow-x: auto;
 }
 
+// align-items: endとすると、Mac/SafariやWindows/IEで要素が下揃えにならない
 .bl_plans {
   display: flex;
   gap: 0 8px;
-  align-items: end;
+  align-items: flex-end;
   margin-top: 60px;
 }
 
