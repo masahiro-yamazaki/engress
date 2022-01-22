@@ -26,10 +26,11 @@
           $sticky = get_option('sticky_posts');
           $sticky_query_args = array(
             'post_type' => 'post',
-            'posts_per_page' => -1,  // 固定ページはすべて表示
+            'posts_per_page' => $posts_per_page,
             'post__in' => $sticky
           );
           $sticky_query = new WP_Query($sticky_query_args);
+
           // 固定ページ総数を $sticky_number に代入
           if ($sticky[0] == true) {
             $sticky_number = $sticky_query->found_posts;
@@ -37,50 +38,27 @@
             $sticky_number = 0;
           }
 
-          // 1ページ目に表示する、通常ページの本数を求める。
-          // (※変数 $normal_number は、2ページ目以降の offset にも利用する。)
-          $normal_number = 0;
-          if ($posts_per_page - $sticky_number > 0) {
-            $normal_number = $posts_per_page - $sticky_number;
-          }
+          // 固定ページを表示するページを求める
+          $sticky_page = ceil($sticky_number / $posts_per_page);
         ?>
 
         <?php
           if ($pager_query->have_posts() == true) : ?>
-          <?php
-            // 【A. 1ページ目の場合】
-            if (get_query_var('paged') == 0 || get_query_var('paged') == 1) :
-            $normal_query_paged1_args = array(
-              'post_type' => 'post',
-              'posts_per_page' => $normal_number,
-              'post__not_in' => $sticky,
-              'paged' => 1
-            );
-            $normal_query_paged1 = new WP_Query($normal_query_paged1_args);
-          ?>
-          <?php if ($sticky[0] == true) : ?>
             <?php while ($sticky_query->have_posts()) : $sticky_query->the_post(); ?>
               <?php get_template_part('template-parts/blog-list-item'); ?>
             <?php endwhile; ?>
-          <?php endif; ?>
-          <?php while ($normal_query_paged1->have_posts()) : $normal_query_paged1->the_post(); ?>
-            <?php get_template_part('template-parts/blog-list-item'); ?>
-          <?php endwhile; ?>
-        <?php
-          //【i-B. 2ページ目以降の場合】
-          else :
-          $normal_query_paged2after_args = array(
+            <?php
+            $normal_query_args = array(
             'post_type' => 'post',
             'posts_per_page' => $posts_per_page,
             'post__not_in' => $sticky,
-            'offset' => (get_query_var('paged') - 2) * $posts_per_page + $normal_number
+            'offset' => (get_query_var('paged') - 1) * $posts_per_page + $sticky_number
           );
-          $normal_query_paged2after = new WP_Query($normal_query_paged2after_args);
+          $normal_query = new WP_Query($normal_query_args);
         ?>
-          <?php while ($normal_query_paged2after->have_posts()) : $normal_query_paged2after->the_post(); ?>
+          <?php while ($normal_query->have_posts()) : $normal_query->the_post(); ?>
             <?php get_template_part('template-parts/blog-list-item'); ?>
           <?php endwhile; ?>
-        <?php endif; ?>
         <?php endif; ?>
       </div>
       <!-- ページネーション -->
