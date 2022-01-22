@@ -12,38 +12,91 @@
       <h2 class='bl_newBlog_title'>新着一覧</h2>
       <div class='bl_newBlog_items'>
         <?php
-          // 以下の方法ではどのページでも先頭固定表示されてしまう
-          // https://twotone.me/web/2178/
-          $list_cnt = 10;
+          $posts_per_page = 10;
+
+          // (Q1) ページャー用クエリ
+          $pager_query_args = array(
+            'post_type' => 'post',
+            'posts_per_page' => $posts_per_page,
+            'paged' => get_query_var('paged')
+          );
+          $pager_query = new WP_Query($pager_query_args);
+
+          // (Q2) 固定ページ抽出クエリ
           $sticky = get_option('sticky_posts');
-          if ($list_cnt <= count($sticky)) {
-            // 「先頭固定」が「$list_cnt」に設定した数値と同じ又は超えた時の記述
-            $args = array(
-              'posts_per_page' => '10',
-              'post_type' => 'post',
-              // 「この投稿を先頭に固定表示」の無効化
-              'ignore_sticky_posts' => true,
-            );
+          $sticky_query_args = array(
+            'post_type' => 'post',
+            'posts_per_page' => -1,  // 固定ページはすべて表示
+            'post__in' => $sticky
+          );
+          $sticky_query = new WP_Query($sticky_query_args);
+          // 固定ページ総数を $sticky_number に代入
+          if ($sticky[0] == true) {
+            $sticky_number = $sticky_query->found_posts;
           } else {
-            // 「先頭固定」が「$list_cnt」を超えてない時
-            // 「$list_cnt」から「先頭固定」の数を引いた数最新記事出力
-            if ( !empty($sticky) ) $list_cnt -= count($sticky);
-            $args = array(
-              'posts_per_page' => $list_cnt,
-              'post_type' => 'post',
-            );
+            $sticky_number = 0;
           }
-          $the_query = new WP_Query($args);
-          if ( $the_query->have_posts() ) :
-          while ( $the_query->have_posts() ) : $the_query->the_post();
+
+          // 1ページ目に表示する、通常ページの本数を求める。
+          // (※変数 $normal_number は、2ページ目以降の offset にも利用する。)
+          $normal_number = 0;
+          if ($posts_per_page - $sticky_number > 0) {
+            $normal_number = $posts_per_page - $sticky_number;
+          }
         ?>
-        <?php get_template_part('template-parts/blog-list-item'); ?>
-        <?php endwhile; ?>
-        <?php else: ?>
+
+        <?php
+          if ($pager_query->have_posts() == true) : ?>
+          <?php
+            // 【A. 1ページ目の場合】
+            if (get_query_var('paged') == 0 || get_query_var('paged') == 1) :
+            $normal_query_paged1_args = array(
+              'post_type' => 'post',
+              'posts_per_page' => $normal_number,
+              'post__not_in' => $sticky,
+              'paged' => 1
+            );
+            $normal_query_paged1 = new WP_Query($normal_query_paged1_args);
+          ?>
+          <?php if ($sticky[0] == true) : ?>
+            <?php while ($sticky_query->have_posts()) : $sticky_query->the_post(); ?>
+              <?php get_template_part('template-parts/blog-list-item'); ?>
+            <?php endwhile; ?>
+          <?php endif; ?>
+          <?php while ($normal_query_paged1->have_posts()) : $normal_query_paged1->the_post(); ?>
+            <?php get_template_part('template-parts/blog-list-item'); ?>
+          <?php endwhile; ?>
+        <?php
+          //【i-B. 2ページ目以降の場合】
+          else :
+          $normal_query_paged2after_args = array(
+            'post_type' => 'post',
+            'posts_per_page' => $posts_per_page,
+            'post__not_in' => $sticky,
+            'offset' => (get_query_var('paged') - 2) * $posts_per_page + $normal_number
+          );
+          $normal_query_paged2after = new WP_Query($normal_query_paged2after_args);
+        ?>
+          <?php while ($normal_query_paged2after->have_posts()) : $normal_query_paged2after->the_post(); ?>
+            <?php get_template_part('template-parts/blog-list-item'); ?>
+          <?php endwhile; ?>
+        <?php endif; ?>
         <?php endif; ?>
       </div>
-      <?php get_template_part('template-parts/pagination'); ?>
-    </div>
+      <!-- ページネーション -->
+      <?php if (paginate_links()) : ?>
+        <div class='bl_pagination'>
+          <?php
+            $args = array(
+              'end_size' => 1,
+              'mid_size' => 1, // default: 2
+              'prev_next' => false,
+              'total' => $pager_query->max_num_pages
+            );
+            echo paginate_links($args);
+          ?>
+        </div>
+      <?php endif; ?>
   </section>
   <?php get_template_part('template-parts/contact'); ?>
 </main>
